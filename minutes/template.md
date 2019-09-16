@@ -3,13 +3,13 @@
 **Time of Meeting:** <day of week> dd/mm/yy
 
 **Attendees:**
-* [ ] Geng Yuxiang      
+[Y/N] Geng Yuxiang      
 Reason for Absence: -/-
-* [ ] Li Shangqian      
+[Y/N] Li Shangqian      
 Reason for Absence: -/-
-* [ ] Xuanken Tay       
+[Y/N] Xuanken Tay       
 Reason for Absence: -/-
-* [ ] Yin Zhou Zheng    
+[Y/N] Yin Zhou Zheng    
 Reason for Absence: -/-
 
 **Previous Minutes Review:**

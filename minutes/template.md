@@ -4,14 +4,15 @@
 
 **Attendees:**
 
-[Y/N] Geng Yuxiang      
+* [Y/N] Geng Yuxiang      
 Reason for Absence: -/-
-[Y/N] Li Shangqian      
+* [Y/N] Li Shangqian      
 Reason for Absence: -/-
-[Y/N] Xuanken Tay       
+* [Y/N] Xuanken Tay       
 Reason for Absence: -/-
-[Y/N] Yin Zhou Zheng    
+* [Y/N] Yin Zhou Zheng    
 Reason for Absence: -/-
+
 
 **Previous Minutes Review:**
 *  <Update on Action Item #1>

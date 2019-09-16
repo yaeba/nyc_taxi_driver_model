@@ -3,6 +3,7 @@
 **Time of Meeting:** <day of week> dd/mm/yy
 
 **Attendees:**
+
 [Y/N] Geng Yuxiang      
 Reason for Absence: -/-
 [Y/N] Li Shangqian      

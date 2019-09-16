@@ -1,6 +1,6 @@
 # MAST30034 Group Project - Group 7
 ## Minutes of Meeting
-**Time of Meeting:** <day of week> dd/mm/yy
+**Time of Meeting:** Monday 16/09/2019
 
 **Attendees:**
 
@@ -12,4 +12,4 @@
 **Action Items:**
 1.  Planning the agenda of Wednesday meeting.
 
-**Time of Next Meeting:** <day of week> dd/mm/yy
+**Time of Next Meeting:** Wednesday 18/09/2019

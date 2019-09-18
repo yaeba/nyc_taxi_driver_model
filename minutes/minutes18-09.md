@@ -14,20 +14,23 @@
 more structure to the meeting; boosting progress in the meeting.
 
 **Action Items:**
-1.  <Assignee>: <Action Item #1>
-2.  ...
+
+/
 
 **Time of Next Meeting:** Friday 20/09/19
 
-**Agenda for Next Meeting:**
-1. Agree on general model outline.
-* 
-2. Decide on preprocessing.
-3. Job allocation.
-4. Presentation
-
-
-**Reminders:**
-*  Push write-up to group GitLab repository in minutes.
-*  Name the minutes file as 'minutesdd-mm'; for instance, meeting held on September 16th will have minutes title: 'minute16-09'.
-*  Assign action items as GitLab issues to appropriate group member(s).
+**Agenda for Next Meeting (In-Order of Highest Priority First):**
+1. General Model Outline (30 MIN):
+* Reach a consensus on the general (high-level) model outline.
+* What is the main heuristic that our model builds upon?
+* Subdivisions? Models for different areas of New York City?
+2. Presentation (60 MIN):
+* Discuss and agree on outline.
+* Open Google slides for collaboration.
+* Discuss job allocation (since this is featured in the presentation).
+3. Pre-Processing (15 MIN):
+* How to pre-process the data?
+* Should we pre-process the data for different group members?
+4. Action Items (15 MIN):
+* What should everyone do before the next meeting?
+* Prepare presentation slides and speeches so we can practice next meeting.

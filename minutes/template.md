@@ -13,24 +13,18 @@ Reason for Absence: -/-
 * [Y/N] Yin Zhou Zheng    
 Reason for Absence: -/-
 
-
 **Previous Minutes Review:**
 *  <Update on Action Item #1>
-*  <Update on Action Item #2>
-*  <Update on Action Item #3>
 *  ...
 
 **Rolled Over Action Items (Incomplete from Previous Meeting):**
 1.  <Rolled Over Action Item #1>
-2.  <Rolled Over Action Item #2>
-3.  <Rolled Over Action Item #3>
-4.  ...
+2.  ...
+
 
 **Action Items:**
-1.  <Action Item #1>
-2.  <Action Item #2>
-3.  <Action item #3>
-4.  ...
+1.  <Assignee>: <Action Item #1>
+2.  ...
 
 **Time of Next Meeting:** <day of week> dd/mm/yy
 

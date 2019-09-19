@@ -1,0 +1,36 @@
+# MAST30034 Group Project - Group 7
+## Minutes of Meeting
+**Time of Meeting:** Wednesday 18/09/19
+
+**Attendees:**
+
+* [Y] Geng Yuxiang      
+* [Y] Li Shangqian
+* [Y] Xuanken Tay
+* [Y] Yin Zhou Zheng
+
+**Previous Minutes Review:**
+*  Today's meeting agenda: Definitely could have been more specific to give
+more structure to the meeting; boosting progress in the meeting.
+
+**Action Items:**
+
+/
+
+**Time of Next Meeting:** Friday 20/09/19
+
+**Agenda for Next Meeting (In-Order of Highest Priority First):**
+1. General Model Outline (30 MIN):
+* Reach a consensus on the general (high-level) model outline.
+* What is the main heuristic that our model builds upon?
+* Subdivisions? Models for different areas of New York City?
+2. Presentation (60 MIN):
+* Discuss and agree on outline.
+* Open Google slides for collaboration.
+* Discuss job allocation (since this is featured in the presentation).
+3. Pre-Processing (15 MIN):
+* How to pre-process the data?
+* Should we pre-process the data for different group members?
+4. Action Items (15 MIN):
+* What should everyone do before the next meeting?
+* Prepare presentation slides and speeches so we can practice next meeting.

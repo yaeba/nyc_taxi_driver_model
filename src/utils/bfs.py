@@ -83,7 +83,8 @@ def find_shortest_path(graph, start, dest):
 	cost_func = lambda u, v, e, prev_e: e['cost']
 	start = to_tuple(start)
 	dest = to_tuple(dest)
-	return dijkstar.find_path(graph, start, dest, cost_func=cost_func)[0]
+	path = dijkstar.find_path(graph, start, dest, cost_func=cost_func)[0]
+	return list(map(to_cell_id, path))
 
 
 ## Helper function to convert cell from id (str) to tuple form

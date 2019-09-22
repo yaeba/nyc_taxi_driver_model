@@ -1,0 +1,5 @@
+{
+	"name": "ExamplePython3Player",
+	"language": "Python3",
+	"script": "./player.py"
+}

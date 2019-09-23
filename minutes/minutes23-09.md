@@ -4,17 +4,15 @@
 
 **Attendees:**
 
-* [Y/N] Geng Yuxiang      
-* [Y/N] Li Shangqian      
-* [Y/N] Xuanken Tay       
-* [Y/N] Yin Zhou Zheng
+* [Y] Geng Yuxiang      
+* [Y] Li Shangqian      
+* [Y] Xuanken Tay       
+* [Y] Yin Zhou Zheng
 
 **Previous Minutes Review:**
-*  Except for the pre-processing, everything else on the agenda was addressed.
-
-**Rolled Over Action Items (Incomplete from Previous Meeting):**
-1.  Discuss pre-processing, and how it will be split among group members. This
-can be done in the meeting after the Wednesday mock presentation.
+*  Each member completed their slides and draft speech.
+*  Noticeable overlaps and disconnection between speakers; these shall be
+addressed in the next meeting.
 
 **Agenda of Today's Meeting:**
 * Determine meetup for Wednesday to run through presentation multiple
@@ -24,10 +22,11 @@ times. Aim to achieve a presentation time of less than 10 minutes.
 1.  <Each Member> Run through presentations individually. Aim to achieve less
 than 2.5 minutes since going over the time limit of 10 minutes will likely 
 result in a point deduction.
+2.  Run through the slides and comment on areas which could use improvement.
 
 **Time of Next Meeting:** Wednesday 25/09/19
 
-**Reminders:**
-*  Push write-up to group GitLab repository in minutes.
-*  Name the minutes file as 'minutesdd-mm'; for instance, meeting held on September 16th will have minutes title: 'minute16-09'.
-*  Assign action items as GitLab issues to appropriate group member(s).
+**Agenda for Next Meeting:**
+1.  Fully integrate each member's slides and speech to form a complete 
+presentation that flows nicely.
+2.  Run through the presentation and aim to achieve a time of less than 10 minutes.

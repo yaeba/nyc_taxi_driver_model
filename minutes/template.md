@@ -3,7 +3,6 @@
 **Time of Meeting:** <day of week> dd/mm/yy
 
 **Attendees:**
-
 * [Y/N] Geng Yuxiang      
 Reason for Absence: -/-
 * [Y/N] Li Shangqian      
@@ -14,19 +13,28 @@ Reason for Absence: -/-
 Reason for Absence: -/-
 
 **Previous Minutes Review:**
-*  <Update on Action Item #1>
+*  <Update on Action Item 1>
 *  ...
 
 **Rolled Over Action Items (Incomplete from Previous Meeting):**
-1.  <Rolled Over Action Item #1>
+1.  <Rolled Over Action Item 1>
 2.  ...
 
+**Agenda of Today's Meeting:**
+1. <Task 1>
+2. <Task 2>
+3. ...
 
 **Action Items:**
-1.  <Assignee>: <Action Item #1>
+1.  <Assignee>: <Action Item 1>
 2.  ...
 
 **Time of Next Meeting:** <day of week> dd/mm/yy
+
+**Agenda for Next Meeting:**
+1. <Task 1>
+2. <Task 2>
+3. ...
 
 **Reminders:**
 *  Push write-up to group GitLab repository in minutes.

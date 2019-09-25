@@ -17,6 +17,7 @@ member's parts.
 1.  Run through the presentation and aim to achieve a time of less than 10 minutes.
 2.  Peer reviews to suggest upon areas needing improvement.
 3.  Decide on next meeting before mid semester break.
+4.  Set meetup time and location for official presentation.
 
 **Action Items:**
 1.  <> 

@@ -20,9 +20,13 @@ member's parts.
 4.  Set meetup time and location for official presentation.
 
 **Action Items:**
-1.  <> 
+1.  Practice presentations.
 
-**Time of Next Meeting:** Friday 27/09/19?
+**Time of Next Meeting:** Thursday 26/09/19
 
 **Agenda for Next Meeting:**
+1.  Create Overleaf document for report writing.
+2.  Discuss task distribution before meeting in Mid Semester Break.
+3.  Set goals/due dates for project components.
+
 

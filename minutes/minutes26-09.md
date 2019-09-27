@@ -17,12 +17,12 @@
 3.  Set goals/due dates for project components.
 
 **Action Items:**
-1.  <Li Shangqian> Setup personal GitLab directory and upload assignments 1 & 2.
-2.  <Yin Zhou Zheng> Setup personal GitLab directory and upload assignments 1 & 2.
-3.  <ALL> Read through assignment 3 specification thoroughly.
-4.  <ALL> Read through each other's assignments, listing any useful material.
-5.  <ALL> Read through each other's GitLab directories. Avoid duplicate code.
-5.  <ALL> Open issues for any discussions concerning the group project.
+1.  {Li Shangqian} Setup personal GitLab directory and upload assignments 1 & 2.
+2.  {Yin Zhou Zheng} Setup personal GitLab directory and upload assignments 1 & 2.
+3.  {ALL} Read through assignment 3 specification thoroughly.
+4.  {ALL} Read through each other's assignments, listing any useful material.
+5.  {ALL} Read through each other's GitLab directories. Avoid duplicate code.
+5.  {ALL} Open issues for any discussions concerning the group project.
 
 **Time of Next Meeting:** Monday 27-09-19 2PM
 

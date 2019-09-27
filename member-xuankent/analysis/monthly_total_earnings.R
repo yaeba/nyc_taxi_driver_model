@@ -1,4 +1,6 @@
 #!/usr/bin/env Rscript
+## Script to plot monthly total earnings vs day vs hour
+## Usage: ./monthly_total_earnings <path> <pattern> <out_prefix>
 
 suppressMessages(library(tidyverse))
 suppressMessages(library(data.table))
@@ -79,7 +81,7 @@ extract_time_features <- function(taxi_data) {
 
 read_one_taxi_data <- function(filename, read_columns=read_cols,
                                out_columns=out_cols) {
-  print(paste("Reading", filename))
+  message("Reading ", filename)
   fread(filename, select=read_columns, fill=TRUE, showProgress=FALSE) %>%
     as_tibble() %>%
     rename(Pickup_cell = PickupCell, Dropoff_cell = DropoffCell) %>%

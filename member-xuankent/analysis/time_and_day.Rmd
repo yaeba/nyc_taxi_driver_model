@@ -1,0 +1,107 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+library(data.table)
+library(lubridate)
+```
+
+
+```{r}
+read_cols <- c("lpep_pickup_datetime", "Lpep_dropoff_datetime", "RateCodeID",
+               "Pickup_longitude", "Pickup_latitude", 
+               "Dropoff_longitude", "Dropoff_latitude",
+               "PickupCell", "DropoffCell",
+               "Passenger_count", "Trip_distance", 
+               "Tip_amount", "Fare_amount", "Payment_type")
+
+out_cols <- c("Season", "Pickup_month", "Pickup_wday", "Weekend", "Pickup_hour", 
+              "Time", "PickupCell", "DropoffCell", "Pickup_day", "Pickup_minute",
+              "Trip_distance", "Trip_duration", "Total_earnings")
+
+# function to compute total earnings
+compute_total_earnings <- function(taxi_data) {
+  taxi_data %>%
+    mutate(Total_earnings = Fare_amount + Tip_amount)
+}
+
+# function to compute trip duration
+compute_trip_duration <- function(taxi_data) {
+  taxi_data %>%
+    rename(Pickup_datetime = lpep_pickup_datetime,
+           Dropoff_datetime = Lpep_dropoff_datetime) %>%
+    mutate(Pickup_datetime = ymd_hms(Pickup_datetime),
+           Dropoff_datetime = ymd_hms(Dropoff_datetime),
+           Trip_duration = difftime(Dropoff_datetime, Pickup_datetime, units="mins"),
+           Trip_duration = as.numeric(Trip_duration) %>% round(digits=2))
+}
+
+clean_taxi_data <- function(taxi_data) {
+  taxi_data %>%
+    # remove rows with missing value(s)
+    drop_na() %>%
+    # data cleansing
+    filter(Passenger_count > 0, Passenger_count <= 6,
+           Pickup_latitude > 39, Pickup_latitude < 42,
+           Pickup_longitude > -76, Pickup_longitude < -72,
+           Dropoff_latitude > 39, Dropoff_latitude < 42,
+           Dropoff_longitude > -76, Dropoff_longitude < -72,
+           Trip_duration > 1, Trip_duration < (10 * 60),
+           Payment_type <= 2)
+}
+
+# helper function to return US season
+season <- function(datetime) {
+  m <- month(datetime)
+  terms <- c("Spring", "Summer", "Autumn", "Winter")
+  s <- factor(character(length(m)), levels=terms)
+  s[m %in% c(3, 4, 5)] <- terms[1]
+  s[m %in% c(6, 7, 8)] <- terms[2]
+  s[m %in% c(9, 10, 11)] <- terms[3]
+  s[m %in% c(12, 1, 2)] <- terms[4]
+  s
+}
+
+
+# function to extract day time-related features
+extract_time_features <- function(taxi_data) {
+  taxi_data %>%
+    mutate(Pickup_month = month(Pickup_datetime, label=TRUE),
+           Pickup_wday = wday(Pickup_datetime, label=TRUE),
+           Pickup_day = day(Pickup_datetime),
+           Pickup_hour = hour(Pickup_datetime),
+           Pickup_minute = minute(Pickup_datetime),
+           Season = season(Pickup_datetime),
+           Weekend = Pickup_day %in% c("Sat", "Sun"),
+           Time = ifelse(Pickup_hour >= 6 & Pickup_hour < 18,
+                         "Daytime",
+                         "Nighttime"),
+           Time = factor(Time, levels=c("Daytime", "Nighttime")))
+}
+
+read_one_taxi_data <- function(filename, read_columns=read_cols, out_columns=out_cols) {
+  print(paste("Reading", filename))
+  fread(filename, select=read_columns, fill=TRUE, showProgress=FALSE) %>%
+    as_tibble() %>%
+    compute_total_earnings() %>%
+    compute_trip_duration() %>%
+    clean_taxi_data() %>%
+    extract_time_features() %>%
+    select(out_columns)
+}
+
+```
+
+
+
+```{r}
+df <- read_one_taxi_data("../../data/tripdata/green_tripdata_2015-07.csv.gz")
+```
+
+```{r}
+head(df)
+```
+

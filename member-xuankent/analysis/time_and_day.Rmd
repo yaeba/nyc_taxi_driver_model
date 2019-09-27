@@ -11,15 +11,14 @@ library(lubridate)
 
 
 ```{r}
-read_cols <- c("lpep_pickup_datetime", "Lpep_dropoff_datetime", "RateCodeID",
-               "Pickup_longitude", "Pickup_latitude", 
-               "Dropoff_longitude", "Dropoff_latitude",
+read_cols <- c("lpep_pickup_datetime", "Lpep_dropoff_datetime", 
                "PickupCell", "DropoffCell",
                "Passenger_count", "Trip_distance", 
                "Tip_amount", "Fare_amount", "Payment_type")
 
-out_cols <- c("Season", "Pickup_month", "Pickup_wday", "Weekend", "Pickup_hour", 
-              "Time", "PickupCell", "DropoffCell", "Pickup_day", "Pickup_minute",
+out_cols <- c("Season", "Pickup_month", "Pickup_week", "Pickup_wday", 
+              "Weekend", "Pickup_hour", "Time", "Pickup_day", 
+              "Pickup_minute", "Pickup_cell", "Dropoff_cell",
               "Trip_distance", "Trip_duration", "Total_earnings")
 
 # function to compute total earnings
@@ -45,11 +44,10 @@ clean_taxi_data <- function(taxi_data) {
     drop_na() %>%
     # data cleansing
     filter(Passenger_count > 0, Passenger_count <= 6,
-           Pickup_latitude > 39, Pickup_latitude < 42,
-           Pickup_longitude > -76, Pickup_longitude < -72,
-           Dropoff_latitude > 39, Dropoff_latitude < 42,
-           Dropoff_longitude > -76, Dropoff_longitude < -72,
-           Trip_duration > 1, Trip_duration < (10 * 60),
+           Trip_duration > 1, Trip_duration < (2 * 60),
+           Total_earnings > 0, Total_earnings < 100,
+           week(Pickup_datetime) == week(Dropoff_datetime),
+           Pickup_cell != "", Dropoff_cell != "",
            Payment_type <= 2)
 }
 
@@ -70,6 +68,7 @@ season <- function(datetime) {
 extract_time_features <- function(taxi_data) {
   taxi_data %>%
     mutate(Pickup_month = month(Pickup_datetime, label=TRUE),
+           Pickup_week = week(Pickup_datetime),
            Pickup_wday = wday(Pickup_datetime, label=TRUE),
            Pickup_day = day(Pickup_datetime),
            Pickup_hour = hour(Pickup_datetime),
@@ -82,10 +81,12 @@ extract_time_features <- function(taxi_data) {
            Time = factor(Time, levels=c("Daytime", "Nighttime")))
 }
 
-read_one_taxi_data <- function(filename, read_columns=read_cols, out_columns=out_cols) {
+read_one_taxi_data <- function(filename, read_columns=read_cols,
+                               out_columns=out_cols) {
   print(paste("Reading", filename))
   fread(filename, select=read_columns, fill=TRUE, showProgress=FALSE) %>%
     as_tibble() %>%
+    rename(Pickup_cell = PickupCell, Dropoff_cell = DropoffCell) %>%
     compute_total_earnings() %>%
     compute_trip_duration() %>%
     clean_taxi_data() %>%
@@ -93,15 +94,73 @@ read_one_taxi_data <- function(filename, read_columns=read_cols, out_columns=out
     select(out_columns)
 }
 
+
+read_all_taxi_data <- function(path, pattern) {
+  lapply(list.files(path, pattern, full.names=TRUE), 
+         function(x) read_one_taxi_data(x, read_cols, out_cols)) %>%
+    rbindlist()
+}
 ```
 
 
 
 ```{r}
-df <- read_one_taxi_data("../../data/tripdata/green_tripdata_2015-07.csv.gz")
+df <- read_all_taxi_data("../../data/tripdata", "tripdata_2015-07")
+list.files("../../data/tripdata", "tripdata_2015")
 ```
 
 ```{r}
 head(df)
+```
+
+
+```{r}
+
+df %>%
+  group_by(Pickup_day, Pickup_hour) %>%
+  summarise(Total_earnings = sum(Total_earnings)) %>%
+  ggplot(aes(x=Pickup_day, y=Pickup_hour, fill=Total_earnings)) +
+  geom_tile() +
+  scale_fill_distiller(palette="Spectral") +
+  scale_y_continuous(breaks=seq(0, 23)) +
+  scale_x_continuous(breaks=seq(1, 31, 2)) +
+  theme_bw() +
+  labs(x="Day of the month", y="Hour of the day",
+       title=paste(
+         "Sum of total earnings in each day of month vs hour,",
+         unique(df$Pickup_month), unique(df$Pickup_))
+  )
+```
+
+```{r}
+df %>%
+  group_by(Pickup_wday, Pickup_hour) %>%
+  summarise(Total_earnings = sum(Total_earnings)) %>%
+  ggplot(aes(x=Pickup_wday, y=Pickup_hour, fill=Total_earnings)) +
+  geom_tile() +
+  scale_fill_distiller(palette="Spectral") +
+  scale_y_continuous(breaks=seq(0, 23)) +
+  theme_bw() +
+  labs(x="Day of the month", y="Hour of the day",
+       title="Sum of total earnings in each day of week vs hour")
+```
+
+
+```{r}
+for (week in unique(df$Pickup_week)) {
+  p <- df %>%
+    filter(Pickup_week == week) %>%
+    group_by(Pickup_wday, Pickup_hour) %>%
+    summarise(Total_earnings = sum(Total_earnings)) %>%
+    ggplot(aes(x=Pickup_wday, y=Pickup_hour, fill=Total_earnings)) +
+    geom_tile() +
+    scale_fill_distiller(palette="Spectral") +
+    scale_y_continuous(breaks=seq(0, 23)) +
+    theme_bw() +
+    labs(x="Day of the month", y="Hour of the day",
+         title="Sum of total earnings in each day of month vs hour")
+  print(p)
+}
+  
 ```
 

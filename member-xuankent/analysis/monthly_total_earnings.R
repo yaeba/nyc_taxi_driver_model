@@ -9,10 +9,20 @@ suppressMessages(library(lubridate))
 
 args <- commandArgs(trailingOnly=TRUE)
 
-read_cols <- c("lpep_pickup_datetime", "Lpep_dropoff_datetime", 
-               "PickupCell", "DropoffCell",
+read_cols <- c("Pickup_datetime", "Dropoff_datetime", 
                "Passenger_count", "Trip_distance", 
-               "Tip_amount", "Fare_amount", "Payment_type")
+               "Tip_amount", "Fare_amount", "Payment_type",
+               "Pickup_cell", "Dropoff_cell")
+
+keep_cols <- c("lpep_pickup_datetime", "Lpep_dropoff_datetime", 
+               "lpep_dropoff_datetime",
+               "tpep_pickup_datetime", "tpep_dropoff_datetime",
+               "Passenger_count", "passenger_count", 
+               "Trip_distance", "trip_distance",
+               "Tip_amount", "tip_amount", 
+               "Fare_amount", "fare_amount",
+               "Payment_type", "payment_type",
+               "PickupCell", "DropoffCell")
 
 out_cols <- c("Season", "Pickup_month", "Pickup_week", "Pickup_wday", 
               "Weekend", "Pickup_hour", "Time", "Pickup_day", 
@@ -28,8 +38,6 @@ compute_total_earnings <- function(taxi_data) {
 # function to compute trip duration
 compute_trip_duration <- function(taxi_data) {
   taxi_data %>%
-    rename(Pickup_datetime = lpep_pickup_datetime,
-           Dropoff_datetime = Lpep_dropoff_datetime) %>%
     mutate(Pickup_datetime = ymd_hms(Pickup_datetime),
            Dropoff_datetime = ymd_hms(Dropoff_datetime),
            Trip_duration = difftime(Dropoff_datetime, Pickup_datetime, units="mins"),
@@ -79,12 +87,21 @@ extract_time_features <- function(taxi_data) {
            Time = factor(Time, levels=c("Daytime", "Nighttime")))
 }
 
+
+read_columns <- function(filename, keep_cols) {
+  header <- fread(filename, nrows=1, header=FALSE) %>%
+    unlist()
+  header[header %in% keep_cols]
+}
+
 read_one_taxi_data <- function(filename, read_columns=read_cols,
-                               out_columns=out_cols) {
+                               out_columns=out_cols,
+                               keep_columns=keep_cols) {
   message("Reading ", filename)
-  fread(filename, select=read_columns, fill=TRUE, showProgress=FALSE) %>%
+  cols <- read_columns(filename, keep_columns)
+  fread(filename, select=cols, fill=TRUE, 
+        showProgress=FALSE, col.names=read_columns) %>%
     as_tibble() %>%
-    rename(Pickup_cell = PickupCell, Dropoff_cell = DropoffCell) %>%
     compute_total_earnings() %>%
     compute_trip_duration() %>%
     clean_taxi_data() %>%

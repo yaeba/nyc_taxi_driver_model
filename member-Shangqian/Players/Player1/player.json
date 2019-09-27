@@ -1,0 +1,7 @@
+[
+	{
+		"name": "Player1",
+		"language": "R",
+		"script": "./testscript.r"
+	}
+]

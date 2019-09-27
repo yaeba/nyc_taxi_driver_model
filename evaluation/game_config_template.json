@@ -1,0 +1,11 @@
+{
+	"gameCount": 1,
+	"autoRunner": false,
+	      "gamedata":"../Game_Release/gamedata/june_2015_gamedata-2019.csv",
+        "startDate":"2015-06-01 00:00:00",
+        "endDate":"2015-06-07 23:59:59",
+
+	"board":"../Game_Release/shapefiles/game_board_2019.geojson",
+	"showUI":true,
+	"players": []
+}

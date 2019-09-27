@@ -1,5 +1,5 @@
 {
-	"name": "ExamplePython3Player",
+	"name": "xuankent_random_walker",
 	"language": "Python3",
 	"script": "./player.py"
 }

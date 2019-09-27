@@ -1,2 +1,6 @@
 data/tripdata
 **/__pycache__
+Game_Release/
+evaluation/app.log
+evaluation/logs/
+evaluation/summaries/

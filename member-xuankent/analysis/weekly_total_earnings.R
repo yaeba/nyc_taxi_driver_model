@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
-## Script to plot monthly total earnings vs day vs hour
-## Usage: ./monthly_total_earnings <in.rds> <out.pdf>
+## Script to plot weekly total earnings vs wday vs hour
+## Usage: ./weekly_total_earnings <in.rds> <out.pdf>
 
 suppressMessages(library(tidyverse))
 
@@ -8,23 +8,21 @@ suppressMessages(library(tidyverse))
 args <- commandArgs(trailingOnly=TRUE)
 
 
-plot_day_month <- function(df, month) {
+plot_day_week <- function(df, week) {
   df %>%
-    group_by(Pickup_day, Pickup_hour) %>%
+    group_by(Pickup_wday, Pickup_hour) %>%
     summarise(Total_earnings = sum(Total_earnings)) %>%
-    ggplot(aes(x=Pickup_day, y=Pickup_hour, fill=Total_earnings)) +
+    ggplot(aes(x=Pickup_wday, y=Pickup_hour, fill=Total_earnings)) +
     geom_tile() +
     scale_fill_distiller(palette="Spectral") +
     scale_y_continuous(breaks=seq(0, 23)) +
-    scale_x_continuous(breaks=seq(1, 31, 2)) +
     theme_bw() +
     labs(x="Day of the month", y="Hour of the day",
          title=paste(
-           "Sum of total earnings in each day of month vs hour,",
-           month)
+           "Sum of total earnings in each day of week vs hour,",
+           week)
     )
 }
-
 
 main <- function(args) {
   if (length(args) != 2) {
@@ -51,19 +49,19 @@ main <- function(args) {
   message("Plotting to ", plot_name)
   pdf(file=plot_name, width=7, height=7)
   
-  months <- unique(df$Pickup_month)
+  weeks <- unique(df$Pickup_week)
   
-  for (month in months) {
-    message("Plotting ", month)
-    
+  for (week in weeks) {
+    message("Plotting week ", week)
+
     df %>%
-      filter(Pickup_month == month) %>%
-      plot_day_month(month) %>%
+      filter(Pickup_week == week) %>%
+      plot_day_week(week) %>%
       print() %>%
       invisible()
   }
   invisible(dev.off())
-
+  
 }
 
 main(args)

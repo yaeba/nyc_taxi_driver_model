@@ -1,20 +1,28 @@
----
-title: "R Notebook"
-output: html_notebook
----
+#!/usr/bin/env Rscript
+## Script to prepare yearly trips dataset
+## Usage: ./prepare_dataset.R <path> <pattern> <out.rds>
 
-```{r}
-library(tidyverse)
-library(data.table)
-library(lubridate)
-```
+suppressMessages(library(tidyverse))
+suppressMessages(library(data.table))
+suppressMessages(library(lubridate))
 
 
-```{r}
-read_cols <- c("lpep_pickup_datetime", "Lpep_dropoff_datetime", 
-               "PickupCell", "DropoffCell",
+args <- commandArgs(trailingOnly=TRUE)
+
+read_cols <- c("Pickup_datetime", "Dropoff_datetime", 
                "Passenger_count", "Trip_distance", 
-               "Tip_amount", "Fare_amount", "Payment_type")
+               "Tip_amount", "Fare_amount", "Payment_type",
+               "Pickup_cell", "Dropoff_cell")
+
+keep_cols <- c("lpep_pickup_datetime", "Lpep_dropoff_datetime", 
+               "lpep_dropoff_datetime",
+               "tpep_pickup_datetime", "tpep_dropoff_datetime",
+               "Passenger_count", "passenger_count", 
+               "Trip_distance", "trip_distance",
+               "Tip_amount", "tip_amount", 
+               "Fare_amount", "fare_amount",
+               "Payment_type", "payment_type",
+               "PickupCell", "DropoffCell")
 
 out_cols <- c("Season", "Pickup_month", "Pickup_week", "Pickup_wday", 
               "Weekend", "Pickup_hour", "Time", "Pickup_day", 
@@ -30,8 +38,6 @@ compute_total_earnings <- function(taxi_data) {
 # function to compute trip duration
 compute_trip_duration <- function(taxi_data) {
   taxi_data %>%
-    rename(Pickup_datetime = lpep_pickup_datetime,
-           Dropoff_datetime = Lpep_dropoff_datetime) %>%
     mutate(Pickup_datetime = ymd_hms(Pickup_datetime),
            Dropoff_datetime = ymd_hms(Dropoff_datetime),
            Trip_duration = difftime(Dropoff_datetime, Pickup_datetime, units="mins"),
@@ -81,16 +87,26 @@ extract_time_features <- function(taxi_data) {
            Time = factor(Time, levels=c("Daytime", "Nighttime")))
 }
 
+
+read_columns <- function(filename, keep_cols) {
+  header <- fread(filename, nrows=1, header=FALSE) %>%
+    unlist()
+  header[header %in% keep_cols]
+}
+
 read_one_taxi_data <- function(filename, read_columns=read_cols,
-                               out_columns=out_cols) {
-  print(paste("Reading", filename))
-  fread(filename, select=read_columns, fill=TRUE, showProgress=FALSE) %>%
+                               out_columns=out_cols,
+                               keep_columns=keep_cols) {
+  message("Reading ", filename)
+  cols <- read_columns(filename, keep_columns)
+  fread(filename, select=cols, fill=TRUE, 
+        showProgress=FALSE, col.names=read_columns) %>%
     as_tibble() %>%
-    rename(Pickup_cell = PickupCell, Dropoff_cell = DropoffCell) %>%
     compute_total_earnings() %>%
     compute_trip_duration() %>%
     clean_taxi_data() %>%
     extract_time_features() %>%
+    mutate_at(vars(Pickup_cell, Dropoff_cell), factor) %>%
     select(out_columns)
 }
 
@@ -100,67 +116,30 @@ read_all_taxi_data <- function(path, pattern) {
          function(x) read_one_taxi_data(x, read_cols, out_cols)) %>%
     rbindlist()
 }
-```
 
 
-
-```{r}
-df <- read_all_taxi_data("../../data/tripdata", "tripdata_2015-07")
-list.files("../../data/tripdata", "tripdata_2015")
-```
-
-```{r}
-head(df)
-```
-
-
-```{r}
-
-df %>%
-  group_by(Pickup_day, Pickup_hour) %>%
-  summarise(Total_earnings = sum(Total_earnings)) %>%
-  ggplot(aes(x=Pickup_day, y=Pickup_hour, fill=Total_earnings)) +
-  geom_tile() +
-  scale_fill_distiller(palette="Spectral") +
-  scale_y_continuous(breaks=seq(0, 23)) +
-  scale_x_continuous(breaks=seq(1, 31, 2)) +
-  theme_bw() +
-  labs(x="Day of the month", y="Hour of the day",
-       title=paste(
-         "Sum of total earnings in each day of month vs hour,",
-         unique(df$Pickup_month), unique(df$Pickup_))
-  )
-```
-
-```{r}
-df %>%
-  group_by(Pickup_wday, Pickup_hour) %>%
-  summarise(Total_earnings = sum(Total_earnings)) %>%
-  ggplot(aes(x=Pickup_wday, y=Pickup_hour, fill=Total_earnings)) +
-  geom_tile() +
-  scale_fill_distiller(palette="Spectral") +
-  scale_y_continuous(breaks=seq(0, 23)) +
-  theme_bw() +
-  labs(x="Day of the month", y="Hour of the day",
-       title="Sum of total earnings in each day of week vs hour")
-```
-
-
-```{r}
-for (week in unique(df$Pickup_week)) {
-  p <- df %>%
-    filter(Pickup_week == week) %>%
-    group_by(Pickup_wday, Pickup_hour) %>%
-    summarise(Total_earnings = sum(Total_earnings)) %>%
-    ggplot(aes(x=Pickup_wday, y=Pickup_hour, fill=Total_earnings)) +
-    geom_tile() +
-    scale_fill_distiller(palette="Spectral") +
-    scale_y_continuous(breaks=seq(0, 23)) +
-    theme_bw() +
-    labs(x="Day of the month", y="Hour of the day",
-         title="Sum of total earnings in each day of month vs hour")
-  print(p)
-}
+main <- function(args) {
+  if (length(args) != 3) {
+    stop("Incorrect number of arguments supplied", call.=FALSE)
+  }
   
-```
+  path <- args[1]
+  pattern <- args[2]
+  output <- args[3]
+  
+  message("Found file(s): ", list.files(path, pattern))
+  
+  # Read data
+  message("Reading data")
+  df <- read_all_taxi_data(path, pattern)
+  
+  
+  # Save data
+  message("Saving data")
+  if (!grepl(".rds$", output)) {
+    output <- paste0(output, ".rds")
+  }
+  saveRDS(df, file=output)
+}
 
+main(args)

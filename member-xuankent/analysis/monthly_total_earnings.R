@@ -11,7 +11,7 @@ args <- commandArgs(trailingOnly=TRUE)
 plot_day_month <- function(df, month) {
   df %>%
     group_by(Pickup_day, Pickup_hour) %>%
-    summarise(Total_earnings = sum(Total_earnings)) %>%
+    summarise(Total_earnings = median(Total_earnings)) %>%
     ggplot(aes(x=Pickup_day, y=Pickup_hour, fill=Total_earnings)) +
     geom_tile() +
     scale_fill_distiller(palette="Spectral") +
@@ -20,7 +20,7 @@ plot_day_month <- function(df, month) {
     theme_bw() +
     labs(x="Day of the month", y="Hour of the day",
          title=paste(
-           "Sum of total earnings in each day of month vs hour,",
+           "Median total earnings in each day of month vs hour,",
            month)
     )
 }

@@ -11,15 +11,15 @@ args <- commandArgs(trailingOnly=TRUE)
 plot_day_week <- function(df, week) {
   df %>%
     group_by(Pickup_wday, Pickup_hour) %>%
-    summarise(Total_earnings = sum(Total_earnings)) %>%
+    summarise(Total_earnings = median(Total_earnings)) %>%
     ggplot(aes(x=Pickup_wday, y=Pickup_hour, fill=Total_earnings)) +
     geom_tile() +
     scale_fill_distiller(palette="Spectral") +
     scale_y_continuous(breaks=seq(0, 23)) +
     theme_bw() +
-    labs(x="Day of the month", y="Hour of the day",
+    labs(x="Day of the week", y="Hour of the day",
          title=paste(
-           "Sum of total earnings in each day of week vs hour,",
+           "Median total earnings in each day of week vs hour,",
            week)
     )
 }

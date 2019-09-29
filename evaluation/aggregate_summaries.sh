@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-## Extract duration, distance and player's name
+## Extract duration and player's name
 ## Aggregate summaries of different players from logs/
 ## Usage: ./aggregate_summaries.sh <path_to_logs/>
 
@@ -8,13 +8,13 @@ LOGS=$1
 extract_duration_distance() {
 	local log=$1
 
-	# Extract duration and distance from log
+	# Extract duration from log
 	cat $log |
 	    grep "pickedup"  |
-	    cut -d',' -f4,5,15 |
+	    cut -d',' -f4,5 |
 	    awk -F',' -v q='"' '{"date -d"q $1 q" +%s"|getline d1;
-	    		"date -d"q $2 q" +%s"|getline d2;print(d2-d1)/60","$3}' |
-	    awk -F',' '{ sum1 += $1; sum2 += $2 } END { print sum1","sum2 }'	
+	    		"date -d"q $2 q" +%s"|getline d2;print(d2-d1)/60}' |
+	    awk -F',' '{ sum1 += $1 } END { print sum1 }'	
 }
 
 export -f extract_duration_distance
@@ -29,7 +29,7 @@ update_player_summary() {
 		sort | 
 		cut -f2 |
 		xargs -I% bash -c 'extract_duration_distance %' |
-		cat <(echo "duration,distance") - |
+		cat <(echo "duration") - |
 		sed "s/$/,$player_name/" |
 		sed "0,/$player_name/s/$player_name/player/")
 

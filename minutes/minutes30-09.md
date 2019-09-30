@@ -43,12 +43,14 @@ month's data for both yellow and green taxi data (check Ricky's script in VM).
 member. Discuss report writing and model building.
 
 **Action Items:**
-1.  
+1.  {Yin Zhou Zheng} Draft the report structure.
+2.  {Xuanken Tay} Data Preprocessing
+3.  {Geng Yuxiang} Attempt on model analysis and building
+4.  {Li Shangqian} Attempt on model analysis and buidling
+
 
 
 **Time of Next Meeting:** TBD
 
 **Agenda for Next Meeting:**
 1.  Each member updates on their work since the last meeting.
-2.  ... 
-

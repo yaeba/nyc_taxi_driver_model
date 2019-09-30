@@ -1,2 +1,3 @@
 ../member-ricky/player/
 ../member-xuankent/players/
+../member-Shangqian/Players/

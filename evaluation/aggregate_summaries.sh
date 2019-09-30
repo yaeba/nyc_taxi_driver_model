@@ -5,7 +5,7 @@
 
 LOGS=$1
 
-extract_duration_distance() {
+extract_duration() {
 	local log=$1
 
 	# Extract duration from log
@@ -17,7 +17,7 @@ extract_duration_distance() {
 	    awk -F',' '{ sum1 += $1 } END { print sum1 }'	
 }
 
-export -f extract_duration_distance
+export -f extract_duration
 
 update_player_summary() {
 	local player_dir=$1
@@ -28,7 +28,7 @@ update_player_summary() {
 		grep -v "trips\|debug" | 
 		sort | 
 		cut -f2 |
-		xargs -I% bash -c 'extract_duration_distance %' |
+		xargs -I% bash -c 'extract_duration %' |
 		cat <(echo "duration") - |
 		sed "s/$/,$player_name/" |
 		sed "0,/$player_name/s/$player_name/player/")

@@ -1,0 +1,11 @@
+{
+	"gameCount": 1,
+	"autoRunner": false,
+	      "gamedata":"../Game_Release/gamedata/july_2017_gamedata-2019.csv",
+        "startDate":"2017-07-10 00:00:00",
+        "endDate":"2017-07-16 23:59:59",
+
+	"board":"../Game_Release/shapefiles/game_board_2019.geojson",
+	"showUI":true,
+	"players": []
+}

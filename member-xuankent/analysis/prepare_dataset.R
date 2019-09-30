@@ -80,7 +80,7 @@ extract_time_features <- function(taxi_data) {
            Pickup_hour = hour(Pickup_datetime),
            Pickup_minute = minute(Pickup_datetime),
            Season = season(Pickup_datetime),
-           Weekend = Pickup_day %in% c("Sat", "Sun"),
+           Weekend = Pickup_wday %in% c("Sat", "Sun"),
            Time = ifelse(Pickup_hour >= 6 & Pickup_hour < 18,
                          "Daytime",
                          "Nighttime"),

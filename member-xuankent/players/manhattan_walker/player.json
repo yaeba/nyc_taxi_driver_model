@@ -1,5 +1,5 @@
 {
-	"name": "xuankent_random_walker_2",
+	"name": "xuankent_manhattan_walker",
 	"language": "Python3",
 	"script": "./player.py"
 }

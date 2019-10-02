@@ -1,0 +1,3417 @@
+Cell,Zone,Borough
+10:106,Mariners Harbor,Staten Island
+10:107,Mariners Harbor,Staten Island
+10:108,Mariners Harbor,Staten Island
+10:112,Bloomfield/Emerson Hill,Staten Island
+10:115,Bloomfield/Emerson Hill,Staten Island
+11:106,Mariners Harbor,Staten Island
+11:107,Mariners Harbor,Staten Island
+11:108,Mariners Harbor,Staten Island
+11:109,Mariners Harbor,Staten Island
+11:110,Mariners Harbor,Staten Island
+12:105,Mariners Harbor,Staten Island
+12:106,Mariners Harbor,Staten Island
+12:108,Mariners Harbor,Staten Island
+12:132,Charleston/Tottenville,Staten Island
+13:104,Mariners Harbor,Staten Island
+13:105,Mariners Harbor,Staten Island
+13:106,Mariners Harbor,Staten Island
+13:107,Mariners Harbor,Staten Island
+13:108,Mariners Harbor,Staten Island
+14:103,Port Richmond,Staten Island
+14:104,Port Richmond,Staten Island
+14:105,Port Richmond,Staten Island
+14:106,Mariners Harbor,Staten Island
+14:107,Mariners Harbor,Staten Island
+14:108,Mariners Harbor,Staten Island
+14:109,Mariners Harbor,Staten Island
+14:110,Bloomfield/Emerson Hill,Staten Island
+14:121,Freshkills Park,Staten Island
+15:103,Port Richmond,Staten Island
+15:106,Port Richmond,Staten Island
+15:107,Port Richmond,Staten Island
+15:113,Bloomfield/Emerson Hill,Staten Island
+15:115,Heartland Village/Todt Hill,Staten Island
+16:115,Heartland Village/Todt Hill,Staten Island
+17:100,Saint George/New Brighton,Staten Island
+17:101,Saint George/New Brighton,Staten Island
+17:109,Bloomfield/Emerson Hill,Staten Island
+17:115,Heartland Village/Todt Hill,Staten Island
+17:117,Heartland Village/Todt Hill,Staten Island
+18:101,West Brighton,Staten Island
+18:103,Saint George/New Brighton,Staten Island
+18:104,Westerleigh,Staten Island
+18:119,Freshkills Park,Staten Island
+18:119,Heartland Village/Todt Hill,Staten Island
+19:100,West Brighton,Staten Island
+19:106,Westerleigh,Staten Island
+19:107,Westerleigh,Staten Island
+19:111,Bloomfield/Emerson Hill,Staten Island
+19:112,Bloomfield/Emerson Hill,Staten Island
+19:31,Riverdale/North Riverdale/Fieldston,Bronx
+19:32,Riverdale/North Riverdale/Fieldston,Bronx
+19:33,Riverdale/North Riverdale/Fieldston,Bronx
+19:34,Riverdale/North Riverdale/Fieldston,Bronx
+19:98,Saint George/New Brighton,Staten Island
+20:105,Westerleigh,Staten Island
+20:106,Westerleigh,Staten Island
+20:108,Bloomfield/Emerson Hill,Staten Island
+20:31,Riverdale/North Riverdale/Fieldston,Bronx
+20:32,Riverdale/North Riverdale/Fieldston,Bronx
+20:33,Riverdale/North Riverdale/Fieldston,Bronx
+20:34,Riverdale/North Riverdale/Fieldston,Bronx
+20:35,Riverdale/North Riverdale/Fieldston,Bronx
+20:36,Riverdale/North Riverdale/Fieldston,Bronx
+20:37,Riverdale/North Riverdale/Fieldston,Bronx
+20:38,Spuyten Duyvil/Kingsbridge,Bronx
+20:39,Spuyten Duyvil/Kingsbridge,Bronx
+20:42,Washington Heights North,Manhattan
+20:43,Washington Heights North,Manhattan
+20:44,Washington Heights North,Manhattan
+20:45,Washington Heights North,Manhattan
+20:46,Washington Heights South,Manhattan
+20:47,Washington Heights South,Manhattan
+21:104,Westerleigh,Staten Island
+21:31,Riverdale/North Riverdale/Fieldston,Bronx
+21:32,Riverdale/North Riverdale/Fieldston,Bronx
+21:33,Riverdale/North Riverdale/Fieldston,Bronx
+21:34,Riverdale/North Riverdale/Fieldston,Bronx
+21:35,Riverdale/North Riverdale/Fieldston,Bronx
+21:36,Riverdale/North Riverdale/Fieldston,Bronx
+21:37,Spuyten Duyvil/Kingsbridge,Bronx
+21:38,Spuyten Duyvil/Kingsbridge,Bronx
+21:39,Spuyten Duyvil/Kingsbridge,Bronx
+21:41,Inwood,Manhattan
+21:42,Washington Heights North,Manhattan
+21:43,Washington Heights North,Manhattan
+21:44,Washington Heights North,Manhattan
+21:45,Washington Heights North,Manhattan
+21:46,Washington Heights South,Manhattan
+21:47,Washington Heights South,Manhattan
+21:48,Washington Heights South,Manhattan
+21:49,Washington Heights South,Manhattan
+21:50,Hamilton Heights,Manhattan
+21:51,Hamilton Heights,Manhattan
+21:52,Manhattanville,Manhattan
+21:53,Manhattanville,Manhattan
+21:54,Morningside Heights,Manhattan
+21:55,Morningside Heights,Manhattan
+21:56,Morningside Heights,Manhattan
+21:57,Bloomingdale,Manhattan
+21:97,Saint George/New Brighton,Staten Island
+22:104,Westerleigh,Staten Island
+22:32,Riverdale/North Riverdale/Fieldston,Bronx
+22:33,Riverdale/North Riverdale/Fieldston,Bronx
+22:34,Riverdale/North Riverdale/Fieldston,Bronx
+22:35,Riverdale/North Riverdale/Fieldston,Bronx
+22:36,Spuyten Duyvil/Kingsbridge,Bronx
+22:37,Spuyten Duyvil/Kingsbridge,Bronx
+22:38,Spuyten Duyvil/Kingsbridge,Bronx
+22:39,Inwood,Manhattan
+22:40,Inwood,Manhattan
+22:41,Inwood,Manhattan
+22:42,Washington Heights North,Manhattan
+22:43,Washington Heights North,Manhattan
+22:44,Washington Heights North,Manhattan
+22:45,Washington Heights North,Manhattan
+22:46,Washington Heights South,Manhattan
+22:47,Washington Heights South,Manhattan
+22:48,Washington Heights South,Manhattan
+22:49,Washington Heights South,Manhattan
+22:50,Hamilton Heights,Manhattan
+22:51,Hamilton Heights,Manhattan
+22:52,Manhattanville,Manhattan
+22:53,Manhattanville,Manhattan
+22:54,Morningside Heights,Manhattan
+22:55,Morningside Heights,Manhattan
+22:56,Morningside Heights,Manhattan
+22:57,Manhattan Valley,Manhattan
+22:58,Manhattan Valley,Manhattan
+22:59,Upper West Side North,Manhattan
+22:61,Upper West Side South,Manhattan
+22:67,Clinton West,Manhattan
+22:95,Saint George/New Brighton,Staten Island
+22:97,Saint George/New Brighton,Staten Island
+23:31,Van Cortlandt Park,Bronx
+23:32,Van Cortlandt Park,Bronx
+23:33,Riverdale/North Riverdale/Fieldston,Bronx
+23:34,Riverdale/North Riverdale/Fieldston,Bronx
+23:35,Spuyten Duyvil/Kingsbridge,Bronx
+23:36,Spuyten Duyvil/Kingsbridge,Bronx
+23:37,Spuyten Duyvil/Kingsbridge,Bronx
+23:38,Marble Hill,Manhattan
+23:39,Inwood Hill Park,Manhattan
+23:40,Inwood,Manhattan
+23:41,Inwood,Manhattan
+23:42,Inwood,Manhattan
+23:43,Highbridge Park,Manhattan
+23:44,Washington Heights North,Manhattan
+23:45,Washington Heights North,Manhattan
+23:46,Washington Heights South,Manhattan
+23:47,Washington Heights South,Manhattan
+23:48,Washington Heights South,Manhattan
+23:49,Hamilton Heights,Manhattan
+23:50,Hamilton Heights,Manhattan
+23:51,Hamilton Heights,Manhattan
+23:52,Manhattanville,Manhattan
+23:53,Manhattanville,Manhattan
+23:54,Morningside Heights,Manhattan
+23:55,Morningside Heights,Manhattan
+23:56,Morningside Heights,Manhattan
+23:57,Manhattan Valley,Manhattan
+23:58,Upper West Side North,Manhattan
+23:62,Lincoln Square East,Manhattan
+23:95,Saint George/New Brighton,Staten Island
+24:100,Grymes Hill/Clifton,Staten Island
+24:101,Grymes Hill/Clifton,Staten Island
+24:102,Grymes Hill/Clifton,Staten Island
+24:31,Van Cortlandt Park,Bronx
+24:34,Van Cortlandt Park,Bronx
+24:35,Van Cortlandt Village,Bronx
+24:36,Van Cortlandt Village,Bronx
+24:37,Van Cortlandt Village,Bronx
+24:38,Van Cortlandt Village,Bronx
+24:39,Kingsbridge Heights,Bronx
+24:40,Kingsbridge Heights,Bronx
+24:41,University Heights/Morris Heights,Bronx
+24:42,University Heights/Morris Heights,Bronx
+24:43,University Heights/Morris Heights,Bronx
+24:44,University Heights/Morris Heights,Bronx
+24:45,Highbridge,Bronx
+24:46,Highbridge,Bronx
+24:47,Highbridge,Bronx
+24:48,Central Harlem North,Manhattan
+24:49,Central Harlem North,Manhattan
+24:50,Central Harlem North,Manhattan
+24:51,Central Harlem North,Manhattan
+24:52,Central Harlem North,Manhattan
+24:53,Central Harlem,Manhattan
+24:54,Central Harlem,Manhattan
+24:55,Central Harlem,Manhattan
+24:56,Central Harlem,Manhattan
+24:57,Manhattan Valley,Manhattan
+24:63,Lincoln Square East,Manhattan
+24:95,Saint George/New Brighton,Staten Island
+24:96,Saint George/New Brighton,Staten Island
+25:101,Stapleton,Staten Island
+25:102,Grymes Hill/Clifton,Staten Island
+25:111,New Dorp/Midland Beach,Staten Island
+25:112,New Dorp/Midland Beach,Staten Island
+25:30,Van Cortlandt Park,Bronx
+25:31,Van Cortlandt Park,Bronx
+25:32,Van Cortlandt Park,Bronx
+25:33,Van Cortlandt Park,Bronx
+25:34,Van Cortlandt Village,Bronx
+25:35,Van Cortlandt Village,Bronx
+25:36,Van Cortlandt Village,Bronx
+25:37,Van Cortlandt Village,Bronx
+25:38,Van Cortlandt Village,Bronx
+25:39,Kingsbridge Heights,Bronx
+25:40,Kingsbridge Heights,Bronx
+25:41,University Heights/Morris Heights,Bronx
+25:42,University Heights/Morris Heights,Bronx
+25:43,University Heights/Morris Heights,Bronx
+25:44,University Heights/Morris Heights,Bronx
+25:45,Highbridge,Bronx
+25:46,Highbridge,Bronx
+25:47,Highbridge,Bronx
+25:48,Highbridge,Bronx
+25:49,Central Harlem North,Manhattan
+25:50,Central Harlem North,Manhattan
+25:51,Central Harlem North,Manhattan
+25:52,Central Harlem North,Manhattan
+25:53,Central Harlem,Manhattan
+25:54,Central Harlem,Manhattan
+25:55,Central Harlem,Manhattan
+25:56,Central Harlem,Manhattan
+25:58,Central Park,Manhattan
+25:59,Central Park,Manhattan
+25:68,Penn Station/Madison Sq West,Manhattan
+25:75,TriBeCa/Civic Center,Manhattan
+25:97,Stapleton,Staten Island
+25:98,Stapleton,Staten Island
+26:102,Grymes Hill/Clifton,Staten Island
+26:103,Arrochar/Fort Wadsworth,Staten Island
+26:104,Arrochar/Fort Wadsworth,Staten Island
+26:106,South Beach/Dongan Hills,Staten Island
+26:107,South Beach/Dongan Hills,Staten Island
+26:108,New Dorp/Midland Beach,Staten Island
+26:111,New Dorp/Midland Beach,Staten Island
+26:29,Woodlawn/Wakefield,Bronx
+26:30,Woodlawn/Wakefield,Bronx
+26:31,Woodlawn/Wakefield,Bronx
+26:32,Van Cortlandt Park,Bronx
+26:34,Norwood,Bronx
+26:35,Van Cortlandt Village,Bronx
+26:36,Van Cortlandt Village,Bronx
+26:37,Van Cortlandt Village,Bronx
+26:38,Bedford Park,Bronx
+26:39,Fordham South,Bronx
+26:40,Fordham South,Bronx
+26:41,Mount Hope,Bronx
+26:42,Mount Hope,Bronx
+26:43,Mount Hope,Bronx
+26:44,West Concourse,Bronx
+26:45,West Concourse,Bronx
+26:46,West Concourse,Bronx
+26:47,West Concourse,Bronx
+26:48,West Concourse,Bronx
+26:49,West Concourse,Bronx
+26:50,West Concourse,Bronx
+26:51,Central Harlem North,Manhattan
+26:52,Central Harlem North,Manhattan
+26:53,East Harlem North,Manhattan
+26:54,East Harlem North,Manhattan
+26:55,East Harlem South,Manhattan
+26:56,East Harlem South,Manhattan
+26:57,East Harlem South,Manhattan
+26:58,Upper East Side North,Manhattan
+26:59,Upper East Side North,Manhattan
+26:62,Upper East Side South,Manhattan
+26:63,Upper East Side South,Manhattan
+26:64,Midtown Center,Manhattan
+26:65,Midtown Center,Manhattan
+26:75,TriBeCa/Civic Center,Manhattan
+26:78,Battery Park City,Manhattan
+26:98,Stapleton,Staten Island
+27:107,South Beach/Dongan Hills,Staten Island
+27:112,Oakwood,Staten Island
+27:29,Woodlawn/Wakefield,Bronx
+27:30,Woodlawn/Wakefield,Bronx
+27:32,Van Cortlandt Park,Bronx
+27:33,Norwood,Bronx
+27:34,Norwood,Bronx
+27:35,Bedford Park,Bronx
+27:36,Bedford Park,Bronx
+27:37,Bedford Park,Bronx
+27:38,Bedford Park,Bronx
+27:39,Bedford Park,Bronx
+27:40,Fordham South,Bronx
+27:41,Mount Hope,Bronx
+27:42,Mount Hope,Bronx
+27:43,Mount Hope,Bronx
+27:44,East Concourse/Concourse Village,Bronx
+27:45,East Concourse/Concourse Village,Bronx
+27:46,East Concourse/Concourse Village,Bronx
+27:47,East Concourse/Concourse Village,Bronx
+27:48,East Concourse/Concourse Village,Bronx
+27:49,West Concourse,Bronx
+27:50,Mott Haven/Port Morris,Bronx
+27:51,Mott Haven/Port Morris,Bronx
+27:52,East Harlem North,Manhattan
+27:53,East Harlem North,Manhattan
+27:54,East Harlem North,Manhattan
+27:55,East Harlem South,Manhattan
+27:56,East Harlem South,Manhattan
+27:57,East Harlem South,Manhattan
+27:58,Upper East Side North,Manhattan
+27:62,Upper East Side South,Manhattan
+27:63,Upper East Side South,Manhattan
+27:65,Midtown East,Manhattan
+27:66,Murray Hill,Manhattan
+27:70,Gramercy,Manhattan
+27:75,TriBeCa/Civic Center,Manhattan
+27:98,Stapleton,Staten Island
+28:100,Stapleton,Staten Island
+28:101,Arrochar/Fort Wadsworth,Staten Island
+28:103,Arrochar/Fort Wadsworth,Staten Island
+28:106,South Beach/Dongan Hills,Staten Island
+28:107,South Beach/Dongan Hills,Staten Island
+28:28,Woodlawn/Wakefield,Bronx
+28:29,Woodlawn/Wakefield,Bronx
+28:30,Van Cortlandt Park,Bronx
+28:31,Van Cortlandt Park,Bronx
+28:32,Van Cortlandt Park,Bronx
+28:33,Norwood,Bronx
+28:34,Norwood,Bronx
+28:35,Norwood,Bronx
+28:36,Bedford Park,Bronx
+28:37,Bedford Park,Bronx
+28:38,Belmont,Bronx
+28:39,Claremont/Bathgate,Bronx
+28:40,East Tremont,Bronx
+28:41,Claremont/Bathgate,Bronx
+28:42,Claremont/Bathgate,Bronx
+28:43,Claremont/Bathgate,Bronx
+28:44,Claremont/Bathgate,Bronx
+28:45,East Concourse/Concourse Village,Bronx
+28:46,East Concourse/Concourse Village,Bronx
+28:47,Morrisania/Melrose,Bronx
+28:48,Melrose South,Bronx
+28:49,Melrose South,Bronx
+28:50,Mott Haven/Port Morris,Bronx
+28:51,Mott Haven/Port Morris,Bronx
+28:52,East Harlem North,Manhattan
+28:53,East Harlem North,Manhattan
+28:54,East Harlem North,Manhattan
+28:55,East Harlem North,Manhattan
+28:56,East Harlem South,Manhattan
+28:57,Yorkville West,Manhattan
+28:59,Yorkville West,Manhattan
+28:61,Lenox Hill West,Manhattan
+28:62,Lenox Hill West,Manhattan
+28:64,Sutton Place/Turtle Bay North,Manhattan
+28:70,East Village,Manhattan
+28:72,East Village,Manhattan
+28:74,Lower East Side,Manhattan
+28:99,Stapleton,Staten Island
+29:100,Stapleton,Staten Island
+29:106,South Beach/Dongan Hills,Staten Island
+29:108,New Dorp/Midland Beach,Staten Island
+29:109,New Dorp/Midland Beach,Staten Island
+29:26,Woodlawn/Wakefield,Bronx
+29:27,Woodlawn/Wakefield,Bronx
+29:28,Woodlawn/Wakefield,Bronx
+29:29,Williamsbridge/Olinville,Bronx
+29:30,Williamsbridge/Olinville,Bronx
+29:31,Williamsbridge/Olinville,Bronx
+29:32,Williamsbridge/Olinville,Bronx
+29:33,Norwood,Bronx
+29:34,Norwood,Bronx
+29:35,Norwood,Bronx
+29:36,Bronx Park,Bronx
+29:37,Bronx Park,Bronx
+29:38,Belmont,Bronx
+29:39,Belmont,Bronx
+29:40,East Tremont,Bronx
+29:41,East Tremont,Bronx
+29:42,Claremont/Bathgate,Bronx
+29:43,Claremont/Bathgate,Bronx
+29:44,Claremont/Bathgate,Bronx
+29:45,Morrisania/Melrose,Bronx
+29:46,Morrisania/Melrose,Bronx
+29:47,Melrose South,Bronx
+29:48,Melrose South,Bronx
+29:49,Mott Haven/Port Morris,Bronx
+29:50,Mott Haven/Port Morris,Bronx
+29:51,Mott Haven/Port Morris,Bronx
+29:52,Randalls Island,Manhattan
+29:53,East Harlem North,Manhattan
+29:54,East Harlem North,Manhattan
+29:55,East Harlem South,Manhattan
+29:56,East Harlem South,Manhattan
+29:62,Lenox Hill East,Manhattan
+29:63,Sutton Place/Turtle Bay North,Manhattan
+29:70,East Village,Manhattan
+29:71,East Village,Manhattan
+29:72,Lower East Side,Manhattan
+29:76,DUMBO/Vinegar Hill,Brooklyn
+29:77,Brooklyn Heights,Brooklyn
+29:81,Red Hook,Brooklyn
+29:82,Red Hook,Brooklyn
+29:83,Red Hook,Brooklyn
+29:84,Red Hook,Brooklyn
+30:26,Woodlawn/Wakefield,Bronx
+30:27,Woodlawn/Wakefield,Bronx
+30:28,Woodlawn/Wakefield,Bronx
+30:29,Williamsbridge/Olinville,Bronx
+30:30,Williamsbridge/Olinville,Bronx
+30:31,Williamsbridge/Olinville,Bronx
+30:32,Williamsbridge/Olinville,Bronx
+30:33,Williamsbridge/Olinville,Bronx
+30:34,Bronxdale,Bronx
+30:35,Bronxdale,Bronx
+30:37,Bronx Park,Bronx
+30:38,Belmont,Bronx
+30:39,Belmont,Bronx
+30:40,East Tremont,Bronx
+30:41,East Tremont,Bronx
+30:42,Crotona Park East,Bronx
+30:43,Crotona Park East,Bronx
+30:44,Morrisania/Melrose,Bronx
+30:45,Morrisania/Melrose,Bronx
+30:46,Morrisania/Melrose,Bronx
+30:47,Melrose South,Bronx
+30:48,Melrose South,Bronx
+30:49,Mott Haven/Port Morris,Bronx
+30:50,Mott Haven/Port Morris,Bronx
+30:51,Mott Haven/Port Morris,Bronx
+30:52,Randalls Island,Manhattan
+30:53,Randalls Island,Manhattan
+30:54,Randalls Island,Manhattan
+30:55,Randalls Island,Manhattan
+30:57,Old Astoria,Queens
+30:58,Old Astoria,Queens
+30:59,Roosevelt Island,Manhattan
+30:60,Roosevelt Island,Manhattan
+30:61,Roosevelt Island,Manhattan
+30:62,Roosevelt Island,Manhattan
+30:63,Roosevelt Island,Manhattan
+30:64,Long Island City/Hunters Point,Queens
+30:65,Long Island City/Hunters Point,Queens
+30:69,Stuy Town/Peter Cooper Village,Manhattan
+30:75,DUMBO/Vinegar Hill,Brooklyn
+30:76,DUMBO/Vinegar Hill,Brooklyn
+30:77,Brooklyn Heights,Brooklyn
+30:78,Brooklyn Heights,Brooklyn
+30:79,Columbia Street,Brooklyn
+30:80,Columbia Street,Brooklyn
+30:81,Red Hook,Brooklyn
+30:82,Red Hook,Brooklyn
+30:83,Red Hook,Brooklyn
+30:91,Bay Ridge,Brooklyn
+30:92,Bay Ridge,Brooklyn
+31:101,Arrochar/Fort Wadsworth,Staten Island
+31:102,Arrochar/Fort Wadsworth,Staten Island
+31:26,Woodlawn/Wakefield,Bronx
+31:27,Woodlawn/Wakefield,Bronx
+31:28,Woodlawn/Wakefield,Bronx
+31:29,Williamsbridge/Olinville,Bronx
+31:30,Williamsbridge/Olinville,Bronx
+31:31,Williamsbridge/Olinville,Bronx
+31:32,Williamsbridge/Olinville,Bronx
+31:33,Williamsbridge/Olinville,Bronx
+31:34,Bronxdale,Bronx
+31:35,Bronxdale,Bronx
+31:36,Bronxdale,Bronx
+31:37,Bronx Park,Bronx
+31:38,Bronx Park,Bronx
+31:39,East Tremont,Bronx
+31:40,East Tremont,Bronx
+31:41,East Tremont,Bronx
+31:42,Crotona Park East,Bronx
+31:43,Crotona Park East,Bronx
+31:44,Morrisania/Melrose,Bronx
+31:45,Longwood,Bronx
+31:46,Longwood,Bronx
+31:47,Melrose South,Bronx
+31:48,Mott Haven/Port Morris,Bronx
+31:49,Mott Haven/Port Morris,Bronx
+31:50,Mott Haven/Port Morris,Bronx
+31:51,Mott Haven/Port Morris,Bronx
+31:52,Randalls Island,Manhattan
+31:53,Randalls Island,Manhattan
+31:54,Randalls Island,Manhattan
+31:55,Randalls Island,Manhattan
+31:57,Old Astoria,Queens
+31:58,Old Astoria,Queens
+31:59,Queensbridge/Ravenswood,Queens
+31:60,Queensbridge/Ravenswood,Queens
+31:61,Queensbridge/Ravenswood,Queens
+31:62,Long Island City/Hunters Point,Queens
+31:63,Long Island City/Hunters Point,Queens
+31:64,Long Island City/Hunters Point,Queens
+31:65,Long Island City/Hunters Point,Queens
+31:66,Long Island City/Hunters Point,Queens
+31:67,Greenpoint,Brooklyn
+31:74,DUMBO/Vinegar Hill,Brooklyn
+31:75,DUMBO/Vinegar Hill,Brooklyn
+31:76,Downtown Brooklyn/MetroTech,Brooklyn
+31:77,Brooklyn Heights,Brooklyn
+31:78,Brooklyn Heights,Brooklyn
+31:79,Cobble Hill,Brooklyn
+31:80,Carroll Gardens,Brooklyn
+31:81,Red Hook,Brooklyn
+31:82,Red Hook,Brooklyn
+31:83,Red Hook,Brooklyn
+31:88,Sunset Park West,Brooklyn
+31:89,Sunset Park West,Brooklyn
+31:90,Bay Ridge,Brooklyn
+31:91,Bay Ridge,Brooklyn
+31:92,Bay Ridge,Brooklyn
+31:93,Bay Ridge,Brooklyn
+31:94,Bay Ridge,Brooklyn
+31:99,Arrochar/Fort Wadsworth,Staten Island
+32:101,Arrochar/Fort Wadsworth,Staten Island
+32:27,Woodlawn/Wakefield,Bronx
+32:28,Woodlawn/Wakefield,Bronx
+32:29,Eastchester,Bronx
+32:30,Eastchester,Bronx
+32:31,Eastchester,Bronx
+32:32,Allerton/Pelham Gardens,Bronx
+32:33,Allerton/Pelham Gardens,Bronx
+32:34,Bronxdale,Bronx
+32:35,Bronxdale,Bronx
+32:36,Pelham Parkway,Bronx
+32:37,Pelham Parkway,Bronx
+32:38,Bronx Park,Bronx
+32:39,Bronx Park,Bronx
+32:40,East Tremont,Bronx
+32:41,Crotona Park East,Bronx
+32:42,Crotona Park East,Bronx
+32:43,Morrisania/Melrose,Bronx
+32:44,Hunts Point,Bronx
+32:45,Hunts Point,Bronx
+32:46,Longwood,Bronx
+32:47,Longwood,Bronx
+32:48,Mott Haven/Port Morris,Bronx
+32:49,Mott Haven/Port Morris,Bronx
+32:50,Mott Haven/Port Morris,Bronx
+32:51,Mott Haven/Port Morris,Bronx
+32:54,Steinway,Queens
+32:55,Steinway,Queens
+32:56,Old Astoria,Queens
+32:57,Old Astoria,Queens
+32:58,Astoria,Queens
+32:59,Queensbridge/Ravenswood,Queens
+32:60,Queensbridge/Ravenswood,Queens
+32:61,Queensbridge/Ravenswood,Queens
+32:62,Long Island City/Hunters Point,Queens
+32:63,Long Island City/Hunters Point,Queens
+32:64,Long Island City/Hunters Point,Queens
+32:65,Long Island City/Hunters Point,Queens
+32:66,Greenpoint,Brooklyn
+32:67,Greenpoint,Brooklyn
+32:68,Greenpoint,Brooklyn
+32:69,Williamsburg (North Side),Brooklyn
+32:70,Williamsburg (North Side),Brooklyn
+32:74,DUMBO/Vinegar Hill,Brooklyn
+32:75,DUMBO/Vinegar Hill,Brooklyn
+32:76,Downtown Brooklyn/MetroTech,Brooklyn
+32:77,Downtown Brooklyn/MetroTech,Brooklyn
+32:78,Boerum Hill,Brooklyn
+32:79,Carroll Gardens,Brooklyn
+32:80,Carroll Gardens,Brooklyn
+32:81,Carroll Gardens,Brooklyn
+32:82,Red Hook,Brooklyn
+32:85,Sunset Park West,Brooklyn
+32:86,Sunset Park West,Brooklyn
+32:87,Sunset Park West,Brooklyn
+32:88,Sunset Park West,Brooklyn
+32:89,Sunset Park West,Brooklyn
+32:90,Bay Ridge,Brooklyn
+32:91,Bay Ridge,Brooklyn
+32:92,Bay Ridge,Brooklyn
+32:93,Bay Ridge,Brooklyn
+32:94,Bay Ridge,Brooklyn
+32:95,Bay Ridge,Brooklyn
+33:27,Woodlawn/Wakefield,Bronx
+33:28,Eastchester,Bronx
+33:29,Eastchester,Bronx
+33:30,Eastchester,Bronx
+33:31,Eastchester,Bronx
+33:32,Allerton/Pelham Gardens,Bronx
+33:33,Allerton/Pelham Gardens,Bronx
+33:34,Allerton/Pelham Gardens,Bronx
+33:35,Pelham Parkway,Bronx
+33:36,Pelham Parkway,Bronx
+33:37,Van Nest/Morris Park,Bronx
+33:38,Van Nest/Morris Park,Bronx
+33:39,East Tremont,Bronx
+33:40,West Farms/Bronx River,Bronx
+33:41,West Farms/Bronx River,Bronx
+33:42,West Farms/Bronx River,Bronx
+33:43,Soundview/Bruckner,Bronx
+33:44,Hunts Point,Bronx
+33:45,Hunts Point,Bronx
+33:46,Hunts Point,Bronx
+33:47,Hunts Point,Bronx
+33:53,Steinway,Queens
+33:54,Steinway,Queens
+33:55,Steinway,Queens
+33:56,Old Astoria,Queens
+33:57,Old Astoria,Queens
+33:58,Astoria,Queens
+33:59,Astoria,Queens
+33:60,Long Island City/Queens Plaza,Queens
+33:61,Long Island City/Queens Plaza,Queens
+33:62,Long Island City/Hunters Point,Queens
+33:63,Long Island City/Hunters Point,Queens
+33:64,Long Island City/Hunters Point,Queens
+33:65,Greenpoint,Brooklyn
+33:66,Greenpoint,Brooklyn
+33:67,Greenpoint,Brooklyn
+33:68,Williamsburg (North Side),Brooklyn
+33:69,Williamsburg (North Side),Brooklyn
+33:70,Williamsburg (North Side),Brooklyn
+33:71,Williamsburg (South Side),Brooklyn
+33:72,Williamsburg (South Side),Brooklyn
+33:73,Brooklyn Navy Yard,Brooklyn
+33:74,Brooklyn Navy Yard,Brooklyn
+33:75,Fort Greene,Brooklyn
+33:76,Downtown Brooklyn/MetroTech,Brooklyn
+33:77,Boerum Hill,Brooklyn
+33:78,Boerum Hill,Brooklyn
+33:79,Carroll Gardens,Brooklyn
+33:80,Carroll Gardens,Brooklyn
+33:81,Gowanus,Brooklyn
+33:82,Sunset Park West,Brooklyn
+33:83,Sunset Park West,Brooklyn
+33:84,Sunset Park West,Brooklyn
+33:85,Sunset Park West,Brooklyn
+33:86,Sunset Park West,Brooklyn
+33:87,Sunset Park West,Brooklyn
+33:88,Sunset Park West,Brooklyn
+33:89,Sunset Park West,Brooklyn
+33:90,Bay Ridge,Brooklyn
+33:91,Bay Ridge,Brooklyn
+33:92,Bay Ridge,Brooklyn
+33:93,Bay Ridge,Brooklyn
+33:94,Bay Ridge,Brooklyn
+33:95,Bay Ridge,Brooklyn
+34:27,Eastchester,Bronx
+34:28,Eastchester,Bronx
+34:29,Co-Op City,Bronx
+34:30,Eastchester,Bronx
+34:31,Eastchester,Bronx
+34:32,Allerton/Pelham Gardens,Bronx
+34:33,Allerton/Pelham Gardens,Bronx
+34:34,Allerton/Pelham Gardens,Bronx
+34:35,Pelham Parkway,Bronx
+34:36,Pelham Parkway,Bronx
+34:37,Van Nest/Morris Park,Bronx
+34:38,Van Nest/Morris Park,Bronx
+34:39,West Farms/Bronx River,Bronx
+34:40,West Farms/Bronx River,Bronx
+34:41,West Farms/Bronx River,Bronx
+34:42,Soundview/Bruckner,Bronx
+34:43,Soundview/Castle Hill,Bronx
+34:44,Soundview/Castle Hill,Bronx
+34:45,Hunts Point,Bronx
+34:46,Hunts Point,Bronx
+34:47,Hunts Point,Bronx
+34:53,Steinway,Queens
+34:54,Steinway,Queens
+34:55,Steinway,Queens
+34:56,Steinway,Queens
+34:57,Astoria,Queens
+34:58,Astoria,Queens
+34:59,Astoria,Queens
+34:60,Long Island City/Queens Plaza,Queens
+34:61,Long Island City/Queens Plaza,Queens
+34:62,Sunnyside,Queens
+34:63,Sunnyside,Queens
+34:64,Long Island City/Hunters Point,Queens
+34:65,Greenpoint,Brooklyn
+34:66,Greenpoint,Brooklyn
+34:67,Greenpoint,Brooklyn
+34:68,Williamsburg (North Side),Brooklyn
+34:69,Williamsburg (North Side),Brooklyn
+34:70,Williamsburg (North Side),Brooklyn
+34:71,Williamsburg (South Side),Brooklyn
+34:72,South Williamsburg,Brooklyn
+34:73,Brooklyn Navy Yard,Brooklyn
+34:74,Fort Greene,Brooklyn
+34:75,Fort Greene,Brooklyn
+34:76,Fort Greene,Brooklyn
+34:77,Fort Greene,Brooklyn
+34:78,Boerum Hill,Brooklyn
+34:79,Gowanus,Brooklyn
+34:80,Gowanus,Brooklyn
+34:81,Gowanus,Brooklyn
+34:82,Park Slope,Brooklyn
+34:83,Sunset Park West,Brooklyn
+34:84,Sunset Park West,Brooklyn
+34:85,Sunset Park West,Brooklyn
+34:86,Sunset Park West,Brooklyn
+34:87,Sunset Park West,Brooklyn
+34:88,Sunset Park East,Brooklyn
+34:89,Sunset Park West,Brooklyn
+34:90,Bay Ridge,Brooklyn
+34:91,Bay Ridge,Brooklyn
+34:92,Bay Ridge,Brooklyn
+34:93,Bay Ridge,Brooklyn
+34:94,Bay Ridge,Brooklyn
+34:95,Bay Ridge,Brooklyn
+34:96,Bay Ridge,Brooklyn
+35:26,Eastchester,Bronx
+35:27,Co-Op City,Bronx
+35:28,Co-Op City,Bronx
+35:29,Co-Op City,Bronx
+35:30,Co-Op City,Bronx
+35:31,Eastchester,Bronx
+35:32,Allerton/Pelham Gardens,Bronx
+35:33,Allerton/Pelham Gardens,Bronx
+35:34,Pelham Parkway,Bronx
+35:35,Pelham Parkway,Bronx
+35:36,Van Nest/Morris Park,Bronx
+35:37,Van Nest/Morris Park,Bronx
+35:38,Parkchester,Bronx
+35:39,Parkchester,Bronx
+35:40,West Farms/Bronx River,Bronx
+35:41,Soundview/Bruckner,Bronx
+35:42,Soundview/Castle Hill,Bronx
+35:43,Soundview/Castle Hill,Bronx
+35:45,Hunts Point,Bronx
+35:46,Hunts Point,Bronx
+35:53,Steinway,Queens
+35:54,Steinway,Queens
+35:55,Steinway,Queens
+35:56,Astoria,Queens
+35:57,Astoria,Queens
+35:58,Astoria,Queens
+35:59,Astoria,Queens
+35:60,Long Island City/Queens Plaza,Queens
+35:61,Sunnyside,Queens
+35:62,Sunnyside,Queens
+35:63,Sunnyside,Queens
+35:64,Sunnyside,Queens
+35:65,Greenpoint,Brooklyn
+35:66,Greenpoint,Brooklyn
+35:67,Greenpoint,Brooklyn
+35:68,Williamsburg (North Side),Brooklyn
+35:69,East Williamsburg,Brooklyn
+35:70,Williamsburg (South Side),Brooklyn
+35:71,Williamsburg (South Side),Brooklyn
+35:72,South Williamsburg,Brooklyn
+35:73,Brooklyn Navy Yard,Brooklyn
+35:74,Clinton Hill,Brooklyn
+35:75,Fort Greene,Brooklyn
+35:76,Fort Greene,Brooklyn
+35:77,Park Slope,Brooklyn
+35:78,Park Slope,Brooklyn
+35:79,Park Slope,Brooklyn
+35:80,Park Slope,Brooklyn
+35:81,Park Slope,Brooklyn
+35:82,Park Slope,Brooklyn
+35:83,Sunset Park West,Brooklyn
+35:84,Sunset Park West,Brooklyn
+35:85,Sunset Park East,Brooklyn
+35:86,Sunset Park East,Brooklyn
+35:87,Sunset Park East,Brooklyn
+35:88,Sunset Park East,Brooklyn
+35:89,Sunset Park East,Brooklyn
+35:90,Dyker Heights,Brooklyn
+35:91,Bay Ridge,Brooklyn
+35:92,Bay Ridge,Brooklyn
+35:93,Bay Ridge,Brooklyn
+35:94,Dyker Heights,Brooklyn
+35:95,Bay Ridge,Brooklyn
+36:25,Eastchester,Bronx
+36:27,Co-Op City,Bronx
+36:28,Co-Op City,Bronx
+36:29,Co-Op City,Bronx
+36:30,Co-Op City,Bronx
+36:31,Allerton/Pelham Gardens,Bronx
+36:32,Allerton/Pelham Gardens,Bronx
+36:33,Pelham Parkway,Bronx
+36:34,Pelham Parkway,Bronx
+36:35,Van Nest/Morris Park,Bronx
+36:36,Van Nest/Morris Park,Bronx
+36:37,Parkchester,Bronx
+36:38,Parkchester,Bronx
+36:39,Soundview/Bruckner,Bronx
+36:40,Soundview/Bruckner,Bronx
+36:41,Soundview/Castle Hill,Bronx
+36:42,Soundview/Castle Hill,Bronx
+36:43,Soundview/Castle Hill,Bronx
+36:44,Hunts Point,Bronx
+36:45,Hunts Point,Bronx
+36:46,Hunts Point,Bronx
+36:52,Steinway,Queens
+36:53,Steinway,Queens
+36:54,Steinway,Queens
+36:55,Astoria,Queens
+36:56,Astoria,Queens
+36:57,Astoria,Queens
+36:58,Astoria,Queens
+36:59,Sunnyside,Queens
+36:60,Sunnyside,Queens
+36:61,Sunnyside,Queens
+36:62,Sunnyside,Queens
+36:63,Sunnyside,Queens
+36:64,Sunnyside,Queens
+36:65,Greenpoint,Brooklyn
+36:66,Greenpoint,Brooklyn
+36:67,East Williamsburg,Brooklyn
+36:68,East Williamsburg,Brooklyn
+36:69,East Williamsburg,Brooklyn
+36:70,Williamsburg (South Side),Brooklyn
+36:71,South Williamsburg,Brooklyn
+36:72,Bedford,Brooklyn
+36:73,Clinton Hill,Brooklyn
+36:74,Clinton Hill,Brooklyn
+36:75,Clinton Hill,Brooklyn
+36:76,Clinton Hill,Brooklyn
+36:77,Prospect Heights,Brooklyn
+36:78,Park Slope,Brooklyn
+36:79,Park Slope,Brooklyn
+36:80,Park Slope,Brooklyn
+36:81,Park Slope,Brooklyn
+36:82,Park Slope,Brooklyn
+36:83,Sunset Park West,Brooklyn
+36:85,Sunset Park East,Brooklyn
+36:86,Sunset Park East,Brooklyn
+36:87,Borough Park,Brooklyn
+36:88,Borough Park,Brooklyn
+36:89,Dyker Heights,Brooklyn
+36:90,Dyker Heights,Brooklyn
+36:91,Dyker Heights,Brooklyn
+36:92,Dyker Heights,Brooklyn
+36:93,Dyker Heights,Brooklyn
+36:94,Dyker Heights,Brooklyn
+36:95,Bay Ridge,Brooklyn
+37:28,Co-Op City,Bronx
+37:29,Co-Op City,Bronx
+37:30,Co-Op City,Bronx
+37:31,Allerton/Pelham Gardens,Bronx
+37:32,Allerton/Pelham Gardens,Bronx
+37:33,Van Nest/Morris Park,Bronx
+37:34,Van Nest/Morris Park,Bronx
+37:35,Van Nest/Morris Park,Bronx
+37:36,Van Nest/Morris Park,Bronx
+37:37,Westchester Village/Unionport,Bronx
+37:38,Westchester Village/Unionport,Bronx
+37:39,Westchester Village/Unionport,Bronx
+37:40,Soundview/Castle Hill,Bronx
+37:41,Soundview/Castle Hill,Bronx
+37:42,Soundview/Castle Hill,Bronx
+37:43,Soundview/Castle Hill,Bronx
+37:44,Hunts Point,Bronx
+37:45,Hunts Point,Bronx
+37:46,Hunts Point,Bronx
+37:52,Steinway,Queens
+37:53,Steinway,Queens
+37:54,Steinway,Queens
+37:55,Saint Michaels Cemetery/Woodside,Queens
+37:56,Astoria,Queens
+37:57,Astoria,Queens
+37:58,Astoria,Queens
+37:59,Sunnyside,Queens
+37:60,Sunnyside,Queens
+37:61,Sunnyside,Queens
+37:62,Sunnyside,Queens
+37:63,Sunnyside,Queens
+37:64,Sunnyside,Queens
+37:65,East Williamsburg,Brooklyn
+37:66,East Williamsburg,Brooklyn
+37:67,East Williamsburg,Brooklyn
+37:68,East Williamsburg,Brooklyn
+37:69,East Williamsburg,Brooklyn
+37:70,East Williamsburg,Brooklyn
+37:71,Bedford,Brooklyn
+37:72,Bedford,Brooklyn
+37:73,Bedford,Brooklyn
+37:74,Bedford,Brooklyn
+37:75,Clinton Hill,Brooklyn
+37:76,Clinton Hill,Brooklyn
+37:77,Prospect Heights,Brooklyn
+37:78,Park Slope,Brooklyn
+37:79,Park Slope,Brooklyn
+37:80,Park Slope,Brooklyn
+37:81,Windsor Terrace,Brooklyn
+37:82,Windsor Terrace,Brooklyn
+37:85,Sunset Park East,Brooklyn
+37:86,Borough Park,Brooklyn
+37:87,Borough Park,Brooklyn
+37:88,Borough Park,Brooklyn
+37:89,Dyker Heights,Brooklyn
+37:90,Dyker Heights,Brooklyn
+37:91,Dyker Heights,Brooklyn
+37:92,Dyker Heights,Brooklyn
+37:93,Dyker Heights,Brooklyn
+37:94,Bath Beach,Brooklyn
+37:95,Bay Ridge,Brooklyn
+38:29,Co-Op City,Bronx
+38:30,Co-Op City,Bronx
+38:31,Co-Op City,Bronx
+38:32,Pelham Bay,Bronx
+38:33,Pelham Bay,Bronx
+38:34,Pelham Bay,Bronx
+38:35,Van Nest/Morris Park,Bronx
+38:36,Van Nest/Morris Park,Bronx
+38:37,Westchester Village/Unionport,Bronx
+38:38,Westchester Village/Unionport,Bronx
+38:39,Westchester Village/Unionport,Bronx
+38:40,Soundview/Castle Hill,Bronx
+38:41,Soundview/Castle Hill,Bronx
+38:42,Soundview/Castle Hill,Bronx
+38:43,Soundview/Castle Hill,Bronx
+38:52,Steinway,Queens
+38:53,Steinway,Queens
+38:54,Steinway,Queens
+38:55,Jackson Heights,Queens
+38:56,Woodside,Queens
+38:57,Woodside,Queens
+38:58,Woodside,Queens
+38:59,Woodside,Queens
+38:60,Sunnyside,Queens
+38:61,Sunnyside,Queens
+38:62,Sunnyside,Queens
+38:63,Sunnyside,Queens
+38:64,Sunnyside,Queens
+38:66,East Williamsburg,Brooklyn
+38:67,East Williamsburg,Brooklyn
+38:68,Bushwick South,Brooklyn
+38:69,Bushwick South,Brooklyn
+38:70,East Williamsburg,Brooklyn
+38:71,Bedford,Brooklyn
+38:72,Bedford,Brooklyn
+38:73,Bedford,Brooklyn
+38:74,Clinton Hill,Brooklyn
+38:75,Clinton Hill,Brooklyn
+38:76,Crown Heights North,Brooklyn
+38:77,Prospect Heights,Brooklyn
+38:78,Prospect Park,Brooklyn
+38:81,Windsor Terrace,Brooklyn
+38:82,Windsor Terrace,Brooklyn
+38:83,Windsor Terrace,Brooklyn
+38:84,Kensington,Brooklyn
+38:85,Borough Park,Brooklyn
+38:86,Borough Park,Brooklyn
+38:87,Borough Park,Brooklyn
+38:88,Borough Park,Brooklyn
+38:89,Dyker Heights,Brooklyn
+38:90,Bensonhurst West,Brooklyn
+38:91,Bensonhurst West,Brooklyn
+38:92,Bath Beach,Brooklyn
+38:93,Bath Beach,Brooklyn
+38:94,Bath Beach,Brooklyn
+39:26,Pelham Bay Park,Bronx
+39:27,Pelham Bay Park,Bronx
+39:28,Pelham Bay Park,Bronx
+39:30,Co-Op City,Bronx
+39:31,Pelham Bay Park,Bronx
+39:32,Pelham Bay,Bronx
+39:33,Pelham Bay,Bronx
+39:34,Pelham Bay,Bronx
+39:35,Schuylerville/Edgewater Park,Bronx
+39:36,Westchester Village/Unionport,Bronx
+39:37,Westchester Village/Unionport,Bronx
+39:38,Westchester Village/Unionport,Bronx
+39:39,Westchester Village/Unionport,Bronx
+39:40,Soundview/Castle Hill,Bronx
+39:41,Soundview/Castle Hill,Bronx
+39:42,Soundview/Castle Hill,Bronx
+39:43,Soundview/Castle Hill,Bronx
+39:52,LaGuardia Airport,Queens
+39:53,Steinway,Queens
+39:54,Jackson Heights,Queens
+39:55,Jackson Heights,Queens
+39:56,Jackson Heights,Queens
+39:57,Woodside,Queens
+39:58,Woodside,Queens
+39:59,Woodside,Queens
+39:60,Woodside,Queens
+39:61,Woodside,Queens
+39:62,Woodside,Queens
+39:63,Sunnyside,Queens
+39:64,Sunnyside,Queens
+39:65,East Williamsburg,Brooklyn
+39:66,East Williamsburg,Brooklyn
+39:67,East Williamsburg,Brooklyn
+39:68,Bushwick North,Brooklyn
+39:69,Bushwick South,Brooklyn
+39:70,Bushwick South,Brooklyn
+39:71,Stuyvesant Heights,Brooklyn
+39:72,Bedford,Brooklyn
+39:73,Bedford,Brooklyn
+39:74,Bedford,Brooklyn
+39:75,Crown Heights North,Brooklyn
+39:76,Crown Heights North,Brooklyn
+39:77,Crown Heights North,Brooklyn
+39:78,Prospect Park,Brooklyn
+39:79,Prospect Park,Brooklyn
+39:81,Windsor Terrace,Brooklyn
+39:82,Windsor Terrace,Brooklyn
+39:83,Windsor Terrace,Brooklyn
+39:84,Kensington,Brooklyn
+39:85,Borough Park,Brooklyn
+39:86,Borough Park,Brooklyn
+39:87,Borough Park,Brooklyn
+39:88,Borough Park,Brooklyn
+39:89,Bensonhurst West,Brooklyn
+39:90,Bensonhurst West,Brooklyn
+39:91,Bensonhurst West,Brooklyn
+39:92,Bath Beach,Brooklyn
+39:93,Bath Beach,Brooklyn
+39:94,Bath Beach,Brooklyn
+40:28,Pelham Bay Park,Bronx
+40:32,Country Club,Bronx
+40:33,Pelham Bay,Bronx
+40:34,Schuylerville/Edgewater Park,Bronx
+40:35,Schuylerville/Edgewater Park,Bronx
+40:36,Schuylerville/Edgewater Park,Bronx
+40:37,Soundview/Castle Hill,Bronx
+40:38,Soundview/Castle Hill,Bronx
+40:39,Soundview/Castle Hill,Bronx
+40:40,Soundview/Castle Hill,Bronx
+40:41,Soundview/Castle Hill,Bronx
+40:42,Soundview/Castle Hill,Bronx
+40:43,Soundview/Castle Hill,Bronx
+40:51,LaGuardia Airport,Queens
+40:52,Jackson Heights,Queens
+40:53,Jackson Heights,Queens
+40:54,Jackson Heights,Queens
+40:55,Jackson Heights,Queens
+40:56,Jackson Heights,Queens
+40:57,Woodside,Queens
+40:58,Woodside,Queens
+40:59,Woodside,Queens
+40:60,Woodside,Queens
+40:61,Elmhurst/Maspeth,Queens
+40:62,Sunnyside,Queens
+40:63,Sunnyside,Queens
+40:65,Maspeth,Queens
+40:66,East Williamsburg,Brooklyn
+40:67,Bushwick North,Brooklyn
+40:68,Bushwick North,Brooklyn
+40:69,Bushwick South,Brooklyn
+40:70,Stuyvesant Heights,Brooklyn
+40:71,Stuyvesant Heights,Brooklyn
+40:72,Stuyvesant Heights,Brooklyn
+40:73,Bedford,Brooklyn
+40:74,Crown Heights North,Brooklyn
+40:75,Crown Heights North,Brooklyn
+40:76,Crown Heights North,Brooklyn
+40:77,Crown Heights South,Brooklyn
+40:78,Prospect-Lefferts Gardens,Brooklyn
+40:79,Prospect-Lefferts Gardens,Brooklyn
+40:80,Flatbush/Ditmas Park,Brooklyn
+40:81,Flatbush/Ditmas Park,Brooklyn
+40:82,Flatbush/Ditmas Park,Brooklyn
+40:83,Kensington,Brooklyn
+40:84,Kensington,Brooklyn
+40:85,Borough Park,Brooklyn
+40:86,Borough Park,Brooklyn
+40:87,Borough Park,Brooklyn
+40:88,Borough Park,Brooklyn
+40:89,Bensonhurst West,Brooklyn
+40:90,Bensonhurst West,Brooklyn
+40:91,Bensonhurst West,Brooklyn
+40:92,Bensonhurst West,Brooklyn
+40:93,Bath Beach,Brooklyn
+40:94,Bath Beach,Brooklyn
+41:24,Pelham Bay Park,Bronx
+41:26,Pelham Bay Park,Bronx
+41:27,Pelham Bay Park,Bronx
+41:33,Country Club,Bronx
+41:34,Country Club,Bronx
+41:35,Schuylerville/Edgewater Park,Bronx
+41:36,Schuylerville/Edgewater Park,Bronx
+41:37,Schuylerville/Edgewater Park,Bronx
+41:38,Soundview/Castle Hill,Bronx
+41:39,Soundview/Castle Hill,Bronx
+41:41,Soundview/Castle Hill,Bronx
+41:42,Soundview/Castle Hill,Bronx
+41:50,LaGuardia Airport,Queens
+41:51,East Elmhurst,Queens
+41:52,Jackson Heights,Queens
+41:53,Jackson Heights,Queens
+41:54,Jackson Heights,Queens
+41:55,Jackson Heights,Queens
+41:56,Jackson Heights,Queens
+41:57,Elmhurst,Queens
+41:58,Elmhurst/Maspeth,Queens
+41:59,Elmhurst/Maspeth,Queens
+41:60,Maspeth,Queens
+41:61,Maspeth,Queens
+41:62,Maspeth,Queens
+41:63,Maspeth,Queens
+41:64,Maspeth,Queens
+41:65,Ridgewood,Queens
+41:66,Bushwick North,Brooklyn
+41:67,Bushwick North,Brooklyn
+41:68,Bushwick North,Brooklyn
+41:69,Bushwick South,Brooklyn
+41:70,Stuyvesant Heights,Brooklyn
+41:71,Stuyvesant Heights,Brooklyn
+41:72,Stuyvesant Heights,Brooklyn
+41:73,Stuyvesant Heights,Brooklyn
+41:74,Crown Heights North,Brooklyn
+41:75,Crown Heights North,Brooklyn
+41:76,Crown Heights South,Brooklyn
+41:77,Crown Heights South,Brooklyn
+41:78,Prospect-Lefferts Gardens,Brooklyn
+41:79,Prospect-Lefferts Gardens,Brooklyn
+41:80,Flatbush/Ditmas Park,Brooklyn
+41:81,Flatbush/Ditmas Park,Brooklyn
+41:82,Flatbush/Ditmas Park,Brooklyn
+41:83,Flatbush/Ditmas Park,Brooklyn
+41:84,Kensington,Brooklyn
+41:85,Kensington,Brooklyn
+41:86,Borough Park,Brooklyn
+41:87,Borough Park,Brooklyn
+41:88,Borough Park,Brooklyn
+41:89,Bensonhurst West,Brooklyn
+41:90,Bensonhurst West,Brooklyn
+41:91,Bensonhurst West,Brooklyn
+41:92,Bensonhurst West,Brooklyn
+41:93,Bath Beach,Brooklyn
+41:94,Bensonhurst West,Brooklyn
+42:26,Pelham Bay Park,Bronx
+42:27,Pelham Bay Park,Bronx
+42:28,Pelham Bay Park,Bronx
+42:32,Country Club,Bronx
+42:33,Country Club,Bronx
+42:34,Country Club,Bronx
+42:35,Schuylerville/Edgewater Park,Bronx
+42:36,Schuylerville/Edgewater Park,Bronx
+42:37,Schuylerville/Edgewater Park,Bronx
+42:39,Schuylerville/Edgewater Park,Bronx
+42:40,Schuylerville/Edgewater Park,Bronx
+42:44,College Point,Queens
+42:45,College Point,Queens
+42:50,LaGuardia Airport,Queens
+42:51,East Elmhurst,Queens
+42:52,East Elmhurst,Queens
+42:53,Jackson Heights,Queens
+42:54,Jackson Heights,Queens
+42:55,Jackson Heights,Queens
+42:56,Elmhurst,Queens
+42:57,Elmhurst,Queens
+42:58,Elmhurst/Maspeth,Queens
+42:59,Maspeth,Queens
+42:60,Maspeth,Queens
+42:61,Maspeth,Queens
+42:62,Maspeth,Queens
+42:63,Maspeth,Queens
+42:64,Ridgewood,Queens
+42:65,Ridgewood,Queens
+42:66,Ridgewood,Queens
+42:67,Bushwick North,Brooklyn
+42:68,Bushwick North,Brooklyn
+42:69,Bushwick South,Brooklyn
+42:70,Stuyvesant Heights,Brooklyn
+42:71,Stuyvesant Heights,Brooklyn
+42:72,Crown Heights North,Brooklyn
+42:73,Crown Heights North,Brooklyn
+42:74,Crown Heights North,Brooklyn
+42:75,Crown Heights North,Brooklyn
+42:76,Crown Heights South,Brooklyn
+42:77,Prospect-Lefferts Gardens,Brooklyn
+42:78,Prospect-Lefferts Gardens,Brooklyn
+42:79,Prospect-Lefferts Gardens,Brooklyn
+42:80,Prospect-Lefferts Gardens,Brooklyn
+42:81,Flatbush/Ditmas Park,Brooklyn
+42:82,Flatbush/Ditmas Park,Brooklyn
+42:83,Flatbush/Ditmas Park,Brooklyn
+42:84,Flatbush/Ditmas Park,Brooklyn
+42:85,Flatbush/Ditmas Park,Brooklyn
+42:86,Ocean Parkway South,Brooklyn
+42:87,Ocean Parkway South,Brooklyn
+42:88,Borough Park,Brooklyn
+42:89,Bensonhurst West,Brooklyn
+42:90,Bensonhurst West,Brooklyn
+42:91,Bensonhurst West,Brooklyn
+42:92,Bensonhurst West,Brooklyn
+42:93,Bensonhurst West,Brooklyn
+42:94,Bensonhurst West,Brooklyn
+42:97,Coney Island,Brooklyn
+42:98,Coney Island,Brooklyn
+43:28,Pelham Bay Park,Bronx
+43:34,Schuylerville/Edgewater Park,Bronx
+43:35,Schuylerville/Edgewater Park,Bronx
+43:36,Schuylerville/Edgewater Park,Bronx
+43:37,Schuylerville/Edgewater Park,Bronx
+43:38,Schuylerville/Edgewater Park,Bronx
+43:40,Schuylerville/Edgewater Park,Bronx
+43:44,College Point,Queens
+43:45,College Point,Queens
+43:46,College Point,Queens
+43:50,LaGuardia Airport,Queens
+43:51,East Elmhurst,Queens
+43:52,East Elmhurst,Queens
+43:53,Jackson Heights,Queens
+43:54,Jackson Heights,Queens
+43:55,Jackson Heights,Queens
+43:56,Elmhurst,Queens
+43:57,Elmhurst/Maspeth,Queens
+43:58,Elmhurst/Maspeth,Queens
+43:59,Maspeth,Queens
+43:60,Maspeth,Queens
+43:61,Maspeth,Queens
+43:62,Maspeth,Queens
+43:63,Maspeth,Queens
+43:64,Ridgewood,Queens
+43:65,Ridgewood,Queens
+43:66,Ridgewood,Queens
+43:67,Bushwick North,Brooklyn
+43:68,Bushwick South,Brooklyn
+43:69,Bushwick South,Brooklyn
+43:70,Stuyvesant Heights,Brooklyn
+43:71,Stuyvesant Heights,Brooklyn
+43:72,Crown Heights North,Brooklyn
+43:73,Crown Heights North,Brooklyn
+43:74,Crown Heights North,Brooklyn
+43:75,Crown Heights South,Brooklyn
+43:76,Prospect-Lefferts Gardens,Brooklyn
+43:77,Prospect-Lefferts Gardens,Brooklyn
+43:78,Erasmus,Brooklyn
+43:79,Erasmus,Brooklyn
+43:80,Erasmus,Brooklyn
+43:81,Erasmus,Brooklyn
+43:82,Flatbush/Ditmas Park,Brooklyn
+43:83,Flatbush/Ditmas Park,Brooklyn
+43:84,Flatbush/Ditmas Park,Brooklyn
+43:85,Midwood,Brooklyn
+43:86,Ocean Parkway South,Brooklyn
+43:87,Ocean Parkway South,Brooklyn
+43:88,Borough Park,Brooklyn
+43:89,Bensonhurst East,Brooklyn
+43:90,Bensonhurst East,Brooklyn
+43:91,Bensonhurst East,Brooklyn
+43:92,Bensonhurst East,Brooklyn
+43:93,Bensonhurst East,Brooklyn
+43:94,Bensonhurst East,Brooklyn
+43:95,Gravesend,Brooklyn
+43:96,Coney Island,Brooklyn
+43:97,Coney Island,Brooklyn
+43:98,Coney Island,Brooklyn
+44:27,City Island,Bronx
+44:35,Schuylerville/Edgewater Park,Bronx
+44:36,Schuylerville/Edgewater Park,Bronx
+44:37,Schuylerville/Edgewater Park,Bronx
+44:38,Schuylerville/Edgewater Park,Bronx
+44:44,College Point,Queens
+44:45,College Point,Queens
+44:46,College Point,Queens
+44:50,East Elmhurst,Queens
+44:51,East Elmhurst,Queens
+44:52,North Corona,Queens
+44:53,North Corona,Queens
+44:54,Elmhurst,Queens
+44:55,Elmhurst,Queens
+44:56,Elmhurst,Queens
+44:57,Elmhurst,Queens
+44:58,Elmhurst,Queens
+44:59,Elmhurst,Queens
+44:60,Maspeth,Queens
+44:61,Middle Village,Queens
+44:62,Middle Village,Queens
+44:63,Ridgewood,Queens
+44:64,Ridgewood,Queens
+44:65,Ridgewood,Queens
+44:66,Ridgewood,Queens
+44:67,Bushwick North,Brooklyn
+44:68,Bushwick South,Brooklyn
+44:69,Bushwick South,Brooklyn
+44:70,Stuyvesant Heights,Brooklyn
+44:71,Crown Heights North,Brooklyn
+44:72,Crown Heights North,Brooklyn
+44:73,Crown Heights North,Brooklyn
+44:74,Crown Heights North,Brooklyn
+44:75,Crown Heights South,Brooklyn
+44:76,Prospect-Lefferts Gardens,Brooklyn
+44:77,Prospect-Lefferts Gardens,Brooklyn
+44:78,East Flatbush/Farragut,Brooklyn
+44:79,East Flatbush/Farragut,Brooklyn
+44:80,Erasmus,Brooklyn
+44:81,Erasmus,Brooklyn
+44:82,Flatbush/Ditmas Park,Brooklyn
+44:83,Flatbush/Ditmas Park,Brooklyn
+44:84,Midwood,Brooklyn
+44:85,Midwood,Brooklyn
+44:86,Ocean Parkway South,Brooklyn
+44:87,Ocean Parkway South,Brooklyn
+44:88,Ocean Parkway South,Brooklyn
+44:89,Bensonhurst East,Brooklyn
+44:90,Bensonhurst East,Brooklyn
+44:91,Bensonhurst East,Brooklyn
+44:92,Bensonhurst East,Brooklyn
+44:94,Gravesend,Brooklyn
+44:96,Coney Island,Brooklyn
+44:97,Coney Island,Brooklyn
+44:98,Coney Island,Brooklyn
+45:27,City Island,Bronx
+45:28,City Island,Bronx
+45:35,Schuylerville/Edgewater Park,Bronx
+45:36,Schuylerville/Edgewater Park,Bronx
+45:37,Schuylerville/Edgewater Park,Bronx
+45:43,Whitestone,Queens
+45:44,Whitestone,Queens
+45:45,College Point,Queens
+45:46,College Point,Queens
+45:47,College Point,Queens
+45:50,Flushing Meadows-Corona Park,Queens
+45:51,North Corona,Queens
+45:52,North Corona,Queens
+45:53,North Corona,Queens
+45:54,Elmhurst,Queens
+45:55,Elmhurst,Queens
+45:56,Elmhurst,Queens
+45:57,Elmhurst,Queens
+45:58,Elmhurst,Queens
+45:59,Middle Village,Queens
+45:60,Middle Village,Queens
+45:61,Middle Village,Queens
+45:62,Ridgewood,Queens
+45:63,Ridgewood,Queens
+45:64,Ridgewood,Queens
+45:65,Ridgewood,Queens
+45:66,Ridgewood,Queens
+45:67,Bushwick North,Brooklyn
+45:68,Bushwick South,Brooklyn
+45:69,Bushwick South,Brooklyn
+45:70,Ocean Hill,Brooklyn
+45:71,Ocean Hill,Brooklyn
+45:72,Ocean Hill,Brooklyn
+45:73,Crown Heights North,Brooklyn
+45:74,East Flatbush/Remsen Village,Brooklyn
+45:75,Prospect-Lefferts Gardens,Brooklyn
+45:76,Prospect-Lefferts Gardens,Brooklyn
+45:77,East Flatbush/Farragut,Brooklyn
+45:78,East Flatbush/Farragut,Brooklyn
+45:79,East Flatbush/Farragut,Brooklyn
+45:80,East Flatbush/Farragut,Brooklyn
+45:81,Flatbush/Ditmas Park,Brooklyn
+45:82,Flatbush/Ditmas Park,Brooklyn
+45:83,Flatbush/Ditmas Park,Brooklyn
+45:84,Midwood,Brooklyn
+45:85,Midwood,Brooklyn
+45:86,Midwood,Brooklyn
+45:87,Ocean Parkway South,Brooklyn
+45:88,Homecrest,Brooklyn
+45:89,Homecrest,Brooklyn
+45:90,Bensonhurst East,Brooklyn
+45:91,Bensonhurst East,Brooklyn
+45:92,Gravesend,Brooklyn
+45:93,Gravesend,Brooklyn
+45:94,Gravesend,Brooklyn
+45:95,Coney Island,Brooklyn
+45:96,Coney Island,Brooklyn
+45:97,Coney Island,Brooklyn
+46:28,City Island,Bronx
+46:35,Schuylerville/Edgewater Park,Bronx
+46:36,Schuylerville/Edgewater Park,Bronx
+46:41,Whitestone,Queens
+46:43,Whitestone,Queens
+46:44,Whitestone,Queens
+46:45,College Point,Queens
+46:46,College Point,Queens
+46:47,College Point,Queens
+46:48,College Point,Queens
+46:49,Flushing Meadows-Corona Park,Queens
+46:50,Flushing Meadows-Corona Park,Queens
+46:51,Corona,Queens
+46:52,North Corona,Queens
+46:53,North Corona,Queens
+46:54,Corona,Queens
+46:55,Corona,Queens
+46:56,Elmhurst,Queens
+46:57,Rego Park,Queens
+46:58,Middle Village,Queens
+46:59,Middle Village,Queens
+46:60,Middle Village,Queens
+46:61,Middle Village,Queens
+46:62,Middle Village,Queens
+46:64,Ridgewood,Queens
+46:65,Ridgewood,Queens
+46:66,Ridgewood,Queens
+46:67,Bushwick North,Brooklyn
+46:68,Bushwick South,Brooklyn
+46:69,Bushwick South,Brooklyn
+46:70,Ocean Hill,Brooklyn
+46:71,Ocean Hill,Brooklyn
+46:72,Ocean Hill,Brooklyn
+46:73,Brownsville,Brooklyn
+46:74,Brownsville,Brooklyn
+46:75,East Flatbush/Remsen Village,Brooklyn
+46:76,East Flatbush/Remsen Village,Brooklyn
+46:77,East Flatbush/Farragut,Brooklyn
+46:78,East Flatbush/Farragut,Brooklyn
+46:79,East Flatbush/Farragut,Brooklyn
+46:80,East Flatbush/Farragut,Brooklyn
+46:81,East Flatbush/Farragut,Brooklyn
+46:82,Flatbush/Ditmas Park,Brooklyn
+46:83,Midwood,Brooklyn
+46:84,Midwood,Brooklyn
+46:85,Midwood,Brooklyn
+46:86,Midwood,Brooklyn
+46:87,Homecrest,Brooklyn
+46:88,Homecrest,Brooklyn
+46:89,Homecrest,Brooklyn
+46:90,Homecrest,Brooklyn
+46:91,Gravesend,Brooklyn
+46:92,Gravesend,Brooklyn
+46:93,Gravesend,Brooklyn
+46:94,Coney Island,Brooklyn
+46:95,Coney Island,Brooklyn
+46:96,Coney Island,Brooklyn
+47:28,City Island,Bronx
+47:29,City Island,Bronx
+47:36,Schuylerville/Edgewater Park,Bronx
+47:40,Whitestone,Queens
+47:41,Whitestone,Queens
+47:42,Whitestone,Queens
+47:43,Whitestone,Queens
+47:44,Whitestone,Queens
+47:46,College Point,Queens
+47:47,College Point,Queens
+47:48,Willets Point,Queens
+47:49,Flushing Meadows-Corona Park,Queens
+47:50,Flushing Meadows-Corona Park,Queens
+47:51,Corona,Queens
+47:52,Corona,Queens
+47:53,Corona,Queens
+47:54,Corona,Queens
+47:55,Corona,Queens
+47:56,Rego Park,Queens
+47:57,Rego Park,Queens
+47:58,Middle Village,Queens
+47:59,Middle Village,Queens
+47:60,Middle Village,Queens
+47:61,Middle Village,Queens
+47:63,Glendale,Queens
+47:64,Glendale,Queens
+47:65,Glendale,Queens
+47:66,Glendale,Queens
+47:68,Bushwick South,Brooklyn
+47:69,Ocean Hill,Brooklyn
+47:70,Ocean Hill,Brooklyn
+47:71,Brownsville,Brooklyn
+47:72,Brownsville,Brooklyn
+47:73,Brownsville,Brooklyn
+47:74,East Flatbush/Remsen Village,Brooklyn
+47:75,East Flatbush/Remsen Village,Brooklyn
+47:76,East Flatbush/Remsen Village,Brooklyn
+47:77,East Flatbush/Remsen Village,Brooklyn
+47:78,East Flatbush/Farragut,Brooklyn
+47:79,East Flatbush/Farragut,Brooklyn
+47:80,East Flatbush/Farragut,Brooklyn
+47:81,Flatlands,Brooklyn
+47:82,Flatlands,Brooklyn
+47:83,Midwood,Brooklyn
+47:84,Midwood,Brooklyn
+47:85,Midwood,Brooklyn
+47:86,Madison,Brooklyn
+47:87,Madison,Brooklyn
+47:88,Homecrest,Brooklyn
+47:89,Homecrest,Brooklyn
+47:90,Homecrest,Brooklyn
+47:91,Homecrest,Brooklyn
+47:92,Gravesend,Brooklyn
+47:93,Coney Island,Brooklyn
+47:94,Coney Island,Brooklyn
+47:95,Coney Island,Brooklyn
+48:29,City Island,Bronx
+48:36,Schuylerville/Edgewater Park,Bronx
+48:40,Whitestone,Queens
+48:41,Whitestone,Queens
+48:42,Whitestone,Queens
+48:43,Whitestone,Queens
+48:44,Flushing,Queens
+48:45,Flushing,Queens
+48:46,Flushing,Queens
+48:47,Flushing,Queens
+48:48,Flushing,Queens
+48:49,Flushing Meadows-Corona Park,Queens
+48:50,Flushing Meadows-Corona Park,Queens
+48:51,Flushing Meadows-Corona Park,Queens
+48:52,Flushing Meadows-Corona Park,Queens
+48:53,Corona,Queens
+48:54,Corona,Queens
+48:55,Rego Park,Queens
+48:56,Rego Park,Queens
+48:57,Rego Park,Queens
+48:58,Middle Village,Queens
+48:59,Middle Village,Queens
+48:60,Middle Village,Queens
+48:61,Middle Village,Queens
+48:62,Glendale,Queens
+48:63,Glendale,Queens
+48:65,Forest Park/Highland Park,Queens
+48:66,Forest Park/Highland Park,Queens
+48:67,Cypress Hills,Brooklyn
+48:68,Cypress Hills,Brooklyn
+48:69,East New York,Brooklyn
+48:70,Brownsville,Brooklyn
+48:71,Brownsville,Brooklyn
+48:72,Brownsville,Brooklyn
+48:73,Brownsville,Brooklyn
+48:74,East Flatbush/Remsen Village,Brooklyn
+48:75,East Flatbush/Remsen Village,Brooklyn
+48:76,East Flatbush/Remsen Village,Brooklyn
+48:77,East Flatbush/Remsen Village,Brooklyn
+48:78,East Flatbush/Remsen Village,Brooklyn
+48:79,Flatlands,Brooklyn
+48:80,Flatlands,Brooklyn
+48:81,Flatlands,Brooklyn
+48:82,Flatlands,Brooklyn
+48:83,Flatlands,Brooklyn
+48:84,Flatlands,Brooklyn
+48:85,Madison,Brooklyn
+48:86,Madison,Brooklyn
+48:87,Madison,Brooklyn
+48:88,Madison,Brooklyn
+48:89,Homecrest,Brooklyn
+48:90,Homecrest,Brooklyn
+48:91,Brighton Beach,Brooklyn
+48:92,Brighton Beach,Brooklyn
+48:93,Coney Island,Brooklyn
+48:94,Coney Island,Brooklyn
+49:39,Whitestone,Queens
+49:40,Whitestone,Queens
+49:41,Whitestone,Queens
+49:43,Murray Hill-Queens,Queens
+49:44,Murray Hill-Queens,Queens
+49:45,Flushing,Queens
+49:46,Flushing,Queens
+49:47,Flushing,Queens
+49:48,Flushing,Queens
+49:49,Flushing,Queens
+49:51,Flushing Meadows-Corona Park,Queens
+49:52,Flushing Meadows-Corona Park,Queens
+49:53,Forest Hills,Queens
+49:54,Forest Hills,Queens
+49:55,Forest Hills,Queens
+49:56,Forest Hills,Queens
+49:57,Rego Park,Queens
+49:58,Rego Park,Queens
+49:60,Middle Village,Queens
+49:61,Glendale,Queens
+49:62,Glendale,Queens
+49:64,Forest Park/Highland Park,Queens
+49:65,Forest Park/Highland Park,Queens
+49:66,Cypress Hills,Brooklyn
+49:67,Cypress Hills,Brooklyn
+49:68,East New York,Brooklyn
+49:69,East New York/Pennsylvania Avenue,Brooklyn
+49:70,East New York/Pennsylvania Avenue,Brooklyn
+49:71,Brownsville,Brooklyn
+49:72,Brownsville,Brooklyn
+49:73,Brownsville,Brooklyn
+49:74,East Flatbush/Remsen Village,Brooklyn
+49:75,East Flatbush/Remsen Village,Brooklyn
+49:76,Canarsie,Brooklyn
+49:77,Canarsie,Brooklyn
+49:78,Flatlands,Brooklyn
+49:79,Flatlands,Brooklyn
+49:80,Flatlands,Brooklyn
+49:81,Flatlands,Brooklyn
+49:82,Flatlands,Brooklyn
+49:83,Marine Park/Mill Basin,Brooklyn
+49:84,Marine Park/Mill Basin,Brooklyn
+49:85,Madison,Brooklyn
+49:86,Madison,Brooklyn
+49:87,Madison,Brooklyn
+49:88,Sheepshead Bay,Brooklyn
+49:89,Sheepshead Bay,Brooklyn
+49:90,Homecrest,Brooklyn
+49:91,Brighton Beach,Brooklyn
+49:92,Brighton Beach,Brooklyn
+49:93,Brighton Beach,Brooklyn
+49:94,Coney Island,Brooklyn
+50:40,Whitestone,Queens
+50:43,Murray Hill-Queens,Queens
+50:44,Murray Hill-Queens,Queens
+50:45,Murray Hill-Queens,Queens
+50:46,Flushing,Queens
+50:47,Flushing,Queens
+50:48,Flushing,Queens
+50:49,Flushing,Queens
+50:50,Queensboro Hill,Queens
+50:51,Flushing Meadows-Corona Park,Queens
+50:52,Flushing Meadows-Corona Park,Queens
+50:53,Forest Hills,Queens
+50:54,Forest Hills,Queens
+50:55,Forest Hills,Queens
+50:56,Forest Hills,Queens
+50:57,Forest Hills,Queens
+50:58,Rego Park,Queens
+50:59,Glendale,Queens
+50:60,Glendale,Queens
+50:61,Glendale,Queens
+50:62,Forest Park/Highland Park,Queens
+50:63,Forest Park/Highland Park,Queens
+50:64,Cypress Hills,Brooklyn
+50:65,Cypress Hills,Brooklyn
+50:66,Cypress Hills,Brooklyn
+50:67,East New York,Brooklyn
+50:68,East New York,Brooklyn
+50:69,East New York/Pennsylvania Avenue,Brooklyn
+50:70,East New York/Pennsylvania Avenue,Brooklyn
+50:71,East New York/Pennsylvania Avenue,Brooklyn
+50:72,Brownsville,Brooklyn
+50:73,Brownsville,Brooklyn
+50:74,East New York,Brooklyn
+50:75,Canarsie,Brooklyn
+50:76,Canarsie,Brooklyn
+50:77,Canarsie,Brooklyn
+50:78,Flatlands,Brooklyn
+50:79,Flatlands,Brooklyn
+50:80,Flatlands,Brooklyn
+50:81,Flatlands,Brooklyn
+50:82,Flatlands,Brooklyn
+50:83,Marine Park/Mill Basin,Brooklyn
+50:85,Madison,Brooklyn
+50:86,Madison,Brooklyn
+50:87,Sheepshead Bay,Brooklyn
+50:88,Sheepshead Bay,Brooklyn
+50:89,Sheepshead Bay,Brooklyn
+50:90,Sheepshead Bay,Brooklyn
+50:91,Brighton Beach,Brooklyn
+50:92,Brighton Beach,Brooklyn
+50:93,Brighton Beach,Brooklyn
+51:38,Whitestone,Queens
+51:41,Whitestone,Queens
+51:42,Whitestone,Queens
+51:44,Murray Hill-Queens,Queens
+51:45,Murray Hill-Queens,Queens
+51:46,Murray Hill-Queens,Queens
+51:47,Flushing,Queens
+51:48,Flushing,Queens
+51:49,Queensboro Hill,Queens
+51:50,Queensboro Hill,Queens
+51:51,Flushing Meadows-Corona Park,Queens
+51:52,Flushing Meadows-Corona Park,Queens
+51:53,Flushing Meadows-Corona Park,Queens
+51:54,Forest Hills,Queens
+51:55,Forest Hills,Queens
+51:56,Forest Hills,Queens
+51:57,Forest Hills,Queens
+51:58,Forest Hills,Queens
+51:59,Glendale,Queens
+51:60,Glendale,Queens
+51:62,Woodhaven,Queens
+51:63,Cypress Hills,Brooklyn
+51:64,Cypress Hills,Brooklyn
+51:65,Cypress Hills,Brooklyn
+51:66,Cypress Hills,Brooklyn
+51:67,East New York,Brooklyn
+51:68,East New York,Brooklyn
+51:69,East New York,Brooklyn
+51:70,East New York/Pennsylvania Avenue,Brooklyn
+51:71,East New York/Pennsylvania Avenue,Brooklyn
+51:72,East New York,Brooklyn
+51:73,East New York,Brooklyn
+51:74,Canarsie,Brooklyn
+51:75,Canarsie,Brooklyn
+51:76,Canarsie,Brooklyn
+51:77,Canarsie,Brooklyn
+51:78,Canarsie,Brooklyn
+51:79,Flatlands,Brooklyn
+51:80,Flatlands,Brooklyn
+51:81,Flatlands,Brooklyn
+51:82,Flatlands,Brooklyn
+51:83,Marine Park/Mill Basin,Brooklyn
+51:85,Madison,Brooklyn
+51:86,Sheepshead Bay,Brooklyn
+51:87,Sheepshead Bay,Brooklyn
+51:88,Sheepshead Bay,Brooklyn
+51:89,Sheepshead Bay,Brooklyn
+51:90,Manhattan Beach,Brooklyn
+51:91,Brighton Beach,Brooklyn
+51:92,Brighton Beach,Brooklyn
+52:38,Bay Terrace/Fort Totten,Queens
+52:40,Bay Terrace/Fort Totten,Queens
+52:41,Bay Terrace/Fort Totten,Queens
+52:43,Murray Hill-Queens,Queens
+52:44,Murray Hill-Queens,Queens
+52:45,Murray Hill-Queens,Queens
+52:46,East Flushing,Queens
+52:47,East Flushing,Queens
+52:48,Flushing,Queens
+52:49,Queensboro Hill,Queens
+52:50,Queensboro Hill,Queens
+52:51,Queensboro Hill,Queens
+52:52,Flushing Meadows-Corona Park,Queens
+52:53,Flushing Meadows-Corona Park,Queens
+52:54,Forest Hills,Queens
+52:55,Forest Hills,Queens
+52:56,Forest Hills,Queens
+52:57,Forest Hills,Queens
+52:58,Forest Hills,Queens
+52:59,Glendale,Queens
+52:60,Glendale,Queens
+52:61,Woodhaven,Queens
+52:62,Woodhaven,Queens
+52:63,Woodhaven,Queens
+52:64,Cypress Hills,Brooklyn
+52:65,Cypress Hills,Brooklyn
+52:66,East New York,Brooklyn
+52:67,East New York,Brooklyn
+52:68,East New York,Brooklyn
+52:69,East New York,Brooklyn
+52:70,East New York,Brooklyn
+52:71,East New York,Brooklyn
+52:72,Canarsie,Brooklyn
+52:73,Canarsie,Brooklyn
+52:74,Canarsie,Brooklyn
+52:75,Canarsie,Brooklyn
+52:76,Canarsie,Brooklyn
+52:77,Canarsie,Brooklyn
+52:79,Marine Park/Mill Basin,Brooklyn
+52:80,Marine Park/Mill Basin,Brooklyn
+52:81,Flatlands,Brooklyn
+52:82,Marine Park/Mill Basin,Brooklyn
+52:83,Marine Park/Mill Basin,Brooklyn
+52:85,Sheepshead Bay,Brooklyn
+52:86,Sheepshead Bay,Brooklyn
+52:87,Sheepshead Bay,Brooklyn
+52:88,Sheepshead Bay,Brooklyn
+52:89,Manhattan Beach,Brooklyn
+52:90,Manhattan Beach,Brooklyn
+52:91,Manhattan Beach,Brooklyn
+52:92,Brighton Beach,Brooklyn
+53:37,Bay Terrace/Fort Totten,Queens
+53:38,Bay Terrace/Fort Totten,Queens
+53:39,Bay Terrace/Fort Totten,Queens
+53:40,Bay Terrace/Fort Totten,Queens
+53:41,Bay Terrace/Fort Totten,Queens
+53:43,Murray Hill-Queens,Queens
+53:44,Murray Hill-Queens,Queens
+53:45,East Flushing,Queens
+53:46,East Flushing,Queens
+53:47,East Flushing,Queens
+53:48,Queensboro Hill,Queens
+53:49,Queensboro Hill,Queens
+53:50,Kew Gardens Hills,Queens
+53:51,Kew Gardens Hills,Queens
+53:52,Kew Gardens Hills,Queens
+53:53,Flushing Meadows-Corona Park,Queens
+53:54,Forest Hills,Queens
+53:55,Forest Hills,Queens
+53:56,Forest Hills,Queens
+53:57,Forest Hills,Queens
+53:59,Woodhaven,Queens
+53:60,Woodhaven,Queens
+53:61,Woodhaven,Queens
+53:62,Woodhaven,Queens
+53:63,Woodhaven,Queens
+53:64,Cypress Hills,Brooklyn
+53:65,Cypress Hills,Brooklyn
+53:66,East New York,Brooklyn
+53:67,East New York,Brooklyn
+53:68,East New York,Brooklyn
+53:69,East New York,Brooklyn
+53:70,East New York,Brooklyn
+53:71,East New York,Brooklyn
+53:72,Starrett City,Brooklyn
+53:73,Canarsie,Brooklyn
+53:74,Canarsie,Brooklyn
+53:75,Canarsie,Brooklyn
+53:76,Canarsie,Brooklyn
+53:77,Canarsie,Brooklyn
+53:79,Marine Park/Mill Basin,Brooklyn
+53:80,Marine Park/Mill Basin,Brooklyn
+53:81,Marine Park/Mill Basin,Brooklyn
+53:82,Marine Park/Mill Basin,Brooklyn
+53:83,Marine Park/Mill Basin,Brooklyn
+53:85,Sheepshead Bay,Brooklyn
+53:86,Sheepshead Bay,Brooklyn
+53:87,Sheepshead Bay,Brooklyn
+53:88,Manhattan Beach,Brooklyn
+53:89,Manhattan Beach,Brooklyn
+53:90,Manhattan Beach,Brooklyn
+54:36,Bay Terrace/Fort Totten,Queens
+54:37,Bay Terrace/Fort Totten,Queens
+54:41,Bayside,Queens
+54:43,Murray Hill-Queens,Queens
+54:44,East Flushing,Queens
+54:45,East Flushing,Queens
+54:47,East Flushing,Queens
+54:48,Queensboro Hill,Queens
+54:49,Queensboro Hill,Queens
+54:50,Kew Gardens Hills,Queens
+54:51,Kew Gardens Hills,Queens
+54:52,Kew Gardens Hills,Queens
+54:53,Kew Gardens Hills,Queens
+54:54,Forest Hills,Queens
+54:55,Forest Hills,Queens
+54:56,Kew Gardens,Queens
+54:57,Forest Park/Highland Park,Queens
+54:58,Richmond Hill,Queens
+54:59,Richmond Hill,Queens
+54:60,Woodhaven,Queens
+54:61,Woodhaven,Queens
+54:62,Woodhaven,Queens
+54:63,Woodhaven,Queens
+54:64,Ozone Park,Queens
+54:65,East New York,Brooklyn
+54:66,East New York,Brooklyn
+54:67,East New York,Brooklyn
+54:69,East New York,Brooklyn
+54:70,East New York,Brooklyn
+54:71,Starrett City,Brooklyn
+54:72,Starrett City,Brooklyn
+54:73,Canarsie,Brooklyn
+54:74,Canarsie,Brooklyn
+54:75,Canarsie,Brooklyn
+54:76,Canarsie,Brooklyn
+54:77,Canarsie,Brooklyn
+54:79,Marine Park/Mill Basin,Brooklyn
+54:80,Marine Park/Mill Basin,Brooklyn
+54:81,Marine Park/Mill Basin,Brooklyn
+54:82,Marine Park/Mill Basin,Brooklyn
+54:83,Marine Park/Floyd Bennett Field,Brooklyn
+54:85,Sheepshead Bay,Brooklyn
+54:86,Sheepshead Bay,Brooklyn
+54:87,Sheepshead Bay,Brooklyn
+54:88,Manhattan Beach,Brooklyn
+55:36,Bay Terrace/Fort Totten,Queens
+55:37,Bay Terrace/Fort Totten,Queens
+55:38,Bay Terrace/Fort Totten,Queens
+55:40,Bayside,Queens
+55:41,Bayside,Queens
+55:43,Murray Hill-Queens,Queens
+55:44,East Flushing,Queens
+55:45,East Flushing,Queens
+55:46,East Flushing,Queens
+55:47,Queensboro Hill,Queens
+55:48,Queensboro Hill,Queens
+55:49,Hillcrest/Pomonok,Queens
+55:50,Kew Gardens Hills,Queens
+55:51,Kew Gardens Hills,Queens
+55:52,Kew Gardens Hills,Queens
+55:53,Kew Gardens Hills,Queens
+55:54,Kew Gardens,Queens
+55:55,Kew Gardens,Queens
+55:56,Kew Gardens,Queens
+55:57,Kew Gardens,Queens
+55:58,Richmond Hill,Queens
+55:59,Richmond Hill,Queens
+55:60,Richmond Hill,Queens
+55:61,Woodhaven,Queens
+55:62,Woodhaven,Queens
+55:63,Woodhaven,Queens
+55:64,Ozone Park,Queens
+55:65,East New York,Brooklyn
+55:66,East New York,Brooklyn
+55:67,East New York,Brooklyn
+55:68,East New York,Brooklyn
+55:69,East New York,Brooklyn
+55:70,East New York,Brooklyn
+55:71,Starrett City,Brooklyn
+55:72,Starrett City,Brooklyn
+55:73,Canarsie,Brooklyn
+55:74,Canarsie,Brooklyn
+55:75,Canarsie,Brooklyn
+55:76,Canarsie,Brooklyn
+55:79,Marine Park/Mill Basin,Brooklyn
+55:83,Marine Park/Floyd Bennett Field,Brooklyn
+55:87,Marine Park/Floyd Bennett Field,Brooklyn
+56:37,Bay Terrace/Fort Totten,Queens
+56:38,Bay Terrace/Fort Totten,Queens
+56:40,Bayside,Queens
+56:42,Auburndale,Queens
+56:43,Auburndale,Queens
+56:44,Auburndale,Queens
+56:48,Hillcrest/Pomonok,Queens
+56:49,Hillcrest/Pomonok,Queens
+56:50,Hillcrest/Pomonok,Queens
+56:51,Kew Gardens Hills,Queens
+56:52,Kew Gardens Hills,Queens
+56:53,Kew Gardens Hills,Queens
+56:54,Briarwood/Jamaica Hills,Queens
+56:55,Kew Gardens,Queens
+56:56,Kew Gardens,Queens
+56:57,Richmond Hill,Queens
+56:58,Richmond Hill,Queens
+56:59,Richmond Hill,Queens
+56:60,Richmond Hill,Queens
+56:61,Woodhaven,Queens
+56:62,Ozone Park,Queens
+56:63,Ozone Park,Queens
+56:64,Ozone Park,Queens
+56:65,Howard Beach,Queens
+56:66,East New York,Brooklyn
+56:68,East New York,Brooklyn
+56:69,East New York,Brooklyn
+56:70,East New York,Brooklyn
+56:71,East New York,Brooklyn
+56:72,Starrett City,Brooklyn
+56:73,Canarsie,Brooklyn
+56:74,Canarsie,Brooklyn
+56:75,Canarsie,Brooklyn
+56:79,Marine Park/Mill Basin,Brooklyn
+56:80,Marine Park/Mill Basin,Brooklyn
+56:82,Marine Park/Floyd Bennett Field,Brooklyn
+56:83,Marine Park/Floyd Bennett Field,Brooklyn
+56:86,Marine Park/Floyd Bennett Field,Brooklyn
+57:38,Bayside,Queens
+57:39,Bayside,Queens
+57:40,Bayside,Queens
+57:42,Bayside,Queens
+57:44,Auburndale,Queens
+57:45,Auburndale,Queens
+57:46,Auburndale,Queens
+57:47,Hillcrest/Pomonok,Queens
+57:48,Hillcrest/Pomonok,Queens
+57:49,Hillcrest/Pomonok,Queens
+57:50,Kew Gardens Hills,Queens
+57:51,Kew Gardens Hills,Queens
+57:52,Kew Gardens Hills,Queens
+57:53,Briarwood/Jamaica Hills,Queens
+57:54,Briarwood/Jamaica Hills,Queens
+57:55,Kew Gardens,Queens
+57:56,Richmond Hill,Queens
+57:57,Richmond Hill,Queens
+57:58,Richmond Hill,Queens
+57:59,Richmond Hill,Queens
+57:60,Richmond Hill,Queens
+57:61,Richmond Hill,Queens
+57:62,Ozone Park,Queens
+57:63,Ozone Park,Queens
+57:64,Howard Beach,Queens
+57:65,Howard Beach,Queens
+57:66,Howard Beach,Queens
+57:67,Howard Beach,Queens
+57:80,Marine Park/Mill Basin,Brooklyn
+57:81,Marine Park/Floyd Bennett Field,Brooklyn
+57:82,Marine Park/Floyd Bennett Field,Brooklyn
+57:83,Marine Park/Floyd Bennett Field,Brooklyn
+57:84,Marine Park/Floyd Bennett Field,Brooklyn
+57:85,Marine Park/Floyd Bennett Field,Brooklyn
+58:39,Bayside,Queens
+58:40,Bayside,Queens
+58:41,Bayside,Queens
+58:43,Auburndale,Queens
+58:45,Auburndale,Queens
+58:46,Fresh Meadows,Queens
+58:47,Fresh Meadows,Queens
+58:48,Hillcrest/Pomonok,Queens
+58:49,Hillcrest/Pomonok,Queens
+58:50,Hillcrest/Pomonok,Queens
+58:51,Hillcrest/Pomonok,Queens
+58:52,Briarwood/Jamaica Hills,Queens
+58:53,Briarwood/Jamaica Hills,Queens
+58:54,Briarwood/Jamaica Hills,Queens
+58:55,Briarwood/Jamaica Hills,Queens
+58:56,Richmond Hill,Queens
+58:57,Richmond Hill,Queens
+58:58,Richmond Hill,Queens
+58:59,Richmond Hill,Queens
+58:60,South Ozone Park,Queens
+58:61,South Ozone Park,Queens
+58:62,Ozone Park,Queens
+58:63,Ozone Park,Queens
+58:64,Howard Beach,Queens
+58:66,Howard Beach,Queens
+58:83,Marine Park/Floyd Bennett Field,Brooklyn
+58:91,Breezy Point/Fort Tilden/Riis Beach,Queens
+59:40,Bayside,Queens
+59:41,Bayside,Queens
+59:45,Fresh Meadows,Queens
+59:46,Fresh Meadows,Queens
+59:47,Fresh Meadows,Queens
+59:48,Hillcrest/Pomonok,Queens
+59:49,Hillcrest/Pomonok,Queens
+59:50,Hillcrest/Pomonok,Queens
+59:51,Hillcrest/Pomonok,Queens
+59:52,Briarwood/Jamaica Hills,Queens
+59:53,Briarwood/Jamaica Hills,Queens
+59:54,Jamaica,Queens
+59:55,Richmond Hill,Queens
+59:56,Richmond Hill,Queens
+59:57,Richmond Hill,Queens
+59:58,South Ozone Park,Queens
+59:59,South Ozone Park,Queens
+59:60,South Ozone Park,Queens
+59:61,South Ozone Park,Queens
+59:62,South Ozone Park,Queens
+59:63,Ozone Park,Queens
+59:64,Howard Beach,Queens
+59:83,Marine Park/Floyd Bennett Field,Brooklyn
+60:39,Bayside,Queens
+60:40,Bayside,Queens
+60:42,Bayside,Queens
+60:43,Bayside,Queens
+60:44,Fresh Meadows,Queens
+60:45,Fresh Meadows,Queens
+60:46,Fresh Meadows,Queens
+60:48,Jamaica Estates,Queens
+60:49,Hillcrest/Pomonok,Queens
+60:50,Briarwood/Jamaica Hills,Queens
+60:51,Briarwood/Jamaica Hills,Queens
+60:52,Jamaica,Queens
+60:53,Briarwood/Jamaica Hills,Queens
+60:54,Jamaica,Queens
+60:55,Jamaica,Queens
+60:56,Jamaica,Queens
+60:57,South Ozone Park,Queens
+60:58,South Ozone Park,Queens
+60:59,South Ozone Park,Queens
+60:60,South Ozone Park,Queens
+60:62,South Ozone Park,Queens
+60:63,Howard Beach,Queens
+60:64,Howard Beach,Queens
+60:65,Howard Beach,Queens
+60:83,Marine Park/Floyd Bennett Field,Brooklyn
+60:89,Breezy Point/Fort Tilden/Riis Beach,Queens
+61:42,Bayside,Queens
+61:45,Fresh Meadows,Queens
+61:46,Fresh Meadows,Queens
+61:47,Jamaica Estates,Queens
+61:48,Jamaica Estates,Queens
+61:49,Jamaica Estates,Queens
+61:50,Jamaica Estates,Queens
+61:51,Briarwood/Jamaica Hills,Queens
+61:52,Jamaica,Queens
+61:53,Jamaica,Queens
+61:54,Jamaica,Queens
+61:55,Jamaica,Queens
+61:56,South Jamaica,Queens
+61:57,South Ozone Park,Queens
+61:58,South Ozone Park,Queens
+61:59,South Ozone Park,Queens
+61:60,South Ozone Park,Queens
+61:61,South Ozone Park,Queens
+61:62,South Ozone Park,Queens
+61:63,Howard Beach,Queens
+61:64,Howard Beach,Queens
+61:65,Howard Beach,Queens
+61:66,Howard Beach,Queens
+61:83,Marine Park/Floyd Bennett Field,Brooklyn
+62:35,Douglaston,Queens
+62:36,Douglaston,Queens
+62:39,Oakland Gardens,Queens
+62:40,Oakland Gardens,Queens
+62:41,Oakland Gardens,Queens
+62:45,Fresh Meadows,Queens
+62:47,Jamaica Estates,Queens
+62:48,Jamaica Estates,Queens
+62:49,Jamaica Estates,Queens
+62:50,Jamaica,Queens
+62:51,Jamaica,Queens
+62:52,Jamaica,Queens
+62:53,Jamaica,Queens
+62:54,South Jamaica,Queens
+62:55,South Jamaica,Queens
+62:56,South Jamaica,Queens
+62:57,South Ozone Park,Queens
+62:58,South Ozone Park,Queens
+62:59,South Ozone Park,Queens
+62:61,South Ozone Park,Queens
+62:62,JFK Airport,Queens
+63:34,Douglaston,Queens
+63:40,Oakland Gardens,Queens
+63:41,Oakland Gardens,Queens
+63:47,Jamaica Estates,Queens
+63:48,Jamaica Estates,Queens
+63:49,Jamaica,Queens
+63:50,Jamaica,Queens
+63:51,Jamaica,Queens
+63:52,South Jamaica,Queens
+63:53,South Jamaica,Queens
+63:54,South Jamaica,Queens
+63:55,South Jamaica,Queens
+63:56,Baisley Park,Queens
+63:57,Baisley Park,Queens
+63:58,South Ozone Park,Queens
+63:59,South Ozone Park,Queens
+63:60,South Ozone Park,Queens
+63:61,South Ozone Park,Queens
+63:67,Jamaica Bay,Queens
+63:85,Breezy Point/Fort Tilden/Riis Beach,Queens
+63:86,Breezy Point/Fort Tilden/Riis Beach,Queens
+64:34,Douglaston,Queens
+64:36,Douglaston,Queens
+64:37,Douglaston,Queens
+64:39,Oakland Gardens,Queens
+64:40,Oakland Gardens,Queens
+64:42,Oakland Gardens,Queens
+64:45,Jamaica Estates,Queens
+64:46,Jamaica Estates,Queens
+64:47,Jamaica Estates,Queens
+64:48,Jamaica,Queens
+64:49,Jamaica,Queens
+64:50,South Jamaica,Queens
+64:51,South Jamaica,Queens
+64:52,South Jamaica,Queens
+64:53,South Jamaica,Queens
+64:54,South Jamaica,Queens
+64:55,Baisley Park,Queens
+64:56,Baisley Park,Queens
+64:57,Baisley Park,Queens
+64:58,Baisley Park,Queens
+64:59,South Ozone Park,Queens
+64:60,South Ozone Park,Queens
+64:61,JFK Airport,Queens
+64:62,JFK Airport,Queens
+64:84,Breezy Point/Fort Tilden/Riis Beach,Queens
+64:85,Breezy Point/Fort Tilden/Riis Beach,Queens
+65:37,Douglaston,Queens
+65:38,Douglaston,Queens
+65:40,Oakland Gardens,Queens
+65:41,Oakland Gardens,Queens
+65:42,Oakland Gardens,Queens
+65:43,Oakland Gardens,Queens
+65:44,Jamaica Estates,Queens
+65:45,Jamaica Estates,Queens
+65:46,Jamaica Estates,Queens
+65:47,Hollis,Queens
+65:48,Hollis,Queens
+65:49,Saint Albans,Queens
+65:50,Saint Albans,Queens
+65:51,South Jamaica,Queens
+65:52,South Jamaica,Queens
+65:53,South Jamaica,Queens
+65:54,Baisley Park,Queens
+65:55,Baisley Park,Queens
+65:56,Baisley Park,Queens
+65:57,Baisley Park,Queens
+65:58,Baisley Park,Queens
+65:59,Baisley Park,Queens
+65:60,JFK Airport,Queens
+65:61,JFK Airport,Queens
+65:82,Breezy Point/Fort Tilden/Riis Beach,Queens
+66:34,Douglaston,Queens
+66:38,Douglaston,Queens
+66:40,Oakland Gardens,Queens
+66:41,Oakland Gardens,Queens
+66:42,Oakland Gardens,Queens
+66:43,Queens Village,Queens
+66:44,Queens Village,Queens
+66:45,Jamaica Estates,Queens
+66:46,Hollis,Queens
+66:47,Hollis,Queens
+66:48,Hollis,Queens
+66:49,Saint Albans,Queens
+66:50,Saint Albans,Queens
+66:51,Saint Albans,Queens
+66:52,Saint Albans,Queens
+66:53,Saint Albans,Queens
+66:54,Baisley Park,Queens
+66:55,Baisley Park,Queens
+66:56,Baisley Park,Queens
+66:57,Baisley Park,Queens
+66:58,Baisley Park,Queens
+66:59,JFK Airport,Queens
+66:60,JFK Airport,Queens
+66:62,JFK Airport,Queens
+66:81,Rockaway Park,Queens
+66:82,Rockaway Park,Queens
+66:83,Breezy Point/Fort Tilden/Riis Beach,Queens
+67:35,Douglaston,Queens
+67:37,Douglaston,Queens
+67:39,Bellerose,Queens
+67:41,Bellerose,Queens
+67:42,Queens Village,Queens
+67:43,Queens Village,Queens
+67:44,Queens Village,Queens
+67:45,Queens Village,Queens
+67:46,Hollis,Queens
+67:47,Hollis,Queens
+67:48,Hollis,Queens
+67:49,Saint Albans,Queens
+67:50,Saint Albans,Queens
+67:51,Saint Albans,Queens
+67:52,Saint Albans,Queens
+67:53,Saint Albans,Queens
+67:54,Baisley Park,Queens
+67:55,Springfield Gardens North,Queens
+67:56,Springfield Gardens North,Queens
+67:57,Springfield Gardens North,Queens
+67:58,JFK Airport,Queens
+67:59,JFK Airport,Queens
+67:62,JFK Airport,Queens
+67:70,Jamaica Bay,Queens
+67:79,Rockaway Park,Queens
+67:80,Rockaway Park,Queens
+68:34,Glen Oaks,Queens
+68:36,Glen Oaks,Queens
+68:38,Bellerose,Queens
+68:40,Bellerose,Queens
+68:41,Bellerose,Queens
+68:42,Queens Village,Queens
+68:43,Queens Village,Queens
+68:44,Queens Village,Queens
+68:45,Queens Village,Queens
+68:46,Queens Village,Queens
+68:47,Hollis,Queens
+68:48,Saint Albans,Queens
+68:49,Saint Albans,Queens
+68:50,Saint Albans,Queens
+68:51,Saint Albans,Queens
+68:52,Saint Albans,Queens
+68:53,Saint Albans,Queens
+68:54,Springfield Gardens North,Queens
+68:55,Springfield Gardens North,Queens
+68:56,Springfield Gardens North,Queens
+68:57,Springfield Gardens South,Queens
+68:59,JFK Airport,Queens
+68:62,JFK Airport,Queens
+68:78,Rockaway Park,Queens
+68:79,Rockaway Park,Queens
+69:34,Glen Oaks,Queens
+69:37,Bellerose,Queens
+69:39,Bellerose,Queens
+69:40,Bellerose,Queens
+69:41,Queens Village,Queens
+69:42,Queens Village,Queens
+69:43,Queens Village,Queens
+69:44,Queens Village,Queens
+69:45,Queens Village,Queens
+69:46,Queens Village,Queens
+69:47,Queens Village,Queens
+69:48,Saint Albans,Queens
+69:49,Saint Albans,Queens
+69:50,Saint Albans,Queens
+69:51,Saint Albans,Queens
+69:52,Saint Albans,Queens
+69:53,Saint Albans,Queens
+69:54,Springfield Gardens North,Queens
+69:55,Springfield Gardens North,Queens
+69:56,Springfield Gardens South,Queens
+69:57,Springfield Gardens South,Queens
+69:61,JFK Airport,Queens
+69:62,JFK Airport,Queens
+69:70,Broad Channel,Queens
+69:71,Broad Channel,Queens
+69:77,Rockaway Park,Queens
+70:34,Glen Oaks,Queens
+70:36,Glen Oaks,Queens
+70:37,Bellerose,Queens
+70:38,Bellerose,Queens
+70:39,Bellerose,Queens
+70:40,Bellerose,Queens
+70:41,Bellerose,Queens
+70:42,Queens Village,Queens
+70:43,Queens Village,Queens
+70:44,Queens Village,Queens
+70:45,Queens Village,Queens
+70:46,Cambria Heights,Queens
+70:48,Saint Albans,Queens
+70:49,Saint Albans,Queens
+70:50,Saint Albans,Queens
+70:51,Saint Albans,Queens
+70:52,Saint Albans,Queens
+70:53,Saint Albans,Queens
+70:54,Springfield Gardens North,Queens
+70:55,Springfield Gardens South,Queens
+70:56,Springfield Gardens South,Queens
+70:57,Springfield Gardens South,Queens
+70:60,JFK Airport,Queens
+70:61,JFK Airport,Queens
+70:62,JFK Airport,Queens
+70:72,Broad Channel,Queens
+70:73,Broad Channel,Queens
+70:76,Rockaway Park,Queens
+70:77,Rockaway Park,Queens
+71:35,Glen Oaks,Queens
+71:37,Glen Oaks,Queens
+71:38,Bellerose,Queens
+71:40,Bellerose,Queens
+71:43,Queens Village,Queens
+71:44,Queens Village,Queens
+71:45,Queens Village,Queens
+71:46,Cambria Heights,Queens
+71:47,Cambria Heights,Queens
+71:48,Saint Albans,Queens
+71:49,Saint Albans,Queens
+71:50,Saint Albans,Queens
+71:51,Saint Albans,Queens
+71:52,Laurelton,Queens
+71:53,Springfield Gardens North,Queens
+71:54,Springfield Gardens North,Queens
+71:55,Springfield Gardens South,Queens
+71:56,Springfield Gardens South,Queens
+71:57,Springfield Gardens South,Queens
+71:59,JFK Airport,Queens
+71:60,JFK Airport,Queens
+71:61,JFK Airport,Queens
+71:74,Rockaway Park,Queens
+71:76,Rockaway Park,Queens
+72:36,Glen Oaks,Queens
+72:38,Bellerose,Queens
+72:39,Bellerose,Queens
+72:44,Queens Village,Queens
+72:46,Cambria Heights,Queens
+72:47,Cambria Heights,Queens
+72:48,Cambria Heights,Queens
+72:49,Laurelton,Queens
+72:50,Laurelton,Queens
+72:51,Laurelton,Queens
+72:52,Laurelton,Queens
+72:53,Laurelton,Queens
+72:54,Springfield Gardens South,Queens
+72:56,Springfield Gardens South,Queens
+72:57,JFK Airport,Queens
+72:59,JFK Airport,Queens
+72:60,JFK Airport,Queens
+72:72,Hammels/Arverne,Queens
+72:73,Hammels/Arverne,Queens
+72:74,Rockaway Park,Queens
+72:75,Rockaway Park,Queens
+73:36,Glen Oaks,Queens
+73:45,Cambria Heights,Queens
+73:47,Cambria Heights,Queens
+73:48,Cambria Heights,Queens
+73:50,Laurelton,Queens
+73:52,Laurelton,Queens
+73:53,Laurelton,Queens
+73:54,Springfield Gardens South,Queens
+73:55,Springfield Gardens South,Queens
+73:70,Hammels/Arverne,Queens
+73:72,Hammels/Arverne,Queens
+73:73,Hammels/Arverne,Queens
+73:74,Hammels/Arverne,Queens
+74:46,Cambria Heights,Queens
+74:49,Laurelton,Queens
+74:50,Laurelton,Queens
+74:51,Laurelton,Queens
+74:53,Springfield Gardens South,Queens
+74:54,Springfield Gardens South,Queens
+74:55,Springfield Gardens South,Queens
+74:56,Rosedale,Queens
+74:70,Hammels/Arverne,Queens
+74:71,Hammels/Arverne,Queens
+75:47,Cambria Heights,Queens
+75:48,Laurelton,Queens
+75:49,Rosedale,Queens
+75:50,Rosedale,Queens
+75:51,Rosedale,Queens
+75:52,Rosedale,Queens
+75:56,Rosedale,Queens
+75:69,Hammels/Arverne,Queens
+75:70,Hammels/Arverne,Queens
+75:71,Hammels/Arverne,Queens
+76:48,Rosedale,Queens
+76:49,Rosedale,Queens
+76:50,Rosedale,Queens
+76:52,Rosedale,Queens
+76:56,Rosedale,Queens
+76:68,Hammels/Arverne,Queens
+76:69,Hammels/Arverne,Queens
+76:70,Hammels/Arverne,Queens
+77:51,Rosedale,Queens
+77:53,Rosedale,Queens
+77:54,Rosedale,Queens
+77:56,Rosedale,Queens
+77:68,Hammels/Arverne,Queens
+77:69,Hammels/Arverne,Queens
+78:56,Rosedale,Queens
+78:57,Rosedale,Queens
+78:65,Far Rockaway,Queens
+78:67,Hammels/Arverne,Queens
+78:68,Hammels/Arverne,Queens
+79:62,Far Rockaway,Queens
+79:65,Far Rockaway,Queens
+79:66,Hammels/Arverne,Queens
+79:67,Hammels/Arverne,Queens
+80:62,Far Rockaway,Queens
+80:63,Far Rockaway,Queens
+80:64,Far Rockaway,Queens
+80:65,Far Rockaway,Queens
+80:66,Far Rockaway,Queens
+81:61,Far Rockaway,Queens
+81:62,Far Rockaway,Queens
+81:63,Far Rockaway,Queens
+81:64,Far Rockaway,Queens
+81:65,Far Rockaway,Queens
+83:63,Far Rockaway,Queens
+9:107,Mariners Harbor,Staten Island
+10:109,Mariners Harbor,Staten Island
+10:110,Bloomfield/Emerson Hill,Staten Island
+10:131,Charleston/Tottenville,Staten Island
+11:112,Bloomfield/Emerson Hill,Staten Island
+11:113,Bloomfield/Emerson Hill,Staten Island
+12:107,Mariners Harbor,Staten Island
+12:109,Mariners Harbor,Staten Island
+12:126,Rossville/Woodrow,Staten Island
+13:111,Bloomfield/Emerson Hill,Staten Island
+13:124,Rossville/Woodrow,Staten Island
+13:134,Charleston/Tottenville,Staten Island
+14:137,Charleston/Tottenville,Staten Island
+15:104,Port Richmond,Staten Island
+15:110,Bloomfield/Emerson Hill,Staten Island
+16:103,Port Richmond,Staten Island
+16:105,Westerleigh,Staten Island
+17:106,Westerleigh,Staten Island
+17:107,Westerleigh,Staten Island
+18:106,Westerleigh,Staten Island
+18:107,Westerleigh,Staten Island
+18:112,Bloomfield/Emerson Hill,Staten Island
+19:101,West Brighton,Staten Island
+19:102,West Brighton,Staten Island
+19:114,Heartland Village/Todt Hill,Staten Island
+20:100,West Brighton,Staten Island
+20:122,Eltingville/Annadale/Prince's Bay,Staten Island
+20:41,Inwood Hill Park,Manhattan
+20:97,Saint George/New Brighton,Staten Island
+21:100,West Brighton,Staten Island
+21:107,Bloomfield/Emerson Hill,Staten Island
+22:64,Lincoln Square West,Manhattan
+23:100,Grymes Hill/Clifton,Staten Island
+23:101,Grymes Hill/Clifton,Staten Island
+23:120,Great Kills,Staten Island
+23:125,Eltingville/Annadale/Prince's Bay,Staten Island
+23:61,Upper West Side South,Manhattan
+23:64,Lincoln Square East,Manhattan
+23:67,Clinton East,Manhattan
+23:98,West Brighton,Staten Island
+23:99,West Brighton,Staten Island
+24:103,Heartland Village/Todt Hill,Staten Island
+24:30,Van Cortlandt Park,Bronx
+24:58,Upper West Side North,Manhattan
+24:66,Times Sq/Theatre District,Manhattan
+24:67,Garment District,Manhattan
+24:72,West Village,Manhattan
+24:99,Grymes Hill/Clifton,Staten Island
+25:104,Heartland Village/Todt Hill,Staten Island
+25:61,Central Park,Manhattan
+25:72,West Village,Manhattan
+26:100,Grymes Hill/Clifton,Staten Island
+26:33,Van Cortlandt Park,Bronx
+26:70,Union Sq,Manhattan
+27:103,Arrochar/Fort Wadsworth,Staten Island
+27:72,Greenwich Village South,Manhattan
+27:76,Financial District North,Manhattan
+28:102,Arrochar/Fort Wadsworth,Staten Island
+28:105,South Beach/Dongan Hills,Staten Island
+28:27,Woodlawn/Wakefield,Bronx
+28:58,Yorkville West,Manhattan
+28:65,UN/Turtle Bay South,Manhattan
+28:66,UN/Turtle Bay South,Manhattan
+28:73,Lower East Side,Manhattan
+28:98,Stapleton,Staten Island
+29:58,Yorkville East,Manhattan
+29:73,Lower East Side,Manhattan
+29:74,Two Bridges/Seward Park,Manhattan
+29:98,Stapleton,Staten Island
+30:100,Arrochar/Fort Wadsworth,Staten Island
+30:101,Arrochar/Fort Wadsworth,Staten Island
+30:108,New Dorp/Midland Beach,Staten Island
+30:36,Bronx Park,Bronx
+30:56,Randalls Island,Manhattan
+30:99,Stapleton,Staten Island
+31:100,Arrochar/Fort Wadsworth,Staten Island
+31:106,South Beach/Dongan Hills,Staten Island
+31:56,Old Astoria,Queens
+31:72,Two Bridges/Seward Park,Manhattan
+31:84,Red Hook,Brooklyn
+34:26,Eastchester,Bronx
+35:44,Hunts Point,Bronx
+35:96,Bay Ridge,Brooklyn
+38:65,East Williamsburg,Brooklyn
+38:95,Bath Beach,Brooklyn
+40:64,Sunnyside,Queens
+41:32,Country Club,Bronx
+42:46,College Point,Queens
+42:47,College Point,Queens
+44:34,Schuylerville/Edgewater Park,Bronx
+44:43,Whitestone,Queens
+44:93,Gravesend,Brooklyn
+46:40,Whitestone,Queens
+46:63,Ridgewood,Queens
+47:62,Glendale,Queens
+48:95,Coney Island,Brooklyn
+49:35,Schuylerville/Edgewater Park,Bronx
+49:42,Whitestone,Queens
+49:59,Middle Village,Queens
+50:39,Whitestone,Queens
+50:41,Whitestone,Queens
+50:84,Marine Park/Mill Basin,Brooklyn
+51:43,Murray Hill-Queens,Queens
+51:84,Marine Park/Mill Basin,Brooklyn
+52:39,Bay Terrace/Fort Totten,Queens
+52:78,Marine Park/Mill Basin,Brooklyn
+52:84,Marine Park/Mill Basin,Brooklyn
+53:42,Murray Hill-Queens,Queens
+53:58,Forest Hills,Queens
+53:78,Marine Park/Mill Basin,Brooklyn
+54:38,Bay Terrace/Fort Totten,Queens
+54:89,Manhattan Beach,Brooklyn
+54:90,Manhattan Beach,Brooklyn
+55:39,Bay Terrace/Fort Totten,Queens
+55:77,Canarsie,Brooklyn
+55:78,Marine Park/Mill Basin,Brooklyn
+56:41,Bayside,Queens
+56:47,Queensboro Hill,Queens
+56:67,East New York,Brooklyn
+57:41,Bayside,Queens
+57:68,East New York,Brooklyn
+58:42,Bayside,Queens
+58:65,Howard Beach,Queens
+59:42,Bayside,Queens
+59:43,Auburndale,Queens
+59:65,Howard Beach,Queens
+59:66,Howard Beach,Queens
+60:36,Douglaston,Queens
+60:41,Bayside,Queens
+60:47,Fresh Meadows,Queens
+60:66,Howard Beach,Queens
+60:67,Howard Beach,Queens
+61:38,Bayside,Queens
+61:44,Fresh Meadows,Queens
+62:43,Fresh Meadows,Queens
+62:46,Jamaica Estates,Queens
+62:60,South Ozone Park,Queens
+62:63,JFK Airport,Queens
+62:82,Marine Park/Floyd Bennett Field,Brooklyn
+63:46,Jamaica Estates,Queens
+64:35,Douglaston,Queens
+64:43,Oakland Gardens,Queens
+65:62,JFK Airport,Queens
+66:36,Douglaston,Queens
+66:80,Rockaway Park,Queens
+68:37,Bellerose,Queens
+68:70,Broad Channel,Queens
+68:80,Rockaway Park,Queens
+69:36,Glen Oaks,Queens
+69:38,Bellerose,Queens
+69:79,Rockaway Park,Queens
+7:108,Mariners Harbor,Staten Island
+7:109,Mariners Harbor,Staten Island
+70:33,Glen Oaks,Queens
+70:35,Glen Oaks,Queens
+70:47,Queens Village,Queens
+70:70,Broad Channel,Queens
+70:71,Broad Channel,Queens
+71:33,Glen Oaks,Queens
+71:41,Bellerose,Queens
+72:43,Queens Village,Queens
+72:55,Springfield Gardens South,Queens
+73:44,Cambria Heights,Queens
+73:46,Cambria Heights,Queens
+73:51,Laurelton,Queens
+73:56,Rosedale,Queens
+74:52,Laurelton,Queens
+74:72,Hammels/Arverne,Queens
+74:73,Hammels/Arverne,Queens
+75:53,Rosedale,Queens
+75:54,Springfield Gardens South,Queens
+75:55,Springfield Gardens South,Queens
+76:53,Rosedale,Queens
+76:54,Rosedale,Queens
+77:52,Rosedale,Queens
+77:64,Far Rockaway,Queens
+77:67,Hammels/Arverne,Queens
+78:54,Rosedale,Queens
+79:52,Rosedale,Queens
+79:53,Rosedale,Queens
+81:66,Far Rockaway,Queens
+82:64,Far Rockaway,Queens
+83:64,Far Rockaway,Queens
+9:106,Mariners Harbor,Staten Island
+9:108,Mariners Harbor,Staten Island
+13:110,Bloomfield/Emerson Hill,Staten Island
+13:128,Rossville/Woodrow,Staten Island
+13:129,Charleston/Tottenville,Staten Island
+13:138,Charleston/Tottenville,Staten Island
+14:112,Bloomfield/Emerson Hill,Staten Island
+16:102,Saint George/New Brighton,Staten Island
+16:104,Westerleigh,Staten Island
+16:111,Bloomfield/Emerson Hill,Staten Island
+16:116,Heartland Village/Todt Hill,Staten Island
+16:126,Arden Heights,Staten Island
+17:104,Saint George/New Brighton,Staten Island
+17:111,Bloomfield/Emerson Hill,Staten Island
+17:113,Heartland Village/Todt Hill,Staten Island
+17:121,Arden Heights,Staten Island
+18:100,Saint George/New Brighton,Staten Island
+18:102,Saint George/New Brighton,Staten Island
+18:108,Bloomfield/Emerson Hill,Staten Island
+19:105,Westerleigh,Staten Island
+21:106,Bloomfield/Emerson Hill,Staten Island
+21:96,Saint George/New Brighton,Staten Island
+21:99,West Brighton,Staten Island
+22:103,Westerleigh,Staten Island
+22:69,West Chelsea/Hudson Yards,Manhattan
+22:96,Saint George/New Brighton,Staten Island
+23:104,Heartland Village/Todt Hill,Staten Island
+23:59,Upper West Side North,Manhattan
+23:60,Upper West Side South,Manhattan
+23:96,Saint George/New Brighton,Staten Island
+24:111,Heartland Village/Todt Hill,Staten Island
+24:32,Van Cortlandt Park,Bronx
+24:60,Upper West Side South,Manhattan
+24:64,Lincoln Square East,Manhattan
+24:65,Times Sq/Theatre District,Manhattan
+24:69,Flatiron,Manhattan
+25:65,Times Sq/Theatre District,Manhattan
+25:69,Flatiron,Manhattan
+26:69,Union Sq,Manhattan
+26:74,SoHo,Manhattan
+26:77,World Trade Center,Manhattan
+27:102,Arrochar/Fort Wadsworth,Staten Island
+27:110,New Dorp/Midland Beach,Staten Island
+27:59,Upper East Side North,Manhattan
+27:73,Little Italy/NoLiTa,Manhattan
+28:60,Lenox Hill West,Manhattan
+29:101,Arrochar/Fort Wadsworth,Staten Island
+30:73,Two Bridges/Seward Park,Manhattan
+32:52,Randalls Island,Manhattan
+33:26,Eastchester,Bronx
+40:27,Pelham Bay Park,Bronx
+40:29,Pelham Bay Park,Bronx
+41:28,Pelham Bay Park,Bronx
+41:31,Country Club,Bronx
+44:40,Schuylerville/Edgewater Park,Bronx
+47:35,Schuylerville/Edgewater Park,Bronx
+47:45,College Point,Queens
+50:36,Schuylerville/Edgewater Park,Bronx
+50:38,Whitestone,Queens
+50:42,Whitestone,Queens
+51:40,Whitestone,Queens
+52:42,Murray Hill-Queens,Queens
+54:39,Bay Terrace/Fort Totten,Queens
+54:68,East New York,Brooklyn
+55:42,Auburndale,Queens
+55:80,Marine Park/Mill Basin,Brooklyn
+55:81,Marine Park/Mill Basin,Brooklyn
+55:82,Marine Park/Mill Basin,Brooklyn
+56:39,Bayside,Queens
+57:43,Auburndale,Queens
+57:69,East New York,Brooklyn
+58:38,Bayside,Queens
+59:38,Bayside,Queens
+59:39,Bayside,Queens
+59:44,Auburndale,Queens
+59:91,Breezy Point/Fort Tilden/Riis Beach,Queens
+6:111,Bloomfield/Emerson Hill,Staten Island
+6:111,Mariners Harbor,Staten Island
+60:38,Bayside,Queens
+60:61,South Ozone Park,Queens
+61:43,Bayside,Queens
+62:44,Fresh Meadows,Queens
+62:64,Howard Beach,Queens
+63:38,Oakland Gardens,Queens
+63:39,Oakland Gardens,Queens
+63:42,Oakland Gardens,Queens
+63:45,Fresh Meadows,Queens
+64:38,Douglaston,Queens
+64:41,Oakland Gardens,Queens
+65:35,Douglaston,Queens
+66:61,JFK Airport,Queens
+67:38,Douglaston,Queens
+68:39,Bellerose,Queens
+68:58,JFK Airport,Queens
+68:60,JFK Airport,Queens
+69:35,Glen Oaks,Queens
+69:58,JFK Airport,Queens
+69:60,JFK Airport,Queens
+71:34,Glen Oaks,Queens
+71:36,Glen Oaks,Queens
+71:39,Bellerose,Queens
+71:58,JFK Airport,Queens
+71:75,Rockaway Park,Queens
+72:35,Glen Oaks,Queens
+72:37,Glen Oaks,Queens
+72:45,Cambria Heights,Queens
+72:58,JFK Airport,Queens
+73:49,Laurelton,Queens
+73:71,Hammels/Arverne,Queens
+74:48,Laurelton,Queens
+74:69,Hammels/Arverne,Queens
+76:51,Rosedale,Queens
+78:52,Rosedale,Queens
+79:57,Rosedale,Queens
+79:64,Far Rockaway,Queens
+82:63,Far Rockaway,Queens
+82:65,Far Rockaway,Queens
+9:110,Mariners Harbor,Staten Island
+13:126,Rossville/Woodrow,Staten Island
+14:111,Bloomfield/Emerson Hill,Staten Island
+15:105,Port Richmond,Staten Island
+16:107,Port Richmond,Staten Island
+19:104,Westerleigh,Staten Island
+20:121,Great Kills,Staten Island
+20:127,Eltingville/Annadale/Prince's Bay,Staten Island
+20:40,Inwood Hill Park,Manhattan
+21:105,Heartland Village/Todt Hill,Staten Island
+22:114,Heartland Village/Todt Hill,Staten Island
+22:119,Great Kills,Staten Island
+23:115,Oakwood,Staten Island
+23:121,Great Kills,Staten Island
+23:68,East Chelsea,Manhattan
+23:97,Saint George/New Brighton,Staten Island
+24:121,Great Kills,Staten Island
+24:71,West Village,Manhattan
+25:110,New Dorp/Midland Beach,Staten Island
+25:63,Central Park,Manhattan
+25:66,Times Sq/Theatre District,Manhattan
+25:71,West Village,Manhattan
+25:74,Hudson Sq,Manhattan
+25:76,Battery Park City,Manhattan
+26:101,Grymes Hill/Clifton,Staten Island
+26:66,Midtown Center,Manhattan
+26:76,TriBeCa/Civic Center,Manhattan
+27:60,Upper East Side North,Manhattan
+27:74,Little Italy/NoLiTa,Manhattan
+28:104,South Beach/Dongan Hills,Staten Island
+28:112,New Dorp/Midland Beach,Staten Island
+28:68,Kips Bay,Manhattan
+29:59,Yorkville East,Manhattan
+29:61,Lenox Hill East,Manhattan
+29:68,Kips Bay,Manhattan
+36:26,Co-Op City,Bronx
+36:96,Bay Ridge,Brooklyn
+38:24,Eastchester,Bronx
+38:79,Prospect Park,Brooklyn
+41:23,Eastchester,Bronx
+48:39,Whitestone,Queens
+51:61,Forest Park/Highland Park,Queens
+54:40,Bay Terrace/Fort Totten,Queens
+54:46,East Flushing,Queens
+55:86,Sheepshead Bay,Brooklyn
+56:45,East Flushing,Queens
+57:37,Bayside,Queens
+58:44,Auburndale,Queens
+58:92,Breezy Point/Fort Tilden/Riis Beach,Queens
+59:90,Breezy Point/Fort Tilden/Riis Beach,Queens
+61:39,Bayside,Queens
+61:41,Bayside,Queens
+61:82,Marine Park/Floyd Bennett Field,Brooklyn
+62:37,Douglaston,Queens
+63:35,Douglaston,Queens
+63:36,Douglaston,Queens
+63:43,Oakland Gardens,Queens
+66:63,JFK Airport,Queens
+67:34,Douglaston,Queens
+67:36,Douglaston,Queens
+67:40,Bellerose,Queens
+67:81,Rockaway Park,Queens
+68:33,Glen Oaks,Queens
+69:59,JFK Airport,Queens
+74:47,Cambria Heights,Queens
+76:67,Hammels/Arverne,Queens
+79:63,Far Rockaway,Queens
+15:102,Port Richmond,Staten Island
+16:109,Westerleigh,Staten Island
+16:114,Heartland Village/Todt Hill,Staten Island
+17:102,Saint George/New Brighton,Staten Island
+18:109,Bloomfield/Emerson Hill,Staten Island
+18:32,Riverdale/North Riverdale/Fieldston,Bronx
+19:99,Saint George/New Brighton,Staten Island
+20:103,West Brighton,Staten Island
+22:60,Upper West Side North,Manhattan
+22:70,West Chelsea/Hudson Yards,Manhattan
+22:98,West Brighton,Staten Island
+23:103,Westerleigh,Staten Island
+23:66,Clinton East,Manhattan
+23:71,East Chelsea,Manhattan
+24:115,Oakwood,Staten Island
+24:59,Upper West Side North,Manhattan
+24:97,Stapleton,Staten Island
+24:98,Grymes Hill/Clifton,Staten Island
+25:100,Stapleton,Staten Island
+25:103,Heartland Village/Todt Hill,Staten Island
+25:73,Hudson Sq,Manhattan
+25:99,Stapleton,Staten Island
+26:67,Midtown South,Manhattan
+27:105,South Beach/Dongan Hills,Staten Island
+27:61,Upper East Side South,Manhattan
+27:68,Murray Hill,Manhattan
+27:78,Financial District South,Manhattan
+28:63,Sutton Place/Turtle Bay North,Manhattan
+29:57,Yorkville East,Manhattan
+29:99,Stapleton,Staten Island
+33:96,Bay Ridge,Brooklyn
+42:38,Schuylerville/Edgewater Park,Bronx
+46:42,Whitestone,Queens
+48:35,Schuylerville/Edgewater Park,Bronx
+48:64,Glendale,Queens
+56:85,Marine Park/Floyd Bennett Field,Brooklyn
+61:40,Bayside,Queens
+63:64,Howard Beach,Queens
+65:36,Douglaston,Queens
+68:35,Glen Oaks,Queens
+73:38,Glen Oaks,Queens
+77:50,Rosedale,Queens
+78:51,Rosedale,Queens
+78:53,Rosedale,Queens
+78:66,Far Rockaway,Queens
+8:107,Mariners Harbor,Staten Island
+11:114,Bloomfield/Emerson Hill,Staten Island
+12:110,Bloomfield/Emerson Hill,Staten Island
+12:130,Charleston/Tottenville,Staten Island
+13:109,Mariners Harbor,Staten Island
+13:132,Charleston/Tottenville,Staten Island
+14:131,Charleston/Tottenville,Staten Island
+15:108,Port Richmond,Staten Island
+15:109,Port Richmond,Staten Island
+17:105,Westerleigh,Staten Island
+17:116,Heartland Village/Todt Hill,Staten Island
+17:127,Rossville/Woodrow,Staten Island
+19:109,Bloomfield/Emerson Hill,Staten Island
+20:109,Bloomfield/Emerson Hill,Staten Island
+21:65,Clinton West,Manhattan
+23:102,Grymes Hill/Clifton,Staten Island
+23:63,Lincoln Square East,Manhattan
+23:69,East Chelsea,Manhattan
+24:104,Heartland Village/Todt Hill,Staten Island
+24:62,Lincoln Square East,Manhattan
+25:67,Garment District,Manhattan
+25:96,Stapleton,Staten Island
+26:114,Oakwood,Staten Island
+26:60,Upper East Side North,Manhattan
+26:99,Grymes Hill/Clifton,Staten Island
+27:100,Grymes Hill/Clifton,Staten Island
+27:101,Stapleton,Staten Island
+27:109,New Dorp/Midland Beach,Staten Island
+27:111,New Dorp/Midland Beach,Staten Island
+27:71,Greenwich Village North,Manhattan
+28:26,Woodlawn/Wakefield,Bronx
+29:102,Arrochar/Fort Wadsworth,Staten Island
+29:103,Arrochar/Fort Wadsworth,Staten Island
+30:107,South Beach/Dongan Hills,Staten Island
+32:102,Arrochar/Fort Wadsworth,Staten Island
+35:25,Eastchester,Bronx
+35:47,Hunts Point,Bronx
+38:27,Pelham Bay Park,Bronx
+51:39,Whitestone,Queens
+54:78,Marine Park/Mill Basin,Brooklyn
+56:78,Marine Park/Mill Basin,Brooklyn
+61:37,Douglaston,Queens
+62:66,Howard Beach,Queens
+63:44,Oakland Gardens,Queens
+66:69,Jamaica Bay,Queens
+67:69,Jamaica Bay,Queens
+69:78,Rockaway Park,Queens
+73:35,Glen Oaks,Queens
+8:110,Bloomfield/Emerson Hill,Staten Island
+12:113,Bloomfield/Emerson Hill,Staten Island
+12:118,Bloomfield/Emerson Hill,Staten Island
+12:129,Charleston/Tottenville,Staten Island
+13:112,Bloomfield/Emerson Hill,Staten Island
+15:129,Rossville/Woodrow,Staten Island
+17:114,Heartland Village/Todt Hill,Staten Island
+17:126,Arden Heights,Staten Island
+18:111,Bloomfield/Emerson Hill,Staten Island
+18:120,Eltingville/Annadale/Prince's Bay,Staten Island
+19:108,Bloomfield/Emerson Hill,Staten Island
+19:124,Eltingville/Annadale/Prince's Bay,Staten Island
+20:98,Saint George/New Brighton,Staten Island
+21:115,Heartland Village/Todt Hill,Staten Island
+21:40,Inwood Hill Park,Manhattan
+21:58,Upper West Side North,Manhattan
+21:59,Upper West Side North,Manhattan
+21:60,Upper West Side North,Manhattan
+21:61,Upper West Side South,Manhattan
+21:62,Upper West Side South,Manhattan
+21:63,Lincoln Square West,Manhattan
+21:64,Lincoln Square West,Manhattan
+21:67,West Chelsea/Hudson Yards,Manhattan
+21:68,West Chelsea/Hudson Yards,Manhattan
+21:69,West Chelsea/Hudson Yards,Manhattan
+22:117,Great Kills,Staten Island
+22:62,Upper West Side South,Manhattan
+22:63,Lincoln Square West,Manhattan
+22:65,Clinton West,Manhattan
+22:66,Clinton West,Manhattan
+22:68,West Chelsea/Hudson Yards,Manhattan
+22:71,West Chelsea/Hudson Yards,Manhattan
+22:72,Meatpacking/West Village West,Manhattan
+23:65,Clinton East,Manhattan
+23:70,East Chelsea,Manhattan
+23:72,Meatpacking/West Village West,Manhattan
+23:73,Meatpacking/West Village West,Manhattan
+23:74,Meatpacking/West Village West,Manhattan
+24:107,Heartland Village/Todt Hill,Staten Island
+24:112,Oakwood,Staten Island
+24:123,Great Kills,Staten Island
+24:61,Upper West Side South,Manhattan
+24:68,Penn Station/Madison Sq West,Manhattan
+24:70,Flatiron,Manhattan
+24:73,Meatpacking/West Village West,Manhattan
+24:74,Hudson Sq,Manhattan
+24:75,TriBeCa/Civic Center,Manhattan
+24:76,Battery Park City,Manhattan
+24:77,Battery Park City,Manhattan
+25:109,New Dorp/Midland Beach,Staten Island
+25:57,Central Park,Manhattan
+25:60,Central Park,Manhattan
+25:62,Central Park,Manhattan
+25:64,Midtown North,Manhattan
+25:70,Flatiron,Manhattan
+25:77,Battery Park City,Manhattan
+25:78,Battery Park City,Manhattan
+26:109,New Dorp/Midland Beach,Staten Island
+26:61,Upper East Side South,Manhattan
+26:68,Midtown South,Manhattan
+26:71,Greenwich Village North,Manhattan
+26:72,Greenwich Village South,Manhattan
+26:73,SoHo,Manhattan
+26:79,Battery Park,Manhattan
+27:108,South Beach/Dongan Hills,Staten Island
+27:28,Woodlawn/Wakefield,Bronx
+27:64,Midtown East,Manhattan
+27:67,Murray Hill,Manhattan
+27:69,Gramercy,Manhattan
+27:77,Financial District North,Manhattan
+27:79,Battery Park,Manhattan
+27:81,Governor's Island/Ellis Island/Liberty Island,Manhattan
+28:67,Kips Bay,Manhattan
+28:69,Gramercy,Manhattan
+28:71,East Village,Manhattan
+28:75,Chinatown,Manhattan
+28:76,Seaport,Manhattan
+28:77,Financial District North,Manhattan
+28:78,Financial District South,Manhattan
+28:80,Governor's Island/Ellis Island/Liberty Island,Manhattan
+29:60,Lenox Hill East,Manhattan
+29:64,Sutton Place/Turtle Bay North,Manhattan
+29:65,UN/Turtle Bay South,Manhattan
+29:66,UN/Turtle Bay South,Manhattan
+29:67,Kips Bay,Manhattan
+29:69,Stuy Town/Peter Cooper Village,Manhattan
+29:75,Chinatown,Manhattan
+30:102,Arrochar/Fort Wadsworth,Staten Island
+30:105,South Beach/Dongan Hills,Staten Island
+30:66,Long Island City/Hunters Point,Queens
+30:70,Alphabet City,Manhattan
+30:71,Alphabet City,Manhattan
+30:72,Two Bridges/Seward Park,Manhattan
+30:74,Two Bridges/Seward Park,Manhattan
+31:104,South Beach/Dongan Hills,Staten Island
+31:69,Alphabet City,Manhattan
+31:70,Alphabet City,Manhattan
+31:71,Alphabet City,Manhattan
+31:73,Two Bridges/Seward Park,Manhattan
+32:53,Randalls Island,Manhattan
+32:99,Arrochar/Fort Wadsworth,Staten Island
+36:49,Rikers Island,Bronx
+37:48,Rikers Island,Bronx
+38:28,Pelham Bay Park,Bronx
+39:49,LaGuardia Airport,Queens
+40:26,Pelham Bay Park,Bronx
+40:30,Pelham Bay Park,Bronx
+61:89,Breezy Point/Fort Tilden/Riis Beach,Queens
+62:42,Oakland Gardens,Queens
+64:44,Oakland Gardens,Queens
+65:63,JFK Airport,Queens
+65:84,Breezy Point/Fort Tilden/Riis Beach,Queens
+67:60,JFK Airport,Queens
+67:61,JFK Airport,Queens
+67:63,JFK Airport,Queens
+68:61,JFK Airport,Queens
+68:63,JFK Airport,Queens
+70:58,JFK Airport,Queens
+70:59,JFK Airport,Queens
+71:62,JFK Airport,Queens
+72:61,JFK Airport,Queens
+73:57,JFK Airport,Queens
+13:127,Rossville/Woodrow,Staten Island
+15:122,Arden Heights,Staten Island
+17:123,Arden Heights,Staten Island
+18:105,Westerleigh,Staten Island
+18:113,Heartland Village/Todt Hill,Staten Island
+19:113,Heartland Village/Todt Hill,Staten Island
+20:120,Great Kills,Staten Island
+22:108,Heartland Village/Todt Hill,Staten Island
+23:105,Heartland Village/Todt Hill,Staten Island
+24:113,Oakwood,Staten Island
+24:118,Great Kills,Staten Island
+25:106,Heartland Village/Todt Hill,Staten Island
+25:119,Great Kills,Staten Island
+26:105,Heartland Village/Todt Hill,Staten Island
+27:114,Oakwood,Staten Island
+27:80,Governor's Island/Ellis Island/Liberty Island,Manhattan
+28:109,New Dorp/Midland Beach,Staten Island
+30:103,South Beach/Dongan Hills,Staten Island
+30:84,Red Hook,Brooklyn
+34:52,Steinway,Queens
+35:51,Steinway,Queens
+35:52,Steinway,Queens
+36:50,Rikers Island,Bronx
+37:26,Pelham Bay Park,Bronx
+37:27,Co-Op City,Bronx
+39:80,Prospect Park,Brooklyn
+43:29,Pelham Bay Park,Bronx
+60:35,Douglaston,Queens
+60:80,Marine Park/Floyd Bennett Field,Brooklyn
+61:36,Douglaston,Queens
+62:34,Douglaston,Queens
+62:38,Oakland Gardens,Queens
+62:81,Marine Park/Floyd Bennett Field,Brooklyn
+63:62,JFK Airport,Queens
+65:68,Jamaica Bay,Queens
+71:42,Queens Village,Queens
+72:62,JFK Airport,Queens
+83:62,Far Rockaway,Queens
+10:111,Bloomfield/Emerson Hill,Staten Island
+10:133,Charleston/Tottenville,Staten Island
+11:117,Bloomfield/Emerson Hill,Staten Island
+16:106,Westerleigh,Staten Island
+16:128,Rossville/Woodrow,Staten Island
+17:108,Westerleigh,Staten Island
+18:123,Eltingville/Annadale/Prince's Bay,Staten Island
+20:101,West Brighton,Staten Island
+20:102,West Brighton,Staten Island
+20:104,Westerleigh,Staten Island
+20:107,Bloomfield/Emerson Hill,Staten Island
+21:108,Bloomfield/Emerson Hill,Staten Island
+22:101,West Brighton,Staten Island
+22:118,Great Kills,Staten Island
+23:124,Eltingville/Annadale/Prince's Bay,Staten Island
+27:99,Stapleton,Staten Island
+32:100,Arrochar/Fort Wadsworth,Staten Island
+37:49,Rikers Island,Bronx
+38:48,Rikers Island,Bronx
+38:49,Rikers Island,Bronx
+39:48,Rikers Island,Bronx
+45:41,Whitestone,Queens
+45:48,College Point,Queens
+46:97,Coney Island,Brooklyn
+58:37,Bayside,Queens
+58:80,Marine Park/Floyd Bennett Field,Brooklyn
+58:81,Marine Park/Floyd Bennett Field,Brooklyn
+62:86,Breezy Point/Fort Tilden/Riis Beach,Queens
+63:63,JFK Airport,Queens
+64:67,Jamaica Bay,Queens
+73:37,Glen Oaks,Queens
+10:128,Charleston/Tottenville,Staten Island
+12:134,Charleston/Tottenville,Staten Island
+13:135,Charleston/Tottenville,Staten Island
+14:128,Rossville/Woodrow,Staten Island
+14:130,Charleston/Tottenville,Staten Island
+15:112,Bloomfield/Emerson Hill,Staten Island
+15:124,Arden Heights,Staten Island
+16:110,Bloomfield/Emerson Hill,Staten Island
+16:113,Heartland Village/Todt Hill,Staten Island
+16:124,Arden Heights,Staten Island
+18:110,Bloomfield/Emerson Hill,Staten Island
+18:126,Eltingville/Annadale/Prince's Bay,Staten Island
+23:112,Heartland Village/Todt Hill,Staten Island
+23:112,Oakwood,Staten Island
+25:116,Oakwood,Staten Island
+26:113,Oakwood,Staten Island
+27:113,Oakwood,Staten Island
+28:108,South Beach/Dongan Hills,Staten Island
+28:113,Oakwood,Staten Island
+29:113,Oakwood,Staten Island
+29:78,Brooklyn Heights,Brooklyn
+29:79,Columbia Street,Brooklyn
+31:103,South Beach/Dongan Hills,Staten Island
+34:51,Steinway,Queens
+37:25,Eastchester,Bronx
+38:80,Prospect Park,Brooklyn
+47:96,Coney Island,Brooklyn
+49:38,Whitestone,Queens
+65:69,Jamaica Bay,Queens
+74:57,JFK Airport,Queens
+12:115,Bloomfield/Emerson Hill,Staten Island
+12:123,Freshkills Park,Staten Island
+12:135,Charleston/Tottenville,Staten Island
+14:122,Freshkills Park,Staten Island
+14:123,Arden Heights,Staten Island
+14:124,Arden Heights,Staten Island
+14:125,Rossville/Woodrow,Staten Island
+16:121,Arden Heights,Staten Island
+21:102,West Brighton,Staten Island
+21:120,Great Kills,Staten Island
+27:104,South Beach/Dongan Hills,Staten Island
+27:106,South Beach/Dongan Hills,Staten Island
+27:82,Governor's Island/Ellis Island/Liberty Island,Manhattan
+28:81,Governor's Island/Ellis Island/Liberty Island,Manhattan
+36:51,Steinway,Queens
+49:63,Glendale,Queens
+5:111,Bloomfield/Emerson Hill,Staten Island
+54:42,Murray Hill-Queens,Queens
+57:92,Breezy Point/Fort Tilden/Riis Beach,Queens
+59:89,Breezy Point/Fort Tilden/Riis Beach,Queens
+69:72,Broad Channel,Queens
+70:78,Rockaway Park,Queens
+74:45,Cambria Heights,Queens
+75:57,JFK Airport,Queens
+78:64,Far Rockaway,Queens
+11:118,Bloomfield/Emerson Hill,Staten Island
+11:127,Rossville/Woodrow,Staten Island
+12:117,Bloomfield/Emerson Hill,Staten Island
+12:125,Charleston/Tottenville,Staten Island
+13:133,Charleston/Tottenville,Staten Island
+15:123,Arden Heights,Staten Island
+16:120,Arden Heights,Staten Island
+17:128,Rossville/Woodrow,Staten Island
+18:114,Heartland Village/Todt Hill,Staten Island
+19:127,Eltingville/Annadale/Prince's Bay,Staten Island
+22:113,Heartland Village/Todt Hill,Staten Island
+24:122,Great Kills,Staten Island
+25:120,Great Kills,Staten Island
+29:107,South Beach/Dongan Hills,Staten Island
+36:48,Rikers Island,Bronx
+44:47,College Point,Queens
+58:67,Howard Beach,Queens
+61:34,Douglaston,Queens
+63:37,Douglaston,Queens
+65:34,Douglaston,Queens
+66:35,Douglaston,Queens
+15:114,Bloomfield/Emerson Hill,Staten Island
+16:117,Heartland Village/Todt Hill,Staten Island
+21:121,Great Kills,Staten Island
+22:121,Great Kills,Staten Island
+22:99,West Brighton,Staten Island
+23:30,Van Cortlandt Park,Bronx
+29:105,South Beach/Dongan Hills,Staten Island
+31:105,South Beach/Dongan Hills,Staten Island
+6:110,Bloomfield/Emerson Hill,Staten Island
+67:82,Rockaway Park,Queens
+75:68,Hammels/Arverne,Queens
+76:55,Rosedale,Queens
+11:111,Bloomfield/Emerson Hill,Staten Island
+12:119,Freshkills Park,Staten Island
+14:114,Bloomfield/Emerson Hill,Staten Island
+15:121,Arden Heights,Staten Island
+17:103,Saint George/New Brighton,Staten Island
+17:112,Bloomfield/Emerson Hill,Staten Island
+19:110,Bloomfield/Emerson Hill,Staten Island
+19:120,Great Kills,Staten Island
+20:99,West Brighton,Staten Island
+21:103,West Brighton,Staten Island
+21:109,Heartland Village/Todt Hill,Staten Island
+50:35,Schuylerville/Edgewater Park,Bronx
+7:110,Bloomfield/Emerson Hill,Staten Island
+12:114,Bloomfield/Emerson Hill,Staten Island
+13:130,Charleston/Tottenville,Staten Island
+17:110,Bloomfield/Emerson Hill,Staten Island
+21:101,West Brighton,Staten Island
+22:122,Eltingville/Annadale/Prince's Bay,Staten Island
+26:110,New Dorp/Midland Beach,Staten Island
+29:111,New Dorp/Midland Beach,Staten Island
+49:36,Schuylerville/Edgewater Park,Bronx
+60:34,Douglaston,Queens
+80:61,Far Rockaway,Queens
+10:116,Bloomfield/Emerson Hill,Staten Island
+21:98,Saint George/New Brighton,Staten Island
+46:27,City Island,Bronx
+59:82,Marine Park/Floyd Bennett Field,Brooklyn
+72:34,Glen Oaks,Queens
+82:62,Far Rockaway,Queens
+16:112,Bloomfield/Emerson Hill,Staten Island
+18:116,Heartland Village/Todt Hill,Staten Island
+21:122,Eltingville/Annadale/Prince's Bay,Staten Island
+23:122,Great Kills,Staten Island
+24:106,Heartland Village/Todt Hill,Staten Island
+59:35,Douglaston,Queens
+62:65,Howard Beach,Queens
+75:72,Hammels/Arverne,Queens
+77:63,Far Rockaway,Queens
+11:136,Charleston/Tottenville,Staten Island
+20:117,Great Kills,Staten Island
+25:115,Oakwood,Staten Island
+25:121,Great Kills,Staten Island
+46:37,Schuylerville/Edgewater Park,Bronx
+65:83,Breezy Point/Fort Tilden/Riis Beach,Queens
+15:131,Charleston/Tottenville,Staten Island
+17:122,Arden Heights,Staten Island
+22:115,Oakwood,Staten Island
+33:52,Steinway,Queens
+38:47,Rikers Island,Bronx
+46:29,City Island,Bronx
+49:50,Flushing Meadows-Corona Park,Queens
+12:111,Bloomfield/Emerson Hill,Staten Island
+15:137,Charleston/Tottenville,Staten Island
+18:127,Eltingville/Annadale/Prince's Bay,Staten Island
+21:126,Eltingville/Annadale/Prince's Bay,Staten Island
+22:102,West Brighton,Staten Island
+56:46,East Flushing,Queens
+65:39,Oakland Gardens,Queens
+20:118,Great Kills,Staten Island
+21:119,Great Kills,Staten Island
+25:108,Heartland Village/Todt Hill,Staten Island
+25:114,Oakwood,Staten Island
+29:104,South Beach/Dongan Hills,Staten Island
+64:68,Jamaica Bay,Queens
+77:57,Rosedale,Queens
+10:129,Charleston/Tottenville,Staten Island
+16:127,Rossville/Woodrow,Staten Island
+18:115,Heartland Village/Todt Hill,Staten Island
+19:123,Eltingville/Annadale/Prince's Bay,Staten Island
+21:127,Eltingville/Annadale/Prince's Bay,Staten Island
+23:119,Great Kills,Staten Island
+24:120,Great Kills,Staten Island
+29:80,Red Hook,Brooklyn
+42:43,College Point,Queens
+55:89,Manhattan Beach,Brooklyn
+66:39,Douglaston,Queens
+70:75,Rockaway Park,Queens
+12:133,Charleston/Tottenville,Staten Island
+14:136,Charleston/Tottenville,Staten Island
+15:125,Arden Heights,Staten Island
+15:128,Rossville/Woodrow,Staten Island
+22:106,Bloomfield/Emerson Hill,Staten Island
+22:116,Great Kills,Staten Island
+28:110,New Dorp/Midland Beach,Staten Island
+28:111,New Dorp/Midland Beach,Staten Island
+28:82,Governor's Island/Ellis Island/Liberty Island,Manhattan
+32:83,Red Hook,Brooklyn
+60:81,Marine Park/Floyd Bennett Field,Brooklyn
+67:78,Rockaway Park,Queens
+11:137,Charleston/Tottenville,Staten Island
+12:127,Rossville/Woodrow,Staten Island
+14:113,Bloomfield/Emerson Hill,Staten Island
+16:131,Eltingville/Annadale/Prince's Bay,Staten Island
+17:132,Eltingville/Annadale/Prince's Bay,Staten Island
+19:126,Eltingville/Annadale/Prince's Bay,Staten Island
+20:116,Heartland Village/Todt Hill,Staten Island
+20:116,Great Kills,Staten Island
+20:119,Great Kills,Staten Island
+23:117,Great Kills,Staten Island
+26:115,Oakwood,Staten Island
+26:97,Stapleton,Staten Island
+37:50,Rikers Island,Bronx
+59:37,Bayside,Queens
+63:65,Howard Beach,Queens
+13:113,Bloomfield/Emerson Hill,Staten Island
+14:120,Freshkills Park,Staten Island
+14:132,Charleston/Tottenville,Staten Island
+16:108,Westerleigh,Staten Island
+17:124,Arden Heights,Staten Island
+18:121,Eltingville/Annadale/Prince's Bay,Staten Island
+18:124,Eltingville/Annadale/Prince's Bay,Staten Island
+18:129,Eltingville/Annadale/Prince's Bay,Staten Island
+18:99,Saint George/New Brighton,Staten Island
+19:103,Saint George/New Brighton,Staten Island
+19:130,Eltingville/Annadale/Prince's Bay,Staten Island
+20:115,Heartland Village/Todt Hill,Staten Island
+20:123,Eltingville/Annadale/Prince's Bay,Staten Island
+20:124,Eltingville/Annadale/Prince's Bay,Staten Island
+22:126,Eltingville/Annadale/Prince's Bay,Staten Island
+23:118,Great Kills,Staten Island
+23:123,Eltingville/Annadale/Prince's Bay,Staten Island
+25:107,Heartland Village/Todt Hill,Staten Island
+25:118,Great Kills,Staten Island
+27:119,Great Kills Park,Staten Island
+30:106,South Beach/Dongan Hills,Staten Island
+30:109,New Dorp/Midland Beach,Staten Island
+30:25,Woodlawn/Wakefield,Bronx
+41:43,Soundview/Castle Hill,Bronx
+43:25,Pelham Bay Park,Bronx
+43:43,College Point,Queens
+47:39,Whitestone,Queens
+58:90,Breezy Point/Fort Tilden/Riis Beach,Queens
+60:82,Marine Park/Floyd Bennett Field,Brooklyn
+60:90,Breezy Point/Fort Tilden/Riis Beach,Queens
+62:88,Breezy Point/Fort Tilden/Riis Beach,Queens
+64:86,Breezy Point/Fort Tilden/Riis Beach,Queens
+68:81,Rockaway Park,Queens
+11:126,Charleston/Tottenville,Staten Island
+14:102,Port Richmond,Staten Island
+15:130,Rossville/Woodrow,Staten Island
+16:123,Arden Heights,Staten Island
+17:118,Heartland Village/Todt Hill,Staten Island
+17:129,Eltingville/Annadale/Prince's Bay,Staten Island
+19:121,Eltingville/Annadale/Prince's Bay,Staten Island
+21:114,Heartland Village/Todt Hill,Staten Island
+23:113,Oakwood,Staten Island
+24:116,Oakwood,Staten Island
+26:112,New Dorp/Midland Beach,Staten Island
+32:26,Woodlawn/Wakefield,Bronx
+57:93,Breezy Point/Fort Tilden/Riis Beach,Queens
+59:67,Howard Beach,Queens
+61:35,Douglaston,Queens
+78:63,Far Rockaway,Queens
+11:116,Bloomfield/Emerson Hill,Staten Island
+11:133,Charleston/Tottenville,Staten Island
+14:126,Rossville/Woodrow,Staten Island
+15:136,Charleston/Tottenville,Staten Island
+17:120,Arden Heights,Staten Island
+21:110,Heartland Village/Todt Hill,Staten Island
+24:29,Van Cortlandt Park,Bronx
+44:28,Pelham Bay Park,Bronx
+56:81,Marine Park/Mill Basin,Brooklyn
+60:37,Douglaston,Queens
+12:136,Charleston/Tottenville,Staten Island
+18:122,Eltingville/Annadale/Prince's Bay,Staten Island
+19:122,Eltingville/Annadale/Prince's Bay,Staten Island
+20:111,Heartland Village/Todt Hill,Staten Island
+21:123,Eltingville/Annadale/Prince's Bay,Staten Island
+25:105,Heartland Village/Todt Hill,Staten Island
+54:35,Bay Terrace/Fort Totten,Queens
+61:88,Breezy Point/Fort Tilden/Riis Beach,Queens
+84:63,Far Rockaway,Queens
+13:137,Charleston/Tottenville,Staten Island
+16:129,Rossville/Woodrow,Staten Island
+22:112,Heartland Village/Todt Hill,Staten Island
+25:113,Oakwood,Staten Island
+30:104,South Beach/Dongan Hills,Staten Island
+61:80,Marine Park/Floyd Bennett Field,Brooklyn
+10:114,Bloomfield/Emerson Hill,Staten Island
+12:112,Bloomfield/Emerson Hill,Staten Island
+12:116,Bloomfield/Emerson Hill,Staten Island
+12:137,Charleston/Tottenville,Staten Island
+15:126,Rossville/Woodrow,Staten Island
+17:131,Eltingville/Annadale/Prince's Bay,Staten Island
+19:125,Eltingville/Annadale/Prince's Bay,Staten Island
+22:120,Great Kills,Staten Island
+23:107,Heartland Village/Todt Hill,Staten Island
+29:112,Oakwood,Staten Island
+9:116,Bloomfield/Emerson Hill,Staten Island
+11:119,Bloomfield/Emerson Hill,Staten Island
+11:134,Charleston/Tottenville,Staten Island
+12:124,Charleston/Tottenville,Staten Island
+12:128,Rossville/Woodrow,Staten Island
+13:131,Charleston/Tottenville,Staten Island
+13:136,Charleston/Tottenville,Staten Island
+14:127,Rossville/Woodrow,Staten Island
+15:111,Bloomfield/Emerson Hill,Staten Island
+15:120,Freshkills Park,Staten Island
+15:127,Rossville/Woodrow,Staten Island
+15:135,Charleston/Tottenville,Staten Island
+16:122,Arden Heights,Staten Island
+16:125,Arden Heights,Staten Island
+16:130,Rossville/Woodrow,Staten Island
+17:125,Arden Heights,Staten Island
+17:130,Eltingville/Annadale/Prince's Bay,Staten Island
+18:131,Eltingville/Annadale/Prince's Bay,Staten Island
+19:119,Great Kills,Staten Island
+19:129,Eltingville/Annadale/Prince's Bay,Staten Island
+20:110,Heartland Village/Todt Hill,Staten Island
+20:114,Heartland Village/Todt Hill,Staten Island
+21:117,Great Kills,Staten Island
+21:118,Great Kills,Staten Island
+22:107,Heartland Village/Todt Hill,Staten Island
+22:123,Eltingville/Annadale/Prince's Bay,Staten Island
+23:106,Heartland Village/Todt Hill,Staten Island
+23:111,Heartland Village/Todt Hill,Staten Island
+23:114,Oakwood,Staten Island
+24:105,Heartland Village/Todt Hill,Staten Island
+24:108,Heartland Village/Todt Hill,Staten Island
+24:114,Oakwood,Staten Island
+24:117,Great Kills,Staten Island
+24:119,Great Kills,Staten Island
+25:117,Great Kills,Staten Island
+40:23,Eastchester,Bronx
+43:33,Country Club,Bronx
+45:29,City Island,Bronx
+53:36,Bay Terrace/Fort Totten,Queens
+57:91,Breezy Point/Fort Tilden/Riis Beach,Queens
+61:67,Howard Beach,Queens
+76:64,Far Rockaway,Queens
+77:65,Far Rockaway,Queens
+77:66,Hammels/Arverne,Queens
+9:113,Bloomfield/Emerson Hill,Staten Island
+10:119,Bloomfield/Emerson Hill,Staten Island
+11:138,Charleston/Tottenville,Staten Island
+12:138,Charleston/Tottenville,Staten Island
+13:122,Freshkills Park,Staten Island
+14:138,Charleston/Tottenville,Staten Island
+18:125,Arden Heights,Staten Island
+18:130,Eltingville/Annadale/Prince's Bay,Staten Island
+19:131,Eltingville/Annadale/Prince's Bay,Staten Island
+20:126,Eltingville/Annadale/Prince's Bay,Staten Island
+20:128,Eltingville/Annadale/Prince's Bay,Staten Island
+21:124,Eltingville/Annadale/Prince's Bay,Staten Island
+21:128,Eltingville/Annadale/Prince's Bay,Staten Island
+21:95,Saint George/New Brighton,Staten Island
+22:124,Eltingville/Annadale/Prince's Bay,Staten Island
+22:127,Eltingville/Annadale/Prince's Bay,Staten Island
+23:116,Great Kills,Staten Island
+30:90,Bay Ridge,Brooklyn
+31:25,Woodlawn/Wakefield,Bronx
+38:25,Pelham Bay Park,Bronx
+39:29,Pelham Bay Park,Bronx
+10:113,Bloomfield/Emerson Hill,Staten Island
+10:117,Bloomfield/Emerson Hill,Staten Island
+14:129,Rossville/Woodrow,Staten Island
+20:129,Eltingville/Annadale/Prince's Bay,Staten Island
+22:125,Eltingville/Annadale/Prince's Bay,Staten Island
+24:110,Heartland Village/Todt Hill,Staten Island
+27:117,Great Kills Park,Staten Island
+55:35,Bay Terrace/Fort Totten,Queens
+76:71,Hammels/Arverne,Queens
+10:132,Charleston/Tottenville,Staten Island
+11:128,Charleston/Tottenville,Staten Island
+11:132,Charleston/Tottenville,Staten Island
+14:135,Charleston/Tottenville,Staten Island
+20:125,Eltingville/Annadale/Prince's Bay,Staten Island
+21:116,Great Kills,Staten Island
+22:105,Heartland Village/Todt Hill,Staten Island
+24:124,Great Kills,Staten Island
+30:98,Stapleton,Staten Island
+59:88,Breezy Point/Fort Tilden/Riis Beach,Queens
+62:83,Marine Park/Floyd Bennett Field,Brooklyn
+12:139,Charleston/Tottenville,Staten Island
+19:35,Riverdale/North Riverdale/Fieldston,Bronx
+21:112,Heartland Village/Todt Hill,Staten Island
+21:113,Heartland Village/Todt Hill,Staten Island
+22:109,Heartland Village/Todt Hill,Staten Island
+29:110,New Dorp/Midland Beach,Staten Island
+44:42,College Point,Queens
+22:111,Heartland Village/Todt Hill,Staten Island
+25:29,Van Cortlandt Park,Bronx
+27:118,Great Kills Park,Staten Island
+32:73,Brooklyn Navy Yard,Brooklyn
+35:49,Rikers Island,Bronx
+37:51,Steinway,Queens
+39:24,Eastchester,Bronx
+59:34,Douglaston,Queens
+61:81,Marine Park/Floyd Bennett Field,Brooklyn
+64:63,JFK Airport,Queens
+75:46,Cambria Heights,Queens
+11:115,Bloomfield/Emerson Hill,Staten Island
+12:120,Freshkills Park,Staten Island
+16:134,Charleston/Tottenville,Staten Island
+16:134,Eltingville/Annadale/Prince's Bay,Staten Island
+60:88,Breezy Point/Fort Tilden/Riis Beach,Queens
+13:120,Freshkills Park,Staten Island
+22:110,Heartland Village/Todt Hill,Staten Island
+62:87,Breezy Point/Fort Tilden/Riis Beach,Queens
+13:125,Rossville/Woodrow,Staten Island
+24:33,Van Cortlandt Park,Bronx
+32:71,Williamsburg (South Side),Brooklyn
+66:68,Jamaica Bay,Queens
+59:80,Marine Park/Floyd Bennett Field,Brooklyn
+77:55,Rosedale,Queens

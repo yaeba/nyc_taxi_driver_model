@@ -30,6 +30,7 @@ read_cell_location <- function(in_csv) {
 }
 
 append_cell_location <- function(df, cell2location) {
+  message("Merging with cell location")
   df[cell2location, on=c(Pickup_cell = "Cell"), c("Zone", "Borough") := list(Zone, Borough)]
   df %>%
     drop_na()

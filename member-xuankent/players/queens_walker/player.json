@@ -1,0 +1,5 @@
+{
+	"name": "xuankent_queens_walker",
+	"language": "Python3",
+	"script": "./player.py"
+}

@@ -66,8 +66,11 @@ def play_turn(current_datetime, current_cell, neighbours):
     # Compute path array until destination
     path = bfs.find_shortest_path(graph, current_cell, dest_cell)
 
+    # If current cell is the most profitable,
     if len(path) == 1:
-        next_move = random.choice(neighbours)
+        next_move = path[0]
+        return {"state": "FORHIRE", "action": "STAY", "moveTo": next_move}
+        # next_move = random.choice(neighbours)
     else:
         next_move = path[1]
     # create a dictionary setting state, action, and if required moveTo
@@ -109,6 +112,9 @@ def next_shift(current_time):
     return {"defer": start_datetime, "moveTo": next_move}
 
 
+# Initialize an empty path list.
+path = []
+
 # loops until shutdown, waiting for new turn requests on StdIn
 while(1):
     # Read input from StdIn
@@ -127,7 +133,13 @@ while(1):
     elif(reqtype == "PLAYTURN"):
         current_cell = req['currentCell']
         neighbours = req['neighbours']
-        action = play_turn(current_datetime, current_cell, neighbours)
+
+        if path == []:
+            action = play_turn(current_datetime, current_cell, neighbours)
+        else:
+            next_move = path.pop()
+            action = {"state": "FORHIRE",
+                      "action": "MOVE", "moveTo": next_move}
         print("MAST30034:" + json.dumps(action))
         sys.stdout.flush()
     elif(reqtype == "NEXTSHIFT"):

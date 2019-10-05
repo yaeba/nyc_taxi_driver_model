@@ -21,11 +21,11 @@ graph = bfs.load_graph(graph_path)
 # Load models and encoders
 
 
-ohe_path = os.path.join(dirname, '../model/ohe.pickle')
+ohe_path = os.path.join(dirname, '../Model/ohe.pickle')
 with open(ohe_path, 'rb') as handle:
     ohe = pickle.load(handle)
 
-poisson = os.path.join(dirname, '../model/ppp.pickle')
+poisson = os.path.join(dirname, '../Model/ppp.pickle')
 with open(poisson, 'rb') as handle:
     pl = pickle.load(handle)
 

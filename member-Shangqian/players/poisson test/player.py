@@ -19,13 +19,16 @@ graph_path = os.path.join(dirname, '../data/graph.pkl')
 graph = bfs.load_graph(graph_path)
 
 # Load models and encoders
-lr_path = os.path.join(dirname, '../model/lr.pickle')
-with open(lr_path, 'rb') as handle:
-    lr = pickle.load(handle)
+
 
 ohe_path = os.path.join(dirname, '../model/ohe.pickle')
 with open(ohe_path, 'rb') as handle:
     ohe = pickle.load(handle)
+
+poisson = os.path.join(dirname, '../model/ppp.pickle')
+with open(poisson, 'rb') as handle:
+    pl = pickle.load(handle)
+
 
 
 def play_turn(current_datetime, current_cell, neighbours):
@@ -48,7 +51,7 @@ def play_turn(current_datetime, current_cell, neighbours):
         arr = df.values[i].reshape(1, -1)
         try:
             pred = ohe.transform(arr).toarray()
-            freq_dict[k] = lr.predict(pred)[0]
+            freq_dict[k] = pl.predict(pred)[0]
         except ValueError:
             freq_dict[k] = 0
 
@@ -66,11 +69,8 @@ def play_turn(current_datetime, current_cell, neighbours):
     # Compute path array until destination
     path = bfs.find_shortest_path(graph, current_cell, dest_cell)
 
-    # If current cell is the most profitable,
     if len(path) == 1:
-        next_move = path[0]
-        return {"state": "FORHIRE", "action": "STAY", "moveTo": next_move}
-        # next_move = random.choice(neighbours)
+        next_move = random.choice(neighbours)
     else:
         next_move = path[1]
     # create a dictionary setting state, action, and if required moveTo
@@ -112,9 +112,6 @@ def next_shift(current_time):
     return {"defer": start_datetime, "moveTo": next_move}
 
 
-# Initialize an empty path list.
-path = []
-
 # loops until shutdown, waiting for new turn requests on StdIn
 while(1):
     # Read input from StdIn
@@ -133,13 +130,7 @@ while(1):
     elif(reqtype == "PLAYTURN"):
         current_cell = req['currentCell']
         neighbours = req['neighbours']
-
-        if path == []:
-            action = play_turn(current_datetime, current_cell, neighbours)
-        else:
-            next_move = path.pop()
-            action = {"state": "FORHIRE",
-                      "action": "MOVE", "moveTo": next_move}
+        action = play_turn(current_datetime, current_cell, neighbours)
         print("MAST30034:" + json.dumps(action))
         sys.stdout.flush()
     elif(reqtype == "NEXTSHIFT"):

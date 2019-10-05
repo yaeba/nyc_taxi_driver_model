@@ -1,0 +1,5 @@
+{
+	"name": "freq_cost_player",
+	"language": "Python3",
+	"script": "./player.py"
+}

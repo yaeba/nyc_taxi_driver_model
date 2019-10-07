@@ -87,6 +87,19 @@ def find_shortest_path(graph, start, dest):
 	return list(map(to_cell_id, path))
 
 
+def get_neighbours(graph, cell, include=True):
+	'''
+	Get all the neighbours of the cell
+
+	:param Graph graph: Graph object
+	:param str cell: Origin cell id (eg "24:105")
+	:(opt) param bool include: Include itself or not
+	:return: List of cell's neighbours
+	'''
+	neighbours = map(to_cell_id, graph[to_tuple(cell)].keys())
+	return list(neighbours) if include else [x for x in neighbours if x != cell]
+
+
 ## Helper function to convert cell from id (str) to tuple form
 def to_tuple(cell):
 	return tuple(map(int, cell.split(':')))

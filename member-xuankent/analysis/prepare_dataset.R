@@ -52,7 +52,7 @@ clean_taxi_data <- function(taxi_data) {
     filter(Passenger_count > 0, Passenger_count <= 6,
            Trip_duration > 1, Trip_duration < (2 * 60),
            Total_earnings > 0, Total_earnings < 100,
-           week(Pickup_datetime) == week(Dropoff_datetime),
+           Pickup_datetime != "Sun" & Dropoff_datetime != "Mon",
            Pickup_cell != "", Dropoff_cell != "",
            Payment_type <= 2)
 }

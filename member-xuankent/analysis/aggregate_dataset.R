@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-## Script to aggregate tripdata data into minute of month
+## Script to aggregate tripdata data into minute of month (Only in Manhattan)
 ## Usage: ./aggregate_dataset.R <output.rds> <cell_location.csv> <data.rds>...
 
 suppressMessages(library(tidyverse))
@@ -7,22 +7,6 @@ suppressMessages(library(data.table))
 
 args <- commandArgs(trailingOnly=TRUE)
 
-
-prepare_time_dataset <- function(infile) {
-  message("Reading ", infile)
-  readRDS(infile) %>%
-    group_by(Season, Pickup_month, Pickup_week, 
-             Pickup_wday, Weekend, Pickup_hour, 
-             Time, Pickup_day) %>%
-    summarise(Median_earnings = median(Total_earnings),
-              Median_duration = median(Trip_duration),
-              Median_distance = median(Trip_distance),
-              Total_earnings = sum(Total_earnings),
-              Trip_duration = sum(Trip_duration),
-              Trip_distance = sum(Trip_distance),
-              Trip_freq = n()) %>%
-    ungroup()
-}
 
 read_cell_location <- function(in_csv) {
   read_csv(in_csv, col_types="fff") %>%
@@ -71,6 +55,7 @@ main <- function(args) {
   }) %>%
     rbindlist() %>%
     append_cell_location(cell2location) %>%
+    filter(Borough == "Manhattan") %>%
     group_data() %>%
     saveRDS(out)
 }

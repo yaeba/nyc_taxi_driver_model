@@ -1,0 +1,5 @@
+{
+	"name": "xuankent_zone_min_weekend_walker",
+	"language": "Python3",
+	"script": "./player.py"
+}

@@ -49,13 +49,14 @@ main <- function(args) {
   if (!grepl(".rds$", out)) {
     out <- paste0(out, ".rds")
   }
+  
   lapply(args, function(x) {
     message("Reading ", x)
-    readRDS(x)
+    readRDS(x) %>%
+      append_cell_location(cell2location) %>%
+      filter(Borough == "Manhattan")
   }) %>%
     rbindlist() %>%
-    append_cell_location(cell2location) %>%
-    filter(Borough == "Manhattan") %>%
     group_data() %>%
     saveRDS(out)
 }

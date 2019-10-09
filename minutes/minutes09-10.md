@@ -12,12 +12,10 @@
 1. Yin Zhou covered the report introduction, problem aims and description, pre-processing and cleaning. 
 2. Shangqian performe visualization on shifts using Tableau.
 3. Ricky attempted poisson regression.
-4. Xuanken covered the 
+4. Xuanken covered better path optimization method and look-up table.
 
-**Assigned Tasks (from Previous Minutes):
-1.  {Li Shangqian} Setup personal GitLab directory and upload assignments 1 & 2.
-2.  {Yin Zhou Zheng} Setup personal GitLab directory and upload assignments 1 & 2.
-3.  {ALL} Read through assignment 3 specification thoroughly.
+**Assigned Tasks (from Previous Minutes): **
+1.  {ALL}  shifts of period 
 4.  {ALL} Read through each other's assignments, listing any useful material.
 5.  {ALL} Read through each other's GitLab directories. Avoid duplicate code.
 5.  {ALL} Open issues for any discussions concerning the group project.

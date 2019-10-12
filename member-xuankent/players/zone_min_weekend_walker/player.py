@@ -7,14 +7,55 @@ import dateutil.parser
 import random
 import pandas as pd
 import numpy as np
-from collections import Counter, deque
+from collections import Counter
 import itertools
+import bisect
+
+
+################### Functions to get next shifts ###################
+
+def shifts(start_time):
+    date_range = [start_time + datetime.timedelta(days=x) for x in range(6)]
+    return list(map(wday_to_shift, date_range))
+
+def wday_to_shift(dt):
+    switch = {
+        0: 14,
+        1: 14,
+        2: 14,
+        3: 15,
+        4: 16,
+        5: 17}
+    wday = dt.weekday()
+    return dt.replace(hour=switch[wday])
+
+def get_next_shift(current_datetime, all_shifts):
+    idx = bisect.bisect(all_shifts, current_datetime)
+    next_shift = all_shifts[idx]
+    diff = next_shift - current_datetime
+
+    if diff < datetime.timedelta(hours=8):
+        # Rest for 8 hours before continuing
+        return current_datetime + datetime.timedelta(hours=8)
+    else:
+        return next_shift
+
+###################################################################
+
+
+
+################# Functions for lookup table ######################
+
 
 def extract_time(dt):
-    weekend = dt.weekday() < 5
+    weekend = dt.weekday() >= 5
     hour = dt.hour
     minute = int(dt.minute / 10) * 10
     return (weekend, hour, minute)
+
+
+def form_tuple(dt, cell_id, manhattan_zones):
+    return extract_time(dt) + (manhattan_zones[cell_id],)
 
 
 def best_start_cells(start_datetime, manhattan_zones, trips_lookup):
@@ -47,47 +88,87 @@ def normalise_frequency(trips_lookup, manhattan_zones):
 
     return trips_lookup
 
-def compute_trip_prob(freq):
-    freq_array = np.array(freq)
-    prob_trip = freq_array / (1 + freq_array)
-    prob_no_trip = np.cumprod([1] + list(1 - prob_trip))[:-1]
-    return sum(prob_trip * prob_no_trip)
 
-def best_moves(current_datetime, current_cell, graph, manhattan_zones, trips_lookup, k=5):
-    start = (current_cell, tuple(), [], 0)
-    queue = deque([start])
-    leaves = dict()
-
-    while queue:
-        (cell, path, freqs, cost) = queue.popleft()
-
-        if cost == k:
-            leaves[path] = compute_trip_prob(freqs)
-            continue
-
-        for neighbour in bfs.get_neighbours(graph, cell):
-            if neighbour not in manhattan_zones.keys():
-                # Not a manhattan cell
-                continue
-            new_cost = cost + 1
-            new_path = path + (neighbour,)
-            new_datetime = current_datetime + timedelta(minutes=new_cost)
-            new_freqs = freqs + [trips_lookup[extract_time(new_datetime) + (manhattan_zones[neighbour],)]]
-            queue.append((neighbour, new_path, new_freqs, new_cost))
-
-    best_prob = max(leaves.values())
-    best_moves = [path[0] for (path, prob) in leaves.items() if prob >= best_prob]
-    counts = Counter(best_moves)
-    return max(best_moves, key=counts.get)
+###################################################################
 
 
-def zones_min_dist(costs, manhattan_zones):
-    by_zone = lambda x: manhattan_zones[x[0]]
-    it = itertools.groupby(sorted(costs.items(), key=by_zone), by_zone)
-    return {k: min(list(g), key=lambda x: x[1]) for (k, g) in it}
 
 
-def first_move(start_datetime, manhattan_zones, trips_lookup):
+def predict_prob_trip(current_datetime, current_cell, manhattan_zones, trips_lookup):
+    key = form_tuple(current_datetime, current_cell, manhattan_zones)
+    if key not in trips_lookup:
+        return 0
+
+    def odds_to_prob(freq):
+        return freq / (1 + freq)
+
+    return odds_to_prob(trips_lookup[key])
+
+
+
+####################### Best move ################################
+## Function to get next move that maximises 
+## probability of getting a trip
+
+def best_move(current_datetime, current_cell, graph, manhattan_cells, predict_func, k=5):
+    """
+    Get next move that maximises Pr(getting a trip) in next `k` minutes
+    :param Datetime current_datetime: python datetime object
+    :param str current_cell: string of cell id
+    :param Graph graph: Graph object
+    :param set/list manhattan_cells: Collection of all manhattan cells
+    :param function predict_func: A function that accepts (datetime, cell) and
+                                return probabilty of getting trip
+    :(opt) param int k: Lookahead value, min of 1, recommended 10~15
+    :return: Cell id to move to
+    """
+
+    time = current_datetime
+    visited = {current_cell: (0, 1, None)}
+
+    for _ in range(k):
+        time += timedelta(minutes=1)
+
+        prev = visited.copy()
+        for cell in list(visited.keys()):
+            (cumprob, cumprob_bar, counts) = prev[cell]
+            for neighbour in bfs.get_neighbours(graph, cell):
+                if not neighbour in manhattan_cells:
+                    continue
+
+                prob = predict_func(time, neighbour)
+                new_cumprob = cumprob + cumprob_bar * prob
+                
+                new_cumprob_bar = cumprob_bar * (1 - prob)
+                new_counts = counts
+
+                if new_counts is None:
+                    # First move
+                    new_counts = Counter([neighbour])
+                else:
+                    new_counts = new_counts.copy()
+                if not neighbour in visited:
+                    visited[neighbour] = (new_cumprob, new_cumprob_bar, new_counts)
+                else:
+                    # Visited before, compare
+                    (old_cumprob, old_cumprob_bar, old_counts) = visited[neighbour]
+                    if new_cumprob >= old_cumprob:
+                        if new_cumprob == old_cumprob and not old_counts is None:
+                            # Append
+                            new_counts += old_counts
+                        # Replace
+                        visited[neighbour] = (new_cumprob, new_cumprob_bar, new_counts)
+
+    best_prob = max(visited.values(), key=lambda x: x[0])[0]
+    best_moves = [count for (cumprob, _, count) in visited.values() if cumprob >= best_prob]
+    best_moves = sum(best_moves, Counter())
+
+    return max(best_moves, key=best_moves.get)
+
+
+###################################################################
+
+def first_move(start_datetime, all_shifts, manhattan_zones, trips_lookup):
     """
     Decide first move, i.e. start time and location:
         start_datetime: start time of the game
@@ -97,8 +178,7 @@ def first_move(start_datetime, manhattan_zones, trips_lookup):
         moveTo: string id of cell to start in
     """
 
-    # Start playing 4 hours after the start of the game
-    start_datetime = start_datetime + timedelta(hours=4)
+    start_datetime = get_next_shift(start_datetime, all_shifts)
 
     # Start in zone with most number of trips per cell
     best_cells = best_start_cells(start_datetime, manhattan_zones, trips_lookup)
@@ -131,10 +211,15 @@ def play_turn(current_datetime, current_cell, neighbours, graph,
         
 
     if current_cell in manhattan_cells:
-        # Already in Manhattan, find series of moves that gives highest probability
-        lookahead = 4
-        next_move = best_moves(current_datetime, current_cell, 
-            graph, manhattan_zones, trips_lookup, k=lookahead)
+        # Already in Manhattan, find move that gives highest probability
+
+        # consider few rounds ahead
+        lookahead = 10
+
+        predict_func = lambda time, cell: \
+                    predict_prob_trip(time, cell, manhattan_zones, trips_lookup)
+        next_move = best_move(current_datetime, current_cell, graph,
+                        manhattan_cells, predict_func, k=lookahead)
     else:
         # Head towards Manhattan
 
@@ -160,11 +245,11 @@ def play_turn(current_datetime, current_cell, neighbours, graph,
     return decision
 
 
-def next_shift(current_time, manhattan_zones, trips_lookup):
+def next_shift(current_datetime, all_shifts, manhattan_zones, trips_lookup):
     """
     Called at the end of shift to determine next shifts
     start time and start location:
-        current_time: current date time in the game
+        current_datetime: current date time in the game
     
     Returns a dictionary containing defer and moveTo.
         defer: datetime to start the next shift,
@@ -172,8 +257,7 @@ def next_shift(current_time, manhattan_zones, trips_lookup):
         moveTo: string id of cell to start in
     """
 
-    # Start next shift 9 hours after this shift
-    start_datetime = current_time + timedelta(hours=9) 
+    start_datetime = get_next_shift(current_datetime, all_shifts) 
 
     # Start next shift in zone with most number of trips per cell
     best_cells = best_start_cells(start_datetime, manhattan_zones, trips_lookup)
@@ -188,6 +272,7 @@ def play_game(graph, manhattan_zones, trips_lookup):
     Output decisions, loops until shutdown
     """
 
+    all_shifts = None
     # Waiting for new turn requests on StdIn
     while(1) :
 
@@ -197,7 +282,8 @@ def play_game(graph, manhattan_zones, trips_lookup):
         current_datetime = dateutil.parser.parse(req['time'])
 
         if(reqtype=="FIRSTMOVE"):
-            action = first_move(current_datetime, manhattan_zones, trips_lookup)
+            all_shifts = shifts(current_datetime)
+            action = first_move(current_datetime, all_shifts, manhattan_zones, trips_lookup)
             # Create response named list that will be converted to JSON
             resp = {}
             resp["defer"]=action['defer'].strftime("%Y-%m-%dT%H:%M")
@@ -215,7 +301,7 @@ def play_game(graph, manhattan_zones, trips_lookup):
             sys.stdout.flush()
 
         elif(reqtype=="NEXTSHIFT"):
-            action=next_shift(current_datetime, manhattan_zones, trips_lookup)
+            action=next_shift(current_datetime, all_shifts, manhattan_zones, trips_lookup)
             # Create response named list that will be converted to JSON
             resp = {}
             resp["defer"]=action['defer'].strftime("%Y-%m-%dT%H:%M")
@@ -234,6 +320,7 @@ def main(root_path):
     cell2loc = pd.read_csv(os.path.join(root_path, "data/cell_to_location.csv"))
     manhattan = cell2loc[cell2loc["Borough"] == "Manhattan"]
 
+    # Dictionary that maps cell id to zone
     manhattan_zones = manhattan.set_index("Cell").to_dict()["Zone"]
 
     # Load lookup table of number of trips for each (Weekend, Hour, Min) 
@@ -252,10 +339,14 @@ def main(root_path):
 
 
 if __name__ == "__main__":
-    # Root path is "group7/"
+    # Script path is path to player.py
     script_path = os.path.abspath(os.path.dirname(sys.argv[0]))
+
+    # Root path is "group7/"
     root_path = os.path.join(script_path, "../../../")
 
+    # Append so that script can import bfs.py under "src/utils/"
+    # remove if bfs.py is in player.py
     sys.path.append(root_path)
 
     from src.utils import bfs

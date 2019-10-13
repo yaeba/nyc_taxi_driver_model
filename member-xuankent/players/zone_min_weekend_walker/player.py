@@ -312,7 +312,7 @@ def play_game(graph, manhattan_zones, trips_lookup):
 
 
 
-def main(root_path):
+def main(root_path, script_path):
     """
     Called at the start of the game
     """
@@ -324,7 +324,7 @@ def main(root_path):
     manhattan_zones = manhattan.set_index("Cell").to_dict()["Zone"]
 
     # Load lookup table of number of trips for each (Weekend, Hour, Min) 
-    trips_lookup = pd.read_csv("zone_min_weekend.csv") \
+    trips_lookup = pd.read_csv(os.path.join(script_path, "zone_min_weekend.csv")) \
         .set_index(["Weekend", "Pickup_hour", "Pickup_minute", "Zone"]) \
         .to_dict()["Number_trips"]
 
@@ -350,4 +350,4 @@ if __name__ == "__main__":
     sys.path.append(root_path)
 
     from src.utils import bfs
-    main(root_path)
+    main(root_path, script_path)

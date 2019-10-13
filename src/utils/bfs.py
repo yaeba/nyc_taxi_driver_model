@@ -1,5 +1,5 @@
 import pandas as pd
-import dijkstar
+from .dijkstar import Graph, find_path
 from collections import deque
 
 
@@ -15,7 +15,7 @@ def prepare_graph(cells_file):
 		.str.split(':')\
 		.apply(lambda x: tuple([int(x[0]), int(x[1])])).tolist()
 
-	graph = dijkstar.Graph()
+	graph = Graph()
 
 	for cell in cells:
 	    poss_neighbour = [(cell[0]+i, cell[1]+j) for i in [-1, 0, 1] for j in [-1, 0, 1]]
@@ -42,7 +42,7 @@ def load_graph(graph_file):
 
 	:param str graph_file: Saved graph object to be loaded
 	'''
-	return dijkstar.Graph.load(graph_file)
+	return Graph.load(graph_file)
 
 def bfs(graph, start):
 	'''
@@ -83,7 +83,7 @@ def find_shortest_path(graph, start, dest):
 	cost_func = lambda u, v, e, prev_e: e['cost']
 	start = to_tuple(start)
 	dest = to_tuple(dest)
-	path = dijkstar.find_path(graph, start, dest, cost_func=cost_func)[0]
+	path = find_path(graph, start, dest, cost_func=cost_func)[0]
 	return list(map(to_cell_id, path))
 
 

@@ -8,3 +8,7 @@ Game_Release/
 **/results.csv
 member-xuankent/outputs/
 .Rproj.user
+
+evaluation/run.sh
+
+evaluation/players.txt

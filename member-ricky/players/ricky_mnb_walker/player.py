@@ -63,13 +63,14 @@ def extract_time(dt):
 
     season = seasons.get(dt.month)
     month = dt.strftime("%b")
+
     week = int(dt.strftime("%V"))
     day = dt.day
     weekday = dt.strftime("%a")
     weekend = dt.weekday() >= 5
     hour = dt.hour
     time = "Daytime" if 6 <= dt.hour <= 18 else "Nighttime"
-    minute = dt.minute
+    minute = dt.minute // 5 * 5
 
     return (season, month, week, day, weekday, weekend, hour, time, minute)
 
@@ -79,7 +80,9 @@ def form_tuple(dt, cell_id, manhattan_zones):
 
 
 def best_start_cells(start_datetime, manhattan_zones, mod, ohe):
+
     time_tuple = extract_time(start_datetime)
+
     poss = [(time_tuple + (zone, cell,))
             for cell, zone in manhattan_zones.items()]
 
@@ -87,10 +90,7 @@ def best_start_cells(start_datetime, manhattan_zones, mod, ohe):
     freq_pred = mod.predict(a)
     best_cell = poss[np.argmax(freq_pred)][-1]
 
-    # best_zone = max(poss, key=trips_lookup.get)[3]
-    # return [cell for (cell, zone) in manhattan_zones.items() if zone == best_zone]
     return best_cell
-
 
 # def normalise_frequency(trips_lookup, manhattan_zones):
 #     zone_ncells = dict(Counter(manhattan_zones.values()))
@@ -119,20 +119,22 @@ def best_start_cells(start_datetime, manhattan_zones, mod, ohe):
 ###################################################################
 
 
-def predict_prob_trip(current_datetime, current_cell, manhattan_zones, mod, ohe):
+def predict_prob_trip(current_datetime, current_cell, manhattan_zones, mod, ohe, graph):
+
+    costs = bfs.bfs(graph, current_cell)
+
     key = form_tuple(current_datetime, current_cell, manhattan_zones)
 
-    try:
-        a = ohe.transform(key)
-    except ValueError:
-        return 0
+    poss = [(key + (current_cell,))]
+
+    a = ohe.transform(poss)
 
     freq_pred = mod.predict(a)
 
     def odds_to_prob(freq):
         return freq / (1 + freq)
 
-    return odds_to_prob(freq_pred)
+    return odds_to_prob(freq_pred)[0]
 
 
 ####################### Best move ################################
@@ -248,7 +250,7 @@ def play_turn(current_datetime, current_cell, neighbours, graph,
         lookahead = 10
 
         def predict_func(time, cell): return \
-            predict_prob_trip(time, cell, manhattan_zones, mod, ohe)
+            predict_prob_trip(time, cell, manhattan_zones, mod, ohe, graph)
         next_move = best_move(current_datetime, current_cell, graph,
                               manhattan_cells, predict_func, k=lookahead)
     else:

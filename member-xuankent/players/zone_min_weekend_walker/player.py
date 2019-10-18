@@ -94,15 +94,17 @@ def normalise_frequency(trips_lookup, manhattan_zones):
 
 
 
-def predict_prob_trip(current_datetime, current_cell, manhattan_zones, trips_lookup):
-    key = form_tuple(current_datetime, current_cell, manhattan_zones)
-    if key not in trips_lookup:
-        return 0
+def predict_prob_trip(df, manhattan_zones, trips_lookup):
+    df['Key'] = df[['Time', 'Cell']].values.tolist()
+    df['Key'] = df['Key'].map(lambda x: form_tuple(*x, manhattan_zones))
+
+    df['Prob_trip'] = df['Key'].map(lambda x: trips_lookup[x] if x in trips_lookup else 0)
 
     def odds_to_prob(freq):
         return freq / (1 + freq)
 
-    return odds_to_prob(trips_lookup[key])
+    df['Prob_trip'] = df['Prob_trip'].map(odds_to_prob)
+    return df
 
 
 
@@ -126,6 +128,20 @@ def best_move(current_datetime, current_cell, graph, manhattan_cells, predict_fu
     time = current_datetime
     visited = {current_cell: (0, 1, None)}
 
+    # Get Manhattan cells reachable within k moves
+    costs = bfs.bfs(graph, current_cell)
+    costs = dict(filter(lambda x: x[1] in range(k+1) and x[0] in manhattan_cells, 
+                        costs.items()))
+
+    cells_costs = [(i, j) for i in costs.keys() for j in range(1, k+1)]
+    cells_costs = list(filter(lambda x: x[1] >= costs[x[0]], cells_costs))
+
+    cells_costs = pd.DataFrame(cells_costs, columns=['Cell', 'Cost'])
+    cells_costs['Time'] = cells_costs['Cost'].map(lambda x: time + timedelta(minutes=x))
+
+    predicted_df = predict_func(cells_costs.copy())
+    prob_dict = predicted_df.set_index(['Cell', 'Time']).to_dict()['Prob_trip']
+
     for _ in range(k):
         time += timedelta(minutes=1)
 
@@ -136,7 +152,7 @@ def best_move(current_datetime, current_cell, graph, manhattan_cells, predict_fu
                 if not neighbour in manhattan_cells:
                     continue
 
-                prob = predict_func(time, neighbour)
+                prob = prob_dict[(neighbour, time)]
                 new_cumprob = cumprob + cumprob_bar * prob
                 
                 new_cumprob_bar = cumprob_bar * (1 - prob)
@@ -216,8 +232,8 @@ def play_turn(current_datetime, current_cell, neighbours, graph,
         # consider few rounds ahead
         lookahead = 10
 
-        predict_func = lambda time, cell: \
-                    predict_prob_trip(time, cell, manhattan_zones, trips_lookup)
+        predict_func = lambda df: \
+                    predict_prob_trip(df, manhattan_zones, trips_lookup)
         next_move = best_move(current_datetime, current_cell, graph,
                         manhattan_cells, predict_func, k=lookahead)
     else:

@@ -1,0 +1,5 @@
+{
+  "name": "ricky_lr_cluster_walker",
+  "language": "Python3",
+  "script": "./player.py"
+}

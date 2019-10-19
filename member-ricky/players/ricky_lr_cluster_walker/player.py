@@ -168,7 +168,7 @@ def predict_prob_trip(df, manhattan_zones, mod, ohe):
 # Function to get next move that maximises
 # probability of getting a trip
 
-def best_move(current_datetime, current_cell, graph, manhattan_cells, predict_func, k=5):
+def best_move(current_datetime, current_cell, graph, manhattan_cells, predict_func, cluster, k=5):
     """
     Get next move that maximises Pr(getting a trip) in next `k` minutes
     :param Datetime current_datetime: python datetime object
@@ -240,7 +240,13 @@ def best_move(current_datetime, current_cell, graph, manhattan_cells, predict_fu
                   in visited.values() if cumprob >= best_prob]
     best_moves = sum(best_moves, Counter())
 
-    return max(best_moves, key=best_moves.get)
+    best_moves = [cell for cell in best_moves if best_moves[cell]
+                  >= max(best_moves.values())]
+
+    b = max(best_moves, key=cluster.get)
+    print(best_moves)
+    print(b)
+    return b
 
 
 ###################################################################
@@ -271,7 +277,7 @@ def first_move(start_datetime, shift, manhattan_zones, mod, ohe):
 
 
 def play_turn(current_datetime, current_cell, neighbours, graph,
-              manhattan_zones, mod, ohe):
+              manhattan_zones, mod, ohe, cluster):
     """
     Processes a players turn:
         current_datetime: date of current round
@@ -303,7 +309,7 @@ def play_turn(current_datetime, current_cell, neighbours, graph,
         #                       mod, ohe, graph)
 
         next_move = best_move(current_datetime, current_cell, graph,
-                              manhattan_cells, predict_func, k=lookahead)
+                              manhattan_cells, predict_func, cluster, k=lookahead)
     else:
         # Head towards Manhattan
 
@@ -357,7 +363,7 @@ def compute_shifts(start_datetime):
     return [start_datetime + timedelta(hours=x) for x in l]
 
 
-def play_game(graph, manhattan_zones, mod, ohe):
+def play_game(graph, manhattan_zones, mod, ohe, cluster):
     """
     Output decisions, loops until shutdown
     """
@@ -389,7 +395,7 @@ def play_game(graph, manhattan_zones, mod, ohe):
             current_cell = req['currentCell']
             neighbours = req['neighbours']
             action = play_turn(current_datetime, current_cell, neighbours, graph,
-                               manhattan_zones, mod, ohe)
+                               manhattan_zones, mod, ohe, cluster)
             print("MAST30034:" + json.dumps(action))
             sys.stdout.flush()
 
@@ -423,10 +429,14 @@ def main(root_path, script_path):
     #     .set_index(["Weekend", "Pickup_hour", "Pickup_minute", "Zone"]) \
     #     .to_dict()["Number_trips"]
 
+    # Load cell clusters
+    cluster = pd.read_csv("cell_clusters.csv").set_index(
+        "Cell").to_dict()["Cell_cluster"]
+
     # Load model and encoder
-    with open(os.path.join(script_path, 'lr_agg.pkl'), 'rb') as handle:
+    with open('../model/lr_agg.pkl', 'rb') as handle:
         mod = pickle.load(handle)
-    with open(os.path.join(script_path, 'ohe_agg.pkl'), 'rb') as handle:
+    with open('../model/ohe_agg.pkl', 'rb') as handle:
         ohe = pickle.load(handle)
 
     # # Normalise frequency in lookup table
@@ -442,7 +452,7 @@ def main(root_path, script_path):
     # exit(1)
 
     # Start playing game
-    play_game(graph, manhattan_zones, mod, ohe)
+    play_game(graph, manhattan_zones, mod, ohe, cluster)
 
 
 if __name__ == "__main__":

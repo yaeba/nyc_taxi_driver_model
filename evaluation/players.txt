@@ -1,3 +1,1 @@
-../member-ricky/player/
-../member-xuankent/players/
-../member-Shangqian/Players/
+../member-ricky/players/ricky_lr_walker

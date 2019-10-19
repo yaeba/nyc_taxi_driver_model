@@ -1,0 +1,84 @@
+---
+title: "Cells Analysis"
+output: html_notebook
+---
+
+
+```{r}
+library(tidyverse)
+library(data.table)
+```
+
+```{r}
+aggregated <- readRDS("../outputs/aggregated.rds")
+head(aggregated)
+```
+
+
+```{r}
+aggregated <- aggregated %>%
+  unite("Wday_time", Pickup_wday:Pickup_minute) %>%
+  select(-Zone)
+head(aggregated)
+```
+
+```{r}
+cells_earnings <- aggregated %>%
+  select(Wday_time, Pickup_cell, Mean_earnings) %>%
+  spread(key=Wday_time, value=Mean_earnings)
+
+head(cells_earnings)
+```
+
+
+
+```{r}
+k <- 5
+
+km <- cells_earnings %>%
+  remove_rownames() %>%
+  column_to_rownames("Pickup_cell") %>%
+  kmeans(k, iter.max=1000, nstart=10)
+
+km$cluster
+```
+
+```{r}
+mds <- cells_earnings %>%
+  remove_rownames() %>%
+  column_to_rownames("Pickup_cell") %>%
+  dist() %>%
+  cmdscale() %>%
+  as_tibble()
+
+colnames(mds) <- c("Dim_1", "Dim_2")
+head(mds)
+```
+
+```{r}
+ggplot(mds, aes(x=Dim_1, y=Dim_2)) +
+  geom_point(color=km$cluster)
+```
+
+```{r}
+aggregated %>%
+  group_by(Pickup_cell) %>%
+  summarise(Total_earnings = sum(Mean_earnings)) %>%
+  ungroup()
+```
+
+
+
+```{r}
+cell_clusters <- data.frame(km$cluster) %>%
+  rownames_to_column("Cell") %>%
+  rename(Cell_cluster = km.cluster)
+
+head(cell_clusters)
+```
+
+
+```{r}
+fwrite(cell_clusters, "../outputs/cell_clusters.csv")
+```
+

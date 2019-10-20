@@ -91,7 +91,7 @@ def extract_time(dt):
 
     weekday = dt.strftime("%a")
     hour = dt.hour
-    minute = int(dt.minute / 10) * 10
+    minute = int(dt.minute / 5) * 5
     return (weekday, hour, minute)
 
 
@@ -99,21 +99,20 @@ def form_tuple(dt, cell_id, manhattan_zones):
     return extract_time(dt) + (manhattan_zones[cell_id],)
 
 
-def best_start_cells(start_datetime, manhattan_zones, mod, ohe):
+def best_start_cells(start_datetime, manhattan_zones, cell_clusters, mod, ohe):
 
     time_tuple = extract_time(start_datetime)
 
-    poss = [(time_tuple + (zone,)) for zone in manhattan_zones.values()]
+    poss = [(time_tuple + (manhattan_zones[cell], cell_clusters[cell],))
+            for cell in manhattan_zones.keys()]
 
     a = ohe.transform(poss)
     freq_pred = mod.predict(a)
 
-    best_zone = poss[np.argmax(freq_pred)][-1]
+    best_zone = poss[np.argmax(freq_pred)][-2]
+    best_cluster = poss[np.argmax(freq_pred)][-1]
 
-    # print(best_zone)
-    # return best_cell
-
-    return [cell for (cell, zone) in manhattan_zones.items() if zone == best_zone]
+    return [cell for cell in manhattan_zones.keys() if manhattan_zones[cell] == best_zone and cell_clusters[cell] == best_cluster]
 
 
 # def normalise_frequency(trips_lookup, manhattan_zones):
@@ -143,16 +142,17 @@ def best_start_cells(start_datetime, manhattan_zones, mod, ohe):
 ###################################################################
 
 
-def predict_prob_trip(df, manhattan_zones, mod, ohe):
+def predict_prob_trip(df, manhattan_zones, cell_clusters, mod, ohe):
 
     df['Pickup_wday'] = df['Time'].dt.strftime("%a")
     df['Pickup_hour'] = df['Time'].dt.hour
     df['Pickup_minute'] = df['Time'].dt.minute // 10 * 10
 
     df['Zone'] = df['Cell'].map(manhattan_zones)
+    df['Cell_cluster'] = df['Cell'].map(cell_clusters)
 
     trans = ohe.transform(
-        df[["Pickup_wday", "Pickup_hour", "Pickup_minute", "Zone"]])
+        df[["Pickup_wday", "Pickup_hour", "Pickup_minute", "Zone", "Cell_cluster"]])
     freq = mod.predict(trans)
     freq[freq < 0] = 0
 
@@ -245,7 +245,7 @@ def best_move(current_datetime, current_cell, graph, manhattan_cells, predict_fu
 
 ###################################################################
 
-def first_move(start_datetime, shift, manhattan_zones, mod, ohe):
+def first_move(start_datetime, shift, manhattan_zones, cell_clusters, mod, ohe):
     """
     Decide first move, i.e. start time and location:
         start_datetime: start time of the game
@@ -263,7 +263,7 @@ def first_move(start_datetime, shift, manhattan_zones, mod, ohe):
     # next_move = best_cell
 
     best_cells = best_start_cells(
-        start_datetime, manhattan_zones, mod, ohe)
+        start_datetime, manhattan_zones, cell_clusters, mod, ohe)
     next_move = random.choice(best_cells)
 
     # Return a dictionary with defer and moveTo set
@@ -271,7 +271,7 @@ def first_move(start_datetime, shift, manhattan_zones, mod, ohe):
 
 
 def play_turn(current_datetime, current_cell, neighbours, graph,
-              manhattan_zones, mod, ohe):
+              manhattan_zones, cell_clusters, mod, ohe):
     """
     Processes a players turn:
         current_datetime: date of current round
@@ -296,11 +296,7 @@ def play_turn(current_datetime, current_cell, neighbours, graph,
         lookahead = 10
 
         def predict_func(df):
-            return predict_prob_trip(df, manhattan_zones, mod, ohe)
-
-        # def predict_func(time, cell): return \
-        #     predict_prob_trip(time, cell, manhattan_zones,
-        #                       mod, ohe, graph)
+            return predict_prob_trip(df, manhattan_zones, cell_clusters, mod, ohe)
 
         next_move = best_move(current_datetime, current_cell, graph,
                               manhattan_cells, predict_func, k=lookahead)
@@ -329,8 +325,8 @@ def play_turn(current_datetime, current_cell, neighbours, graph,
     return decision
 
 
-def next_shift(current_datetime, shift, manhattan_zones, mod, ohe):
-    """
+def next_shift(current_datetime, shift, manhattan_zones, cell_clusters, mod, ohe):
+    """()
     Called at the end of shift to determine next shifts
     start time and start location:
         current_datetime: current date time in the game
@@ -345,7 +341,7 @@ def next_shift(current_datetime, shift, manhattan_zones, mod, ohe):
 
     # Start next shift in zone with most number of trips per cell
     best_cells = best_start_cells(
-        start_datetime, manhattan_zones,  mod, ohe)
+        start_datetime, manhattan_zones, cell_clusters, mod, ohe)
     next_move = random.choice(best_cells)
 
     # Return a dictionary with defer and moveTo set
@@ -357,7 +353,7 @@ def compute_shifts(start_datetime):
     return [start_datetime + timedelta(hours=x) for x in l]
 
 
-def play_game(graph, manhattan_zones, mod, ohe):
+def play_game(graph, manhattan_zones, cell_clusters, mod, ohe):
     """
     Output decisions, loops until shutdown
     """
@@ -375,7 +371,7 @@ def play_game(graph, manhattan_zones, mod, ohe):
         if(reqtype == "FIRSTMOVE"):
             all_shifts = compute_shifts(current_datetime)
             action = first_move(current_datetime, all_shifts[shift_index],
-                                manhattan_zones, mod, ohe)
+                                manhattan_zones, cell_clusters, mod, ohe)
             # Create response named list that will be converted to JSON
             resp = {}
             resp["defer"] = action['defer'].strftime("%Y-%m-%dT%H:%M")
@@ -389,13 +385,13 @@ def play_game(graph, manhattan_zones, mod, ohe):
             current_cell = req['currentCell']
             neighbours = req['neighbours']
             action = play_turn(current_datetime, current_cell, neighbours, graph,
-                               manhattan_zones, mod, ohe)
+                               manhattan_zones, cell_clusters, mod, ohe)
             print("MAST30034:" + json.dumps(action))
             sys.stdout.flush()
 
         elif(reqtype == "NEXTSHIFT"):
             action = next_shift(current_datetime, all_shifts[shift_index],
-                                manhattan_zones, mod, ohe)
+                                manhattan_zones, cell_clusters, mod, ohe)
             # Create response named list that will be converted to JSON
             resp = {}
             resp["defer"] = action['defer'].strftime("%Y-%m-%dT%H:%M")
@@ -418,15 +414,18 @@ def main(root_path, script_path):
     # Dictionary that maps cell id to zone
     manhattan_zones = manhattan.set_index("Cell").to_dict()["Zone"]
 
+    cell_clusters = pd.read_csv(os.path.join(
+        root_path, "data/cell_clusters.csv")).set_index("Cell").to_dict()['Cell_cluster']
+
     # # Load lookup table of number of trips for each (Weekend, Hour, Min)
     # trips_lookup = pd.read_csv(os.path.join(script_path, "zone_min_weekend.csv")) \
     #     .set_index(["Weekend", "Pickup_hour", "Pickup_minute", "Zone"]) \
     #     .to_dict()["Number_trips"]
 
     # Load model and encoder
-    with open('../model/lr_agg.pkl', 'rb') as handle:
+    with open('../model/lr_agg_5_cluster.pkl', 'rb') as handle:
         mod = pickle.load(handle)
-    with open('../model/ohe_agg.pkl', 'rb') as handle:
+    with open('../model/ohe_agg_5_cluster.pkl', 'rb') as handle:
         ohe = pickle.load(handle)
 
     # # Normalise frequency in lookup table
@@ -442,7 +441,7 @@ def main(root_path, script_path):
     # exit(1)
 
     # Start playing game
-    play_game(graph, manhattan_zones, mod, ohe)
+    play_game(graph, manhattan_zones, cell_clusters, mod, ohe)
 
 
 if __name__ == "__main__":

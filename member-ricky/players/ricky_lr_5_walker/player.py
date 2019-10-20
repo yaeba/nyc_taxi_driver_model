@@ -91,7 +91,7 @@ def extract_time(dt):
 
     weekday = dt.strftime("%a")
     hour = dt.hour
-    minute = int(dt.minute / 10) * 10
+    minute = int(dt.minute / 5) * 5
     return (weekday, hour, minute)
 
 
@@ -424,9 +424,9 @@ def main(root_path, script_path):
     #     .to_dict()["Number_trips"]
 
     # Load model and encoder
-    with open('../model/lr_agg.pkl', 'rb') as handle:
+    with open('../model/lr_agg_5.pkl', 'rb') as handle:
         mod = pickle.load(handle)
-    with open('../model/ohe_agg.pkl', 'rb') as handle:
+    with open('../model/ohe_agg_5.pkl', 'rb') as handle:
         ohe = pickle.load(handle)
 
     # # Normalise frequency in lookup table

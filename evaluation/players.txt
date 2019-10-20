@@ -1,4 +1,3 @@
+../member-ricky/players/ricky_lr_5_cluster_walker
+../member-ricky/players/ricky_lr_5_walker
 ../member-ricky/players/ricky_lr_walker
-../member-ricky/players/ricky_lr_cluster_walker
-../player.json
-

@@ -424,9 +424,9 @@ def main(root_path, script_path):
     #     .to_dict()["Number_trips"]
 
     # Load model and encoder
-    with open('../model/lr_agg_5.pkl', 'rb') as handle:
+    with open(os.path.join(script_path, 'lr_agg_5.pkl'), 'rb') as handle:
         mod = pickle.load(handle)
-    with open('../model/ohe_agg_5.pkl', 'rb') as handle:
+    with open(os.path.join(script_path, 'ohe_agg_5.pkl'), 'rb') as handle:
         ohe = pickle.load(handle)
 
     # # Normalise frequency in lookup table
